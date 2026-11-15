@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><title>언어 단위의 위계 — 직접 구성 요소·구와 절·병렬 구성·수능 기출 풀이 | 국어 문법</title><meta content="언어 단위의 위계를 실제 문장으로 분석합니다. 형태소·단어·구·절·문장의 구성 관계와 직접 구성 요소, 병렬 구성을 2017·2026학년도 기출문제로 풀이합니다." name="description"/><style>
+:root{--navy:#17324D;--blue:#275D85;--ink:#17212B;--muted:#5B6875;--line:#D9E1E7;--paper:#fff;--soft:#F7F9FB;--green:#1C6B57;--warn:#FFF8E6}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#EEF2F5;color:var(--ink);font-family:"Pretendard","Noto Sans KR","Apple SD Gothic Neo","Malgun Gothic",sans-serif;line-height:1.78;letter-spacing:-.02em}
+a{color:var(--blue);text-decoration:none}.shell{max-width:980px;margin:0 auto;padding:32px 20px 80px}article{background:var(--paper);border-radius:22px;box-shadow:0 12px 36px rgba(23,50,77,.08);overflow:hidden}
+.hero{padding:56px;background:linear-gradient(135deg,#17324D,#244E70);color:#fff}.eyebrow{display:inline-block;font-size:13px;font-weight:900;letter-spacing:.08em;background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.25);padding:6px 10px;border-radius:999px;margin-bottom:18px}
+h1{font-size:38px;line-height:1.25;letter-spacing:-.045em;margin:0 0 18px}.subtitle{font-size:18px;line-height:1.7;color:#DCEAF3;max-width:780px;margin:0}.content{padding:48px 56px 64px}
+.cover{margin:0 0 30px}.cover img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:18px;border:1px solid var(--line);box-shadow:0 10px 26px rgba(23,50,77,.08)}
+.toc{margin:0 0 48px;padding:24px 26px;background:#F7F9FB;border:1px solid var(--line);border-radius:16px}.toc-title{font-size:18px;font-weight:900;color:var(--navy);margin-bottom:13px}.toc ol{margin:0;padding-left:22px;columns:2;column-gap:36px}.toc li{break-inside:avoid;margin:0 0 9px}
+section{scroll-margin-top:24px;margin-bottom:58px}h2{font-size:26px;line-height:1.35;color:var(--navy);margin:0 0 22px;padding-bottom:11px;border-bottom:2px solid #E7EEF3}h3{font-size:18px;color:var(--navy);margin:0 0 8px}p{margin:0 0 16px}strong{color:#102D45}
+.keybox,.warning{border-radius:16px;padding:20px 22px;margin:24px 0}.keybox{background:#EEF6FB;border-left:5px solid var(--blue)}.warning{background:var(--warn);border-left:5px solid #C98200}
+.sentence,.example,.dialogue{background:#FAFBFC;border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin:20px 0}.sentence{text-align:center;font-size:20px;font-weight:800;color:var(--navy)}
+table{width:100%;border-collapse:separate;border-spacing:0;margin:22px 0;border:1px solid var(--line);border-radius:14px;overflow:hidden;font-size:15px}th,td{padding:14px 15px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}th{background:#EAF3F8;color:var(--navy);font-weight:800}tr:last-child td{border-bottom:0}td+td,th+th{border-left:1px solid var(--line)}
+.checklist{list-style:none;padding:0;margin:18px 0}.checklist li{padding:9px 0 9px 30px;position:relative;border-bottom:1px solid #EDF1F4}.checklist li:before{content:"✓";position:absolute;left:5px;color:var(--green);font-weight:900}
+.summary td:first-child{width:28%;font-weight:800;color:var(--navy)}.closing{font-size:19px;text-align:center;background:#F0F6FA;border-radius:16px;padding:26px;margin-top:28px}
+.references{background:#F8FAFB;border-top:1px solid var(--line);padding:28px 56px 38px;color:var(--muted);font-size:13px}
+@media(max-width:900px){.shell{padding:0}.hero,.content,.references{padding-left:24px;padding-right:24px}h1{font-size:31px}.toc ol{columns:1}}
+
+
+.article-topnav{background:#fff;border-bottom:1px solid #d9e1e7;font-family:"Pretendard","Noto Sans KR","Apple SD Gothic Neo","Malgun Gothic",sans-serif}
+.article-topnav .nav-in{max-width:1180px;margin:0 auto;min-height:58px;padding:0 20px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+.article-topnav .nav-left,.article-topnav .nav-right{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.article-topnav a{color:#425466;text-decoration:none;font-size:13px;font-weight:800}
+.article-topnav a.current{color:#17324D}
+@media(max-width:720px){.article-topnav .nav-in{align-items:flex-start;flex-direction:column;padding-top:12px;padding-bottom:12px;gap:8px}.article-topnav .nav-right{gap:10px}.article-topnav a{font-size:12px}}
+
+/* Grammar 0120 renewal: existing design preserved, expanded analysis layout */
+.renewal-map{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:20px 0}
+.renewal-map>div{background:#f6f9fc;border:1px solid #d9e1e7;border-radius:14px;padding:18px 20px}
+.renewal-map h3{margin:0 0 8px;font-size:17px;color:#17324D}
+.renewal-map p{font-size:15px;margin:0 0 8px}
+.rn-steps{counter-reset:step;list-style:none;padding:0;display:grid;gap:10px}
+.rn-steps li{counter-increment:step;background:#f6f9fc;border:1px solid #d9e1e7;border-radius:12px;padding:16px 18px 16px 58px;position:relative}
+.rn-steps li:before{content:counter(step);position:absolute;left:15px;top:15px;border-radius:50%;width:29px;height:29px;background:#17324D;color:white;text-align:center;line-height:29px;font-weight:800}
+.rn-links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:20px 0}
+.rn-links a{display:block;padding:16px 18px;border:1px solid #d9e1e7;border-radius:13px;background:#f7f9fb;color:#17324D;font-weight:700}
+.rn-links a span{display:block;font-size:13px;color:#5B6875;font-weight:500;margin-top:5px}
+.rn-footnote{font-size:14px;color:#5B6875}
+@media(max-width:720px){.renewal-map,.rn-links{grid-template-columns:1fr}.rn-steps li{padding-left:54px}table{display:block;overflow-x:auto}}
+
+/* GRAM-0121 concept→exam renewal; existing design preserved */
+.g-lead{font-size:19px;color:#223B50;line-height:1.85}
+.g-box{background:#F2F7FB;border:1px solid #D7E4ED;border-radius:14px;padding:22px;margin:20px 0}
+.g-box b{color:#17324D}
+.g-steps{list-style:none;counter-reset:step;padding:0;display:grid;gap:11px}
+.g-steps li{counter-increment:step;position:relative;background:#F7FAFC;border:1px solid #D9E1E7;border-radius:12px;padding:14px 16px 14px 54px}
+.g-steps li:before{content:counter(step);position:absolute;left:14px;top:14px;width:26px;height:26px;line-height:26px;text-align:center;color:white;background:#275D85;font-weight:bold;border-radius:50%}
+.g-example{font-size:17px;padding:18px;background:#F7FAFC;border-left:4px solid #275D85;margin:20px 0;line-height:1.85}
+.g-layer{font-family:inherit;white-space:pre-wrap;background:#F5F8FC;border:1px solid #D8E5F0;border-radius:12px;padding:20px;line-height:1.95}
+.g-exam{border:1px solid #C8DBE8;background:#FFF;border-radius:16px;padding:23px;margin:20px 0}
+.g-exam h3{font-size:19px;margin:0 0 10px}
+.g-id{font-size:12px;color:#5B6875;background:#EAF3F8;border-radius:100px;padding:4px 10px;display:inline-block;margin-bottom:8px}
+.g-next{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.g-next a{padding:17px 18px;display:block;border:1px solid #D9E1E7;background:#F7F9FB;border-radius:13px;font-weight:800}
+.g-next a span{font-size:13px;display:block;color:#5B6875;font-weight:400;margin-top:4px}
+.g-note{color:#5B6875;font-size:14px}
+@media(max-width:720px){.g-next{grid-template-columns:1fr}table{display:block;overflow-x:auto}}
+</style><link href="https://4th-season.com/hierarchy-of-language-units" rel="canonical"/><meta content="index,follow" name="robots"/><meta content="GRAMMAR_RENEWAL_0121_20261018_V2" name="4s-public-marker"/><meta content="2026-09-27" name="article:published_time"/><meta content="how" name="4th-subcategory"/><link href="/assets/common/stdict-search.css?v=20260927v1" id="s4-stdict-search-css" rel="stylesheet"/>
+<link href="/assets/common/article-nav.css?v=20260928v1" id="s4-article-nav-css" rel="stylesheet"/>
+</head><body>
+<nav id="fs-common-menu" class="fs-common-menu" data-sitejob-marker="GLOBAL_ARTICLE_NAV_V2" aria-label="개별 글 공통 메뉴"><div class="fsn-inner"><a class="fsn-exit" href="/learn/grammar/">← 상위 지도</a><a class="fsn-brand" href="/">4TH SEASON</a><a class="fsn-domain" href="/learn/">LEARN</a><a class="fsn-domain" href="/world/">WORLD</a><a class="fsn-domain" href="/life/">LIFE</a><a class="fsn-domain insite" href="/insite/">In:Site</a><a class="fsn-series" href="/learn/grammar/">문법</a><a class="fsn-map" href="/sitemap/">한눈에 보기</a></div></nav>
+<div aria-label="표준국어대사전 검색" class="s4-dict-search" data-endpoint="/api/stdict" id="s4-stdict-search">
+<form autocomplete="off" class="s4-dict-form" role="search">
+<span class="s4-dict-badge">사전</span>
+<label class="s4-dict-sr" for="s4-dict-input">표준국어대사전 검색어</label>
+<input aria-label="표준국어대사전 검색" class="s4-dict-input" id="s4-dict-input" inputmode="search" maxlength="80" placeholder="표준국어대사전" type="search"/>
+<button aria-label="사전 검색" class="s4-dict-submit" type="submit">⌕</button>
+</form>
+<div aria-live="polite" class="s4-dict-panel" hidden=""></div>
+</div><header class="article-topnav"><div class="nav-in"><nav aria-label="상위 이동" class="nav-left"><a href="/">홈</a><a href="/learn/">LEARN</a></nav><nav aria-label="LEARN 동일 레벨 메뉴" class="nav-right"><a href="/learn/korean-reading/">읽기</a><a aria-current="page" class="current" href="/learn/grammar/">문법</a><a href="/learn/vocabulary/">어휘</a><a href="/learn/reread/">Re:Read</a><a href="/quote-prestige/">명언의 품격</a></nav></div></header><div class="shell"><article><header class="hero"><span class="eyebrow">국어 문법</span><h1>언어 단위의 위계 — 작은 단위가 큰 단위를 만드는 방식</h1><p class="subtitle">단위를 크기순으로 외우는 데서 벗어나, 직접 구성 요소·문장 속 포함 관계·병렬 구성의 조건을 실제 기출에서 판정합니다.</p></header><div class="content"><figure class="cover"><img alt="형태소·단어·구·절·문장의 구성 관계와 언어 단위의 위계를 나타내는 대표 이미지" height="540" src="/assets/grammar/hierarchy-of-language-units.webp" width="960"/></figure><nav aria-label="목차" class="toc"><div class="toc-title">목차</div><ol><li><a href="#s1">언어 단위의 위계를 알면 기출문제가 다르게 보입니다</a></li><li><a href="#s2">1. 작은 단위가 큰 단위를 이루는 방식에는 조건이 있습니다</a></li><li><a href="#s3">2. 형태소에서 단어로 — 내부 구성과 단어 종류는 다릅니다</a></li><li><a href="#s4">3. 직접 구성 요소는 한 번에 끝까지 쪼개는 분석이 아닙니다</a></li><li><a href="#s5">4. 단어와 어절 — 숫자가 달라지는 이유</a></li><li><a href="#s6">5. 구와 절은 길이가 아니라 주어·서술어 관계로 가릅니다</a></li><li><a href="#s7">6. 절이 더 큰 문장 안에 들어갈 때, 전체 주어는 달라집니다</a></li><li><a href="#s8">7. 포함 관계와 문장 성분의 역할을 구별합니다</a></li><li><a href="#s9">8. 병렬 구성은 같은 자격의 요소가 대등하게 결합합니다</a></li><li><a href="#s10">9. 기출 ① 2004학년도 수능 36번 — 선택과 통합의 층위를 구별</a></li><li><a href="#s11">10. 기출 ② 2017학년도 9월 12번 — 전체 주어를 어떻게 찾는가</a></li><li><a href="#s12">11. 기출 ③ 2026학년도 9월 35번 — 병렬인지 아닌지 판단</a></li><li><a href="#s13">12. 기출 ④ 2026학년도 9월 36번 — 잘못된 병렬을 세 이유로 분류</a></li><li><a href="#s14">13. 처음 보는 문장도 같은 순서로 분석합니다</a></li><li><a href="#s15">14. 흔한 오개념을 이렇게 고칩니다</a></li><li><a href="#s16">15. 다음 개념글은 무엇을 읽어야 할까요?</a></li><li><a href="#s17">한눈에 정리 — 언어 단위의 위계는 판단의 순서입니다</a></li></ol></nav><section id="s1"><h2>언어 단위의 위계를 알면 기출문제가 다르게 보입니다</h2>
+<p class="g-lead">‘형태소 → 단어 → 구 → 절 → 문장’이라는 순서를 외워도, 복잡한 문장에 들어가면 어디서 끊어야 할지 막힐 수 있습니다. <strong>위계는 단어 수를 세는 표가 아니라, 무엇이 무엇을 직접 이루는가를 판정하는 방법</strong>이기 때문입니다.</p>
+<div class="g-example">“언니가 읽던 책이 여기 있다.”<p>전체 문장의 주어는 무엇일까요? <strong>언니가</strong>만 보아서는 안 됩니다. 언니가 읽던 것이 <strong>책</strong>이라는 관계를 먼저 잡으면, 전체의 주어 덩어리는 <strong>언니가 읽던 책이</strong>가 됩니다.</p></div>
+<div class="keybox"><strong>이번 글의 역할</strong> 상위 글인 <a href="/language-units">언어 단위</a>가 음운·음절·담화까지 전체 지도를 보여 준다면, 이 글은 형태소·단어·구·절·문장의 <em>직접 구성·포함·병렬</em> 관계를 실제 문제에서 판정합니다.</div>
+</section><section id="s2"><h2>1. 작은 단위가 큰 단위를 이루는 방식에는 조건이 있습니다</h2>
+<p>한 단위가 더 큰 단위 속에 들어 있다고 해서 곧바로 <strong>직접 구성 요소</strong>인 것은 아닙니다. 직접 구성 요소는 <em>한 층위 위의 전체를 바로 이루는 부분</em>입니다. 단어를 여러 형태소로 나누거나 문장을 여러 어절로 나누는 작업과, 어떤 두 덩어리가 바로 결합하는지 밝히는 작업은 다릅니다.</p>
+<table><thead><tr><th>관찰할 관계</th><th>판정 질문</th><th>사례</th></tr></thead><tbody>
+<tr><td>구성</td><td>바로 상위 구조를 이루는 두 요소는 무엇인가?</td><td>‘민물고기’ → ‘민물’ + ‘고기’</td></tr>
+<tr><td>포함</td><td>더 큰 문장 속에 작은 주어·서술어 구조가 들어 있는가?</td><td>‘언니가 읽던’은 ‘책’을 꾸미는 관형절</td></tr>
+<tr><td>기능</td><td>이 큰 덩어리는 전체 문장 속에서 무슨 역할을 하는가?</td><td>‘언니가 읽던 책이’는 전체 문장의 주어</td></tr>
+<tr><td>병렬</td><td>둘 이상의 요소가 대등하게 연결될 자격이 있는가?</td><td>‘물과 불’, ‘밖은 춥고 안은 덥다’</td></tr>
+</tbody></table>
+</section><section id="s3"><h2>2. 형태소에서 단어로 — 내부 구성과 단어 종류는 다릅니다</h2>
+<div class="g-example"><strong>먹었다</strong> = 먹- + -었- + -다</div>
+<p>‘먹었다’는 학교 문법에서 한 <strong>단어의 활용형</strong>이지만, 안으로는 어간과 어미라는 여러 형태소로 분석됩니다. 분리할 수 있다는 사실과 띄어 써야 한다는 판단은 다른 문제입니다.</p>
+<p>‘학생들’은 <strong>학생 + -들</strong>로 설명할 수 있고, ‘학생들이’처럼 조사가 결합하면 조사를 별도 단어로 다루는 학교 문법의 분류가 적용됩니다. <strong>형태소의 개수·단어의 개수·어절의 개수</strong>를 한 번에 답하려 하지 말아야 합니다.</p>
+<div class="warning"><strong>주의</strong> 조사는 학교 문법에서 단어로 처리하지만 어미는 용언의 활용형 내부에 놓입니다. 단어 형성의 어근·접사와 활용의 어간·어미도 서로 다른 분석 질문입니다.</div>
+</section><section id="s4"><h2>3. 직접 구성 요소는 한 번에 끝까지 쪼개는 분석이 아닙니다</h2>
+<p><strong>민물고기</strong>를 보겠습니다. 이 낱말은 ‘민물’과 ‘고기’가 결합한 합성어입니다. 다시 ‘민물’을 분석하면 ‘민-’과 ‘물’이 나타날 수 있습니다. 어느 단계에서 묻느냐에 따라 직접 구성 요소가 달라집니다.</p>
+<div class="g-layer">민물고기
+├─ 민물
+│   ├─ 민- (접두사)
+│   └─ 물
+└─ 고기</div>
+<p>여기서 전체 ‘민물고기’의 직접 구성 요소는 <strong>민물 / 고기</strong>입니다. 속에 접사가 하나 있다고 해서 전체 단어를 곧장 파생어로 판정하지 않습니다. <strong>최상위 분기에서 어떤 결합이 이루어졌는지</strong>를 확인해야 합니다.</p>
+<p>분석 후보를 세운 뒤에는 ① 분리한 말이 실제로 존재하는지, ② 분리 전후의 의미 관계가 자연스러운지 함께 확인합니다.</p>
+</section><section id="s5"><h2>4. 단어와 어절 — 숫자가 달라지는 이유</h2>
+<div class="g-example"><strong>학생이 새 책을 읽었다.</strong></div>
+<table><thead><tr><th>분석 단위</th><th>결과</th><th>판단 기준</th></tr></thead><tbody>
+<tr><td>어절</td><td>학생이 / 새 / 책을 / 읽었다 → <strong>4어절</strong></td><td>띄어 쓴 말의 덩어리</td></tr>
+<tr><td>단어</td><td>학생 / 이 / 새 / 책 / 을 / 읽었다 → <strong>6단어</strong></td><td>조사는 단어, 어미는 단어로 따로 세지 않음</td></tr>
+<tr><td>문장 성분</td><td>학생이(주어) · 새(관형어) · 책을(목적어) · 읽었다(서술어)</td><td>문장 안에서 맡은 역할</td></tr>
+</tbody></table>
+<p>‘새’는 품사로는 <strong>관형사</strong>이면서, 문장 안에서는 <strong>관형어</strong>입니다. 같은 표현이라도 분석의 관점을 바꾸면 다른 답이 나옵니다. 이를 모순으로 판단해서는 안 됩니다.</p>
+</section><section id="s6"><h2>5. 구와 절은 길이가 아니라 주어·서술어 관계로 가릅니다</h2>
+<table><thead><tr><th>표현</th><th>분석</th><th>핵심 근거</th></tr></thead><tbody>
+<tr><td>아주 예쁜 꽃</td><td>구</td><td>그 전체에 독립된 주어·서술어 관계가 중심이 아님</td></tr>
+<tr><td>꽃이 피는</td><td>절</td><td>‘꽃이’(주어)와 ‘피는’(서술어)의 관계가 있음</td></tr>
+<tr><td>내가 읽던</td><td>절</td><td>‘내가’가 ‘읽던’의 주어로 연결됨</td></tr>
+</tbody></table>
+<p>절에는 문맥에 따라 주어가 드러나지 않는 경우도 있으므로 <strong>겉으로 보이는 조사 하나만으로</strong> 기계적으로 판단하면 안 됩니다. 어떤 용언이 어떤 주체의 행위를 나타내는지 문장 내부의 관계를 확인해야 합니다.</p>
+</section><section id="s7"><h2>6. 절이 더 큰 문장 안에 들어갈 때, 전체 주어는 달라집니다</h2>
+<div class="g-example"><strong>언니가 찾던 책이 여기 있구나.</strong></div>
+<div class="g-layer">[문장]
+  ├─ [주어] [[관형절 언니가 찾던] 책이]
+  └─ [서술부] 여기 있구나</div>
+<p>‘언니가’는 <strong>관형절 내부의 주어</strong>이며, 전체 문장의 주어를 그 자리에서 바로 끊어 ‘언니가’로 정하면 잘못된 위계가 됩니다. 큰 구조를 먼저 구분하고 안쪽으로 내려가는 방식이 필요합니다.</p>
+<p>이는 뒤에서 볼 2017학년도 9월 12번의 기본 원리이기도 합니다.</p>
+</section><section id="s8"><h2>7. 포함 관계와 문장 성분의 역할을 구별합니다</h2>
+<p><strong>‘새 책을’</strong>은 내부적으로 ‘새/책/을’로 분해할 수 있지만, 전체 문장에서는 하나의 <strong>목적어 덩어리</strong>가 될 수 있습니다. 내부 구성 요소의 수와 외부 기능의 수는 같은 값일 필요가 없습니다.</p>
+<p>문제에서 <em>직접 구성 요소</em>를 요구하면 구성의 첫 분기를, <em>문장 성분</em>을 요구하면 서술어와의 관계를, <em>품사</em>를 요구하면 단어별 특성을 우선합니다.</p>
+</section><section id="s9"><h2>8. 병렬 구성은 같은 자격의 요소가 대등하게 결합합니다</h2>
+<div class="g-example">① 물과 불　② 밖은 춥고 안은 덥다.</div>
+<p>①은 두 명사가 조사로 연결된 병렬 구성입니다. ②는 두 절이 연결 어미로 대등하게 연결됩니다. 두 경우 모두 ‘무엇과 무엇이 연결되는가’를 먼저 식별해야 합니다.</p>
+<p>2026학년도 9월 모의평가 지문은 <strong>단어·구·절의 단위가 같은지</strong>, 선행절·후행절에서 생략된 성분의 기능이 같은지, 병렬된 각 항목이 같은 서술어와 호응하는지를 판단하도록 설명합니다. 다만 해당 지문은 <strong>명사와 명사구도 병렬 가능</strong>하다는 조건을 제시하므로 무조건 ‘단위가 다르면 불가’라고 암기해서는 안 됩니다.</p>
+</section><section id="s10"><h2>9. 기출 ① 2004학년도 수능 36번 — 선택과 통합의 층위를 구별</h2>
+<div class="g-exam"><span class="g-id">E2004-CSAT-Q36 · 개념 연계</span><h3>구조·선택·통합을 같은 뜻으로 쓰지 않기</h3>
+<p>언어 체계 설명문이 제시한 핵심은 <strong>대체 가능한 항목의 선택 관계</strong>와 <strong>동시에 연결되어 구조를 만드는 통합 관계</strong>의 구별입니다. 문제는 이어진 글 속의 문장과 단어를 가리키며 두 관계를 판정하게 합니다.</p>
+<ol class="g-steps"><li>표시된 대상이 단어인지 문장인지, 혹은 글 전체인지 확인합니다.</li><li>그 자리에 다른 표현을 <strong>바꾸어 넣는 관계</strong>인지 살펴봅니다.</li><li>요소들이 이어져 더 큰 구조를 <strong>함께 이루는 관계</strong>인지 따로 검토합니다.</li><li>선지에서 서로 다른 층위를 같은 종류의 관계로 오인하지 않았는지 판정합니다.</li></ol>
+<p class="g-note">이 글은 원천 DB의 발문과 선지 구조를 토대로 판단 절차를 설명합니다. 공식 정답 번호는 별도 대조 후 확정합니다.</p></div>
+</section><section id="s11"><h2>10. 기출 ② 2017학년도 9월 12번 — 전체 주어를 어떻게 찾는가</h2>
+<div class="g-exam"><span class="g-id">E2017-SEP-Q012 · 정답 ② 검증</span><h3>최상위 직접 구성 요소부터 나누기</h3>
+<p>이 문항은 직접 구성 요소 분석을 바탕으로 다섯 문장의 잘못된 구분을 찾는 문제입니다. ②의 핵심은 <strong>‘소포가 도착했다고 들었다’</strong>를 전체 주어 ‘소포가’와 서술부 ‘도착했다고 들었다’로 자를 수 있는지입니다.</p>
+<p>‘소포가’는 <strong>‘소포가 도착했다’</strong>에 해당하는 안긴 내용의 주어입니다. 전체 문장의 바로 위 구조를 ‘소포가’와 나머지 서술부로 분석할 수는 없습니다. 발문이 요구한 것은 안쪽에 들어 있는 주어를 찾아내는 일이 아니라 <strong>전체 구조의 첫 분기</strong>입니다.</p>
+<ol class="g-steps"><li>문장 전체에 먼저 결합한 덩어리가 있는지 찾습니다.</li><li>안긴절 속 주어와 문장 전체의 주어를 구별합니다.</li><li>각 선지가 제시한 첫 분기가 실제 최상위 직접 구성 요소인지 판정합니다.</li></ol>
+<p>수능 DB 기록 정답은 <strong>②</strong>이고, 별도 공개 정답표에서도 ②를 확인했습니다.</p></div>
+</section><section id="s12"><h2>11. 기출 ③ 2026학년도 9월 35번 — 병렬인지 아닌지 판단</h2>
+<div class="g-exam"><span class="g-id">E2026-SEP-Q035 · 병렬 구성</span><h3>단어 순서를 바꾸었다고 병렬이 되는 것은 아닙니다</h3>
+<p>이 문제는 병렬 구성의 <strong>대등성</strong>을 판단하게 합니다. 예를 들어 ‘도서관이 우리 집과 가깝다’와 ‘우리 집이 도서관과 가깝다’의 의미가 유사하더라도, 그 자체로 두 문장에 <strong>병렬 구성</strong>이 있다고 단정할 수는 없습니다. 두 성분이 문장 안에서 접속되어 대등하게 결합했는지를 봐야 합니다.</p>
+<p>반면 ‘팥, 콩, 쌀이 많다’처럼 조사가 없어도 나열에 의해 병렬 관계가 성립할 수 있습니다. 핵심은 연결 어미의 존재만이 아니라 <strong>문장 안에서 어떤 요소들이 동등한 기능으로 병치되는가</strong>입니다.</p>
+<ol class="g-steps"><li>병렬로 연결됐다고 주장하는 두 요소를 표시합니다.</li><li>둘의 문법 단위와 문장 속 기능을 확인합니다.</li><li>대등성·나열·접속 방식과 지문에서 제시한 조건을 대조합니다.</li></ol></div>
+</section><section id="s13"><h2>12. 기출 ④ 2026학년도 9월 36번 — 잘못된 병렬을 세 이유로 분류</h2>
+<div class="g-exam"><span class="g-id">E2026-SEP-Q036 · 병렬·생략·호응</span><h3>㉠ 단위 / ㉡ 생략 / ㉢ 호응의 순서</h3>
+<p>문항은 다섯 표현을 비교해 부적절한 이유가 무엇인지 판단하게 합니다. 예시에서 명사구인 <strong>‘체력 단련’</strong>과 절인 <strong>‘방을 청소한’</strong>처럼 병렬된 요소들의 단위가 달라지는 경우가 있습니다. 또 ‘국이나 빵을 굽는다’처럼 각 병렬 요소가 동일한 서술어 ‘굽다’와 자연스럽게 호응하는지도 따져야 합니다.</p>
+<table><thead><tr><th>지문 기준</th><th>질문</th><th>검사 순서</th></tr></thead><tbody>
+<tr><td>㉠ 병렬 단위</td><td>병렬된 말의 단위는 같은가? 예외 조건이 있는가?</td><td>구성 요소의 층위 확인</td></tr>
+<tr><td>㉡ 생략</td><td>생략된 성분이 선행절과 같은 문장 성분인가?</td><td>실제 복원 후 비교</td></tr>
+<tr><td>㉢ 호응</td><td>나열된 항목 모두가 서술어에 적절히 호응하는가?</td><td>각 항목을 서술어와 개별 결합</td></tr>
+</tbody></table>
+<p>선지 정오를 예단하기보다, 각 문장을 <strong>단위 → 성분 → 의미 호응</strong> 순서로 다시 분석하는 것이 재현 가능한 풀이법입니다. 이 문항의 문장별 오류 조합과 정답번호는 정답·해설 원문과 대조해 개별 문항 분석 글에서 확정합니다.</p></div>
+</section><section id="s14"><h2>13. 처음 보는 문장도 같은 순서로 분석합니다</h2>
+<ol class="g-steps"><li><strong>발문에서 묻는 분석 층위</strong>를 정합니다. 개수인가, 직접 구성 요소인가, 병렬 조건인가?</li><li><strong>최상위 덩어리부터</strong> 묶습니다. 문장이면 안긴절을 포함해 큰 구조를 먼저 봅니다.</li><li>필요한 층위에서만 <strong>바로 아래 단계</strong>로 나눕니다. 무조건 음운까지 쪼개지 않습니다.</li><li>구조와 기능을 분리합니다. 내부 구성을 확인한 뒤 문장 속 역할을 봅니다.</li><li>병렬이라면 단위·대등성·생략·호응 조건을 따로 검증합니다.</li><li>선지의 주장을 원문에 대입하고 근거가 없는 추측을 버립니다.</li></ol>
+</section><section id="s15"><h2>14. 흔한 오개념을 이렇게 고칩니다</h2>
+<table><thead><tr><th>잘못된 판단</th><th>바른 판별 기준</th></tr></thead><tbody>
+<tr><td>음절 수와 형태소 수는 같다</td><td>음절은 소리 단위, 형태소는 의미·기능 단위이다</td></tr>
+<tr><td>띄어 쓴 덩어리 하나는 단어 하나다</td><td>조사가 들어간 어절은 둘 이상의 단어일 수 있다</td></tr>
+<tr><td>문장에 주어가 보이면 그것이 전체의 주어다</td><td>안긴절 내부의 주어와 전체 문장의 주어를 구별한다</td></tr>
+<tr><td>접속 조사가 없으면 병렬 구성도 없다</td><td>조사 없이 나열한 구성도 병렬이 될 수 있다</td></tr>
+<tr><td>같은 글의 문장들이면 모두 같은 층위다</td><td>단어·절·문장·담화는 다른 분석 단위이다</td></tr>
+</tbody></table>
+</section><section id="s16"><h2>15. 다음 개념글은 무엇을 읽어야 할까요?</h2>
+<p><a href="/language-units">언어 단위 총론</a>에서 여러 층위의 전체 지도를 본 뒤, 문항에서 요구한 지식에 따라 필요한 글로 이동합니다.</p>
+<div class="g-next">
+<a href="/form-function-meaning">형태·기능·의미<span>같은 형태를 다른 관점으로 분류하는 기준</span></a>
+<a href="/parts-of-speech-and-sentence-components">품사와 문장 성분<span>단어의 종류와 문장 속 역할의 차이</span></a>
+<a href="/grammar-rules-and-system">규칙과 체계<span>선택 관계와 통합 관계로 구조를 읽는 법</span></a>
+<a href="/grammar-analysis-method">문법 분석 방법<span>발문에서 필요한 개념부터 찾는 순서</span></a>
+</div><p>기출 전체를 외우기보다 한 문항에서 배운 판단 기준을 다른 문제에도 적용할 수 있는지가 중요합니다.</p>
+</section><section id="s17"><h2>한눈에 정리 — 언어 단위의 위계는 판단의 순서입니다</h2>
+<table><thead><tr><th>질문</th><th>판정</th></tr></thead><tbody>
+<tr><td>작은 것이 큰 것을 이루는 방법은?</td><td>직접 구성 요소를 위에서부터 단계적으로 확인</td></tr>
+<tr><td>단어와 어절은 같은가?</td><td>아니다. 조사는 독립 단어로 세지만 앞말에 붙어 한 어절을 이룬다</td></tr>
+<tr><td>구와 절은 어떻게 다른가?</td><td>보통 주어·서술어 관계가 성립하는지 살핀다</td></tr>
+<tr><td>전체 주어를 찾으려면?</td><td>안긴절 내부 주어가 아니라 최상위 주어 덩어리를 찾는다</td></tr>
+<tr><td>병렬이 적절한지 알려면?</td><td>대등성·단위·생략·호응 조건을 나누어 검토</td></tr>
+</tbody></table>
+<p class="closing"><strong>문법 분석은 가장 작은 단위부터 무작정 나누는 일이 아닙니다.</strong> 문제에서 요구하는 층위를 정하고, 그 층위에 해당하는 구성 관계를 차례대로 설명하는 일입니다.</p>
+</section></div><footer class="references"><h2>공식 기준·참고자료</h2><ul>
+<li><a href="https://www.korean.go.kr/front/onlineQna/onlineQnaView.do?mn_id=216&amp;pageIndex=1&amp;qna_seq=305550">국립국어원 온라인가나다 — 구와 절의 개념</a></li>
+<li>국립국어원, 『2014년 표준 국어 문법 개발』, 문장 구성 단위 관련 논의</li>
+<li>2017학년도 9월 모의평가 국어 11~12번 및 EBSi 해설 (직접 구성 요소)</li>
+<li>2026학년도 9월 모의평가 언어와 매체 35~36번 (병렬 구성·생략·호응)</li>
+</ul></footer></article></div><script defer="" id="s4-stdict-search-js" src="/assets/common/stdict-search.js?v=20260927v1"></script>
+</body></html>

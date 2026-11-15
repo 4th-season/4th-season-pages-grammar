@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>경계 사례와 예외 — 문법에서 답이 갈리는 이유 | 국어 문법</title>
+<meta content="문법의 예외와 범주의 경계, 해석 조건, 학문적 견해 차이를 구별합니다. 의존 명사와 조사 ‘뿐·대로’, 다의어·동음이의어, 부정 표현을 기출 원문·선지별 근거로 분석하고 새로운 문제에 적용하는 판단 절차를 익힙니다." name="description"/>
+<style>
+:root{--navy:#17324D;--blue:#275D85;--ink:#17212B;--muted:#5B6875;--line:#D9E1E7;--paper:#fff;--soft:#F7F9FB;--green:#1C6B57;--purple:#6C4E90;--warn:#FFF8E6;--lav:#F5F1FA;--red:#A94442}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#EEF2F5;color:var(--ink);font-family:"Pretendard","Noto Sans KR","Apple SD Gothic Neo","Malgun Gothic",sans-serif;line-height:1.78;letter-spacing:-.02em}a{color:var(--blue);text-decoration:none}
+.shell{max-width:980px;margin:0 auto;padding:32px 20px 80px}article{background:var(--paper);border-radius:22px;box-shadow:0 12px 36px rgba(23,50,77,.08);overflow:hidden}
+.hero{padding:56px;background:linear-gradient(135deg,#17324D,#244E70);color:#fff}.eyebrow{display:inline-block;font-size:13px;font-weight:900;letter-spacing:.08em;background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.25);padding:6px 10px;border-radius:999px;margin-bottom:18px}
+h1{font-size:38px;line-height:1.25;letter-spacing:-.045em;margin:0 0 18px}.subtitle{font-size:18px;line-height:1.7;color:#DCEAF3;max-width:820px;margin:0}
+.content{padding:48px 56px 64px}.cover{margin:0 0 30px}.cover img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:18px;border:1px solid var(--line);box-shadow:0 10px 26px rgba(23,50,77,.08)}
+.toc{margin:0 0 48px;padding:24px 26px;background:#F7F9FB;border:1px solid var(--line);border-radius:16px}.toc-title{font-size:18px;font-weight:900;color:var(--navy);margin-bottom:13px}.toc ol{margin:0;padding-left:22px;columns:2;column-gap:36px}.toc li{break-inside:avoid;margin:0 0 9px}
+section{scroll-margin-top:24px;margin-bottom:58px}h2{font-size:26px;line-height:1.35;color:var(--navy);margin:0 0 22px;padding-bottom:11px;border-bottom:2px solid #E7EEF3}h3{font-size:19px;color:var(--navy);margin:26px 0 10px}p{margin:0 0 16px}strong{color:#102D45}
+.keybox,.warning,.methodbox,.insight{border-radius:16px;padding:20px 22px;margin:24px 0}.keybox{background:#EEF6FB;border-left:5px solid var(--blue)}.methodbox{background:#EEF8F4;border-left:5px solid var(--green)}.warning{background:var(--warn);border-left:5px solid #C98200}.insight{background:var(--lav);border-left:5px solid var(--purple)}
+.sentence{background:#FAFBFC;border:1px solid var(--line);border-radius:14px;padding:19px 20px;margin:20px 0;text-align:center;font-size:20px;font-weight:800;color:var(--navy)}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:22px 0}.card{border:1px solid var(--line);border-radius:15px;padding:20px;background:#fff}.card b{display:block;color:var(--navy);font-size:18px;margin-bottom:7px}
+table{width:100%;border-collapse:separate;border-spacing:0;margin:22px 0;border:1px solid var(--line);border-radius:14px;overflow:hidden;font-size:15px}th,td{padding:14px 15px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}th{background:#EAF3F8;color:var(--navy);font-weight:800}tr:last-child td{border-bottom:0}td+td,th+th{border-left:1px solid var(--line)}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:24px 0}.step{border:1px solid var(--line);border-radius:14px;padding:16px;background:#fff}.step b{display:block;color:var(--navy);margin-bottom:6px}.num{display:inline-flex;width:28px;height:28px;align-items:center;justify-content:center;border-radius:50%;background:var(--blue);color:#fff;font-weight:900;margin-bottom:9px}
+.checklist{list-style:none;padding:0;margin:18px 0}.checklist li{padding:9px 0 9px 30px;position:relative;border-bottom:1px solid #EDF1F4}.checklist li:before{content:"✓";position:absolute;left:5px;color:var(--green);font-weight:900}
+.closing{font-size:19px;text-align:center;background:#F0F6FA;border-radius:16px;padding:26px;margin-top:28px}
+.references{background:#F8FAFB;border-top:1px solid var(--line);padding:28px 56px 38px;color:var(--muted);font-size:13px}.references h2{font-size:18px;border:0;margin:0 0 10px;padding:0}.references a{word-break:break-all}
+@media(max-width:900px){.shell{padding:0}.hero,.content,.references{padding-left:24px;padding-right:24px}h1{font-size:31px}.toc ol{columns:1}.grid,.steps{grid-template-columns:1fr}}
+
+
+.article-topnav{background:#fff;border-bottom:1px solid #d9e1e7;font-family:"Pretendard","Noto Sans KR","Apple SD Gothic Neo","Malgun Gothic",sans-serif}
+.article-topnav .nav-in{max-width:1180px;margin:0 auto;min-height:58px;padding:0 20px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+.article-topnav .nav-left,.article-topnav .nav-right{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.article-topnav a{color:#425466;text-decoration:none;font-size:13px;font-weight:800}
+.article-topnav a.current{color:#17324D}
+@media(max-width:720px){.article-topnav .nav-in{align-items:flex-start;flex-direction:column;padding-top:12px;padding-bottom:12px;gap:8px}.article-topnav .nav-right{gap:10px}.article-topnav a{font-size:12px}}
+
+/* GRAM-0133 renewal additions */
+.proof{border:1px solid #D6E5EE;border-radius:16px;padding:20px;background:#FAFCFE;margin:20px 0}
+.proof .tag{font-size:13px;font-weight:900;letter-spacing:.02em;color:#245D7C;margin-bottom:10px}
+.proof p:last-child{margin-bottom:0}
+.evidence-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:24px 0}
+.evidence-grid>div{border-radius:14px;border:1px solid var(--line);padding:18px;background:#FAFBFC}
+.evidence-grid strong{display:block;margin-bottom:8px}
+.flowlist{counter-reset:step;list-style:none;margin:24px 0;padding:0}
+.flowlist li{counter-increment:step;position:relative;padding:13px 14px 14px 55px;border-bottom:1px solid #E3EBEF}
+.flowlist li:before{content:counter(step);position:absolute;left:11px;top:13px;display:grid;place-items:center;width:30px;height:30px;background:#235575;color:white;border-radius:50%;font-weight:800}
+.sources a{overflow-wrap:anywhere}
+@media(max-width:700px){.evidence-grid{grid-template-columns:1fr}}
+
+/* A single question reconstructed from the approved question DB, no whole-exam embed */
+.question-unit{margin:24px 0 30px;border:1px solid #cbdbe6;border-radius:18px;overflow:hidden;background:#fff}
+.question-unit .qheading{padding:17px 22px;background:#edf4f8;border-bottom:1px solid #d3e0e8;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.question-unit .qheading b{color:#17324D;font-size:17px}.question-unit .qmeta{font-size:13px;color:#4b6576}
+.question-unit details{padding:0 20px}.question-unit summary{cursor:pointer;padding:17px 0;color:#1c5374;font-weight:800;list-style-position:outside}
+.question-unit .sourcebody{padding:0 0 24px}.question-unit .qstem{font-weight:800;padding:15px 0 12px}
+.question-unit .qview{border:1px solid #d9e1e7;border-radius:13px;background:#fafcfd;padding:17px;margin:10px 0 18px}
+.question-unit .qview-title{font-weight:800;color:#17324D;margin-bottom:9px}
+.question-unit .qchoices{list-style:none;margin:12px 0;padding:0;counter-reset:item}
+.question-unit .qchoices li{padding:13px 15px;margin:7px 0;border:1px solid #e0e5e9;border-radius:11px;display:flex;gap:11px;font-size:15px}
+.question-unit .qchoices .qnum{flex:none;font-weight:800;color:#214d70}
+.question-unit .dbsource{font-size:12px;color:#526475;margin:14px 0 0}
+.question-unit .q-viewtable{width:100%;font-size:14px;table-layout:fixed;margin:13px 0}.question-unit .q-viewtable th,.question-unit .q-viewtable td{padding:10px;text-align:center}
+.question-unit .qwarn{font-size:13px;background:#fff9e9;padding:12px;border-radius:10px;color:#604719}
+@media(max-width:720px){.question-unit details{padding:0 14px}.question-unit .qheading{padding:15px}}
+</style>
+<link href="https://4th-season.com/grammar-boundary-cases-and-exceptions" rel="canonical"/><meta content="index,follow" name="robots"/><meta content="GRAMMAR_QUESTION_INLINE_0133_20261018_R3" name="4s-public-marker"/><meta content="2026-09-27" name="article:published_time"/><meta content="how" name="4th-subcategory"/><link href="/assets/common/stdict-search.css?v=20260927v1" id="s4-stdict-search-css" rel="stylesheet"/>
+<link href="/assets/common/article-nav.css?v=20260928v1" id="s4-article-nav-css" rel="stylesheet"/>
+</head>
+<body>
+<nav id="fs-common-menu" class="fs-common-menu" data-sitejob-marker="GLOBAL_ARTICLE_NAV_V2" aria-label="개별 글 공통 메뉴"><div class="fsn-inner"><a class="fsn-exit" href="/learn/grammar/">← 상위 지도</a><a class="fsn-brand" href="/">4TH SEASON</a><a class="fsn-domain" href="/learn/">LEARN</a><a class="fsn-domain" href="/world/">WORLD</a><a class="fsn-domain" href="/life/">LIFE</a><a class="fsn-domain insite" href="/insite/">In:Site</a><a class="fsn-series" href="/learn/grammar/">문법</a><a class="fsn-map" href="/sitemap/">한눈에 보기</a></div></nav>
+<div aria-label="표준국어대사전 검색" class="s4-dict-search" data-endpoint="/api/stdict" id="s4-stdict-search">
+<form autocomplete="off" class="s4-dict-form" role="search">
+<span class="s4-dict-badge">사전</span>
+<label class="s4-dict-sr" for="s4-dict-input">표준국어대사전 검색어</label>
+<input aria-label="표준국어대사전 검색" class="s4-dict-input" id="s4-dict-input" inputmode="search" maxlength="80" placeholder="표준국어대사전" type="search"/>
+<button aria-label="사전 검색" class="s4-dict-submit" type="submit">⌕</button>
+</form>
+<div aria-live="polite" class="s4-dict-panel" hidden=""></div>
+</div><header class="article-topnav"><div class="nav-in"><nav aria-label="상위 이동" class="nav-left"><a href="/">홈</a><a href="/learn/">LEARN</a></nav><nav aria-label="LEARN 동일 레벨 메뉴" class="nav-right"><a href="/learn/korean-reading/">읽기</a><a aria-current="page" class="current" href="/learn/grammar/">문법</a><a href="/learn/vocabulary/">어휘</a><a href="/learn/reread/">Re:Read</a><a href="/quote-prestige/">명언의 품격</a></nav></div></header><div class="shell"><article>
+<header class="hero"><span class="eyebrow">국어 문법</span><h1>경계 사례와 예외 — 문법에서 답이 갈리는 이유</h1>
+<p class="subtitle">규칙에서 벗어난 예와 두 범주의 경계에 놓인 사례는 같은 문제가 아닙니다. 사전 뜻풀이와 문장 조건, 학교 문법의 기준을 나누어 보고, 실제 평가원 기출의 정답과 오답 근거까지 단계별로 확인해 봅니다.</p></header>
+<div class="content">
+<figure class="cover"><img alt="규칙의 예외, 범주의 경계, 분석 관점, 학교 기준의 네 유형으로 문법 경계 사례를 구분한 대표 이미지" height="540" src="/assets/grammar/grammar-boundary-cases-and-exceptions.webp" width="960"/></figure>
+<nav aria-label="목차" class="toc"><div class="toc-title">목차</div><ol><li><a href="#s1">문법에서 답이 갈리는 세 가지 서로 다른 이유</a></li><li><a href="#s2">예외·범주 경계·해석 조건·견해 차이의 네 범주</a></li><li><a href="#s3">규칙의 ‘예외’인지, 아직 조건을 확인하지 않은 것인지</a></li><li><a href="#s4">뜻의 확장과 같은 소리의 다른 단어 — 판단 기준</a></li><li><a href="#s5">기출 ① 2022학년도 6월 39번 — 다의어·동음이의어 판별</a></li><li><a href="#s6">뜻을 판별할 때의 반례 점검</a></li><li><a href="#s7">같은 부정 표현이라도 의지가 개입하지 않을 수 있습니다</a></li><li><a href="#s8">기출 ② 2023학년도 9월 38번 — 부정 표현의 해석 조건</a></li><li><a href="#s9">의존 명사와 조사의 경계 — ‘뿐’</a></li><li><a href="#s10">의존 명사와 조사의 경계 — ‘대로’</a></li><li><a href="#s11">관형사와 용언의 관형사형은 같은 자리가 아닙니다</a></li><li><a href="#s12">학교 문법과 학문 문법의 차이 — 언제 판정이 달라질까?</a></li><li><a href="#s13">경계 사례를 오답으로 만드는 네 가지 습관</a></li><li><a href="#s14">기출 풀이법 — 조건·분류·검증의 다섯 단계</a></li><li><a href="#s15">연결 개념글 — 총론에서 세부 개념으로</a></li><li><a href="#s16">한눈에 정리 — 예외를 외우기 전에 경계를 확인하세요</a></li></ol></nav>
+<section id="s1"><h2>1. 문법에서 답이 갈리는 세 가지 서로 다른 이유</h2>
+<p>‘같은 표현인데 왜 문법 책마다 설명이 다를까?’ 문법을 공부하다 보면 부딪히는 질문입니다. 그런데 이 질문에는 서로 다른 현상이 섞여 있습니다. <strong>규칙 자체에 조건이 있는 경우</strong>, <strong>겉모양이 같아도 단어의 범주가 다른 경우</strong>, <strong>문맥이나 분석 이론을 달리해서 해석이 달라지는 경우</strong>입니다.</p>
+<p>가령 ‘공부할 뿐’과 ‘너뿐’은 같은 글자 ‘뿐’이 보여도 의존 명사와 조사를 구별해야 합니다. ‘코’는 신체 부위를 가리키는 뜻이 다른 뜻으로 확장되기도 하고, 우연히 소리가 같은 별개의 단어를 가리키기도 합니다. 또 ‘안’이 들어간 문장은 반드시 화자가 어떤 행동을 하지 않기로 <em>결심했다</em>는 뜻만 나타내지는 않습니다.</p>
+<div class="keybox"><strong>출발점</strong><br/>헷갈리는 표현을 바로 ‘예외’라고 부르지 마세요. 먼저 <strong>무엇의 경계인가</strong>를 정해야 기준을 고를 수 있습니다.</div></section><section id="s2"><h2>2. 예외·범주 경계·해석 조건·견해 차이의 네 범주</h2>
+<table><thead><tr><th>문제의 성격</th><th>어디서 갈리는가</th><th>먼저 확인할 근거</th></tr></thead><tbody>
+<tr><td>규칙의 예외·조건</td><td>기본 규칙에 적용 범위나 우선순위가 있음</td><td>규정의 적용 환경·선행 단계</td></tr>
+<tr><td>문법 범주의 경계</td><td>같은 형태가 의존 명사·조사 등으로 쓰임</td><td>앞말의 형태·결합 위치·문장 기능</td></tr>
+<tr><td>의미·해석 조건</td><td>같은 단어·표현의 의미가 문맥에 따라 달라짐</td><td>사전 표제어·중심 의미·문맥 정보</td></tr>
+<tr><td>분석 이론의 차이</td><td>문장 성분이나 분류 개념의 범위를 다르게 잡음</td><td>문항의 &lt;보기&gt;·학교 문법 체계·분석 전제</td></tr>
+</tbody></table>
+<p>이 네 가지는 경계 사례를 다루는 출발점이지만, 서로 배타적인 범주가 아닙니다. 어떤 기출에서는 규칙의 적용 순서와 문맥 정보가 동시에 필요할 수 있습니다. 이런 때는 필요한 기준을 연결하되, <strong>기준을 확인하지 않고 결론부터 내리지 않는 것</strong>이 중요합니다.</p></section><section id="s3"><h2>3. 규칙의 ‘예외’인지, 아직 조건을 확인하지 않은 것인지</h2>
+<p>표준 발음이나 활용 문제에서 예상과 다른 형태가 나타났다고 곧바로 예외라고 부를 수는 없습니다. 음운 변동은 선행 조건과 후행 조건에 따라 단계적으로 일어날 수 있습니다. 먼저 원형, 음운 환경, 적용 규칙, 순서를 적어야 합니다.</p>
+<div class="methodbox"><strong>판별 순서</strong><br/>기본 규칙이 무엇인가 → 이 사례가 규칙의 적용 환경에 속하는가 → 다른 규칙이 먼저 적용되는가 → 규정에 명시된 예외인가.</div>
+<p>같은 문항에서도 비음화의 결과만 보고 판단하면 틀릴 수 있습니다. 예를 들어 받침 뒤의 발음은 다른 규칙을 거친 결과일 수 있으므로, 출발형에서 최종 발음까지의 과정을 구별해야 합니다.</p>
+<p>‘규칙이 적용되지 않는다’와 ‘규칙을 아직 적용할 수 없는 환경이다’는 다릅니다. 바로 이 차이가 새로운 사례로 확장할 수 있는 문법 이해를 만듭니다.</p></section><section id="s4"><h2>4. 뜻의 확장과 같은 소리의 다른 단어 — 판단 기준</h2>
+<p>‘코’라는 소리를 들으면 얼굴 가운데 있는 신체 부위가 떠오릅니다. 그런데 ‘콧물이 흐른다’처럼 그 신체 부위와 밀접하게 관련된 액체를 가리키는 쓰임도 있습니다. 반면 그물을 짠 부분의 매듭을 가리키는 ‘코’는 신체 부위를 뜻하는 ‘코’와 소리는 같아도 사전에서 다른 표제어로 구별합니다.</p>
+<div class="evidence-grid"><div><strong>다의어의 중심·주변 의미</strong>한 단어의 여러 의미가 관련성을 갖고 연결됩니다. ‘코’의 신체 부위 뜻과 콧구멍에서 흐르는 액체 뜻이 이에 해당합니다.</div><div><strong>동음이의어</strong>소리가 같다고 하나의 단어가 되는 것은 아닙니다. 신체 부위의 ‘코’와 그물의 매듭 ‘코’를 따로 봅니다.</div></div>
+<p>여기서 중요한 것은 ‘뜻이 비슷해 보인다’라는 감각이 아니라 <strong>제시된 사전 자료가 어느 표제어와 의미 번호를 나누는지</strong>입니다. 특히 기출에서는 문제의 &lt;보기&gt;가 그 구분을 직접 제시할 수 있습니다.</p></section><section id="s5"><h2>5. 기출 ① 2022학년도 6월 39번 — 다의어·동음이의어 판별</h2>
+<p>평가원 <strong>2022학년도 6월 모의평가 언어와 매체 39번</strong>은 ‘코’의 신체 부위라는 중심 의미, 액체를 뜻하는 주변 의미, 같은 소리지만 다른 표제어인 매듭 뜻을 구별하게 합니다. 기출의 자료는 ‘코¹’과 ‘코²’를 구분합니다.</p><div class="question-unit" data-question-id="E2022-JUN-Q039" data-render-format="QUESTION_ONLY" data-render-source="CSAT-DB" data-usage-review="LIMITED_QUOTATION"><div class="qheading"><b>이 개념을 사용한 실제 기출 문항</b><span class="qmeta">2022학년도 6월 모의평가 · 국어 언어와 매체 39번</span></div><details class="qoriginal"><summary>문항 단위 원문 보기 — 발문 · &lt;보기&gt; · ①~⑤</summary><div class="sourcebody"><p class="qstem">&lt;보기&gt;를 바탕으로 할 때, ㉠～㉢에 해당하는 단어가 사용된 예로 적절한 것은?</p><div class="qview"><div class="qview-title">&lt;보기&gt; / 학습 자료</div><p>선생님: 신체 관련 어휘는 ㉠신체 부위를 나타내는 중심적 의미가 ㉡주변적 의미로 확장될 수 있어요. 이때 ㉢소리는 같지만 중심적 의미가 다른 단어와 잘 구분해야 합니다. 그럼 아래에서 이러한 의미 관계를 확인해 봅시다.</p><p><strong>코¹</strong> : 포유류의 얼굴 중앙에 튀어나온 부분 / 콧구멍에서 흘러나오는 액체</p><p><strong>코²</strong> : 그물이나 뜨개질한 물건의 눈마다의 매듭</p></div><ol class="qchoices"><li><span class="qnum">①</span><span>㉠: 묽은 코가 옷에 묻어 휴지로 닦았다.</span></li><li><span class="qnum">②</span><span>㉠: 어부가 쳐 놓은 어망의 코가 끊어졌다.</span></li><li><span class="qnum">③</span><span>㉡: 코끼리는 긴 코를 자유자재로 사용한다.</span></li><li><span class="qnum">④</span><span>㉡: 동생이 갑자기 코를 다쳐서 병원에 갔다.</span></li><li><span class="qnum">⑤</span><span>㉢: 어머니께서 목도리를 한 코씩 떠 나가셨다.</span></li></ol><p class="dbsource">출처: 한국교육과정평가원 · 2022학년도 6월 모의평가 · 18쪽. DB의 발문·보기·선지에 근거하여 문단과 표제어 표현을 읽기 쉽게 정리했습니다. 원본의 도식·서체까지 완전 재현한 것은 아닙니다.</p><p class="qwarn">읽기용 재구성본입니다. 시험지 전체를 삽입하지 않았으며, 원본의 표·도식 검증과 저작물 이용 조건을 따로 확인해야 합니다.</p></div></details><p class="dbsource" style="padding:0 20px 18px;margin:0">정답 ⑤와 선지별 판단 근거는 이어지는 본문 분석표에서 확인하세요.</p></div>
+<div class="proof"><div class="tag">풀이의 핵심 판단</div><p><strong>㉠</strong> 신체 부위의 중심 의미 / <strong>㉡</strong> 거기에서 확장한 주변 의미 / <strong>㉢</strong> 중심 의미가 다른 동음이의어. 선지의 문장을 먼저 읽고 정답을 찾는 것이 아니라, 세 기준에 맞춰 선지를 분류한 뒤 표기된 ㉠·㉡·㉢과 일치하는지 확인합니다.</p></div>
+<table><thead><tr><th>선지</th><th>실제 의미 분석</th><th>선지 판정</th></tr></thead><tbody>
+<tr><td>① 묽은 코</td><td>콧구멍에서 흘러나오는 액체 → 주변 의미 ㉡</td><td>㉠ 표시는 틀림</td></tr>
+<tr><td>② 어망의 코</td><td>그물의 매듭 → 동음이의어 ㉢</td><td>㉠ 표시는 틀림</td></tr>
+<tr><td>③ 코끼리의 긴 코</td><td>신체 부위 → 중심 의미 ㉠</td><td>㉡ 표시는 틀림</td></tr>
+<tr><td>④ 코를 다치다</td><td>신체 부위 → 중심 의미 ㉠</td><td>㉡ 표시는 틀림</td></tr>
+<tr><td>⑤ 목도리를 한 코씩 뜨다</td><td>뜨개질 매듭 → 동음이의어 ㉢</td><td><strong>일치 · 정답 ⑤</strong></td></tr>
+</tbody></table>
+<p>이 문제의 오답은 국어사전의 뜻 하나를 모르기 때문만이 아닙니다. <strong>사전의 중심 의미와 주변 의미를 같은 단어의 의미 확장으로 읽을 것인지, 다른 표제어로 읽을 것인지</strong>의 기준을 바꿔 적용하기 때문에 생깁니다.</p></section><section id="s6"><h2>6. 뜻을 판별할 때의 반례 점검</h2>
+<p>‘코’라는 글자가 같다는 이유만으로 모든 의미를 하나로 묶어 보면 ②와 ⑤가 틀리게 됩니다. 반대로 ‘뜻이 다르다’는 이유만으로 모두 다른 단어로 나누면 중심 의미에서 확장된 ①을 설명하지 못합니다.</p>
+<div class="warning"><strong>반례 점검</strong><br/>‘소리가 같다 → 다의어’도 잘못이고, ‘뜻이 다르다 → 동음이의어’도 잘못입니다. <strong>의미 간 관련성과 사전의 표제어 구별</strong>을 함께 확인해야 합니다.</div>
+<p>기출이 사전 풀이를 제공할 때는 그 자료를 우선합니다. 자료 없이 독자적으로 분석한다면 표준국어대사전이나 우리말샘의 실제 등재 내용을 확인해야 합니다.</p></section><section id="s7"><h2>7. 같은 부정 표현이라도 의지가 개입하지 않을 수 있습니다</h2>
+<p>‘안 먹었다’는 말만 보고 ‘먹지 않기로 마음먹었다’고 판단하면 어떤 문장에서는 맞지만 어떤 문장에서는 틀립니다. 2023학년도 9월 모의평가에서 제시한 자료는 <strong>‘안’이나 ‘-지 않다’가 쓰여도 단순 부정이 될 수 있다</strong>는 조건을 설명합니다.</p>
+<p>형용사 서술어가 성질이나 상태를 나타내는 경우, 주어의 의지를 말할 수 없습니다. 또한 동사가 서술어여도 주어가 비·바람 같은 무정물이면 의지 부정으로 읽을 수 없습니다. 유정물 주어일 때도 문맥에 따라 단순 부정의 해석이 가능합니다.</p>
+<div class="keybox"><strong>기준 이동</strong><br/>부정 표현의 형식만 보는 것에서 끝내지 않습니다. <strong>서술어의 품사 → 주어의 유정성 → 문장의 의미와 문맥</strong>을 차례로 확인합니다.</div></section><section id="s8"><h2>8. 기출 ② 2023학년도 9월 38번 — 부정 표현의 해석 조건</h2>
+<p>평가원 <strong>2023학년도 9월 모의평가 언어와 매체 38번</strong>은 ㉠ 형용사 서술어의 단순 부정, ㉡ 의지가 없는 무정물 주어를 가진 동사 서술어의 단순 부정을 각각 만족하는 예를 선택하게 합니다.</p><div class="question-unit" data-question-id="E2023-SEP-Q038" data-render-format="QUESTION_ONLY" data-render-source="CSAT-DB" data-usage-review="LIMITED_QUOTATION"><div class="qheading"><b>이 개념을 사용한 실제 기출 문항</b><span class="qmeta">2023학년도 9월 모의평가 · 국어 언어와 매체 38번</span></div><details class="qoriginal"><summary>문항 단위 원문 보기 — 발문 · &lt;보기&gt; · ①~⑤</summary><div class="sourcebody"><p class="qstem">&lt;보기&gt;의 ㉠, ㉡에 해당하는 예끼리 묶인 것으로 적절한 것은?</p><div class="qview"><div class="qview-title">&lt;보기&gt; / 학습 자료</div><p>국어의 부정에는 ‘안’이나 ‘-지 않다’를 사용하는 ‘의지 부정’과 ‘못’이나 ‘-지 못하다’를 사용하는 ‘능력 부정’이 있다고 알려져 있다. 그러나 ‘안’이나 ‘-지 않다’가 사용된 부정문이 주어의 의지와 무관한 ‘단순 부정’을 나타내는 경우도 많다.</p><p><strong>㉠</strong> 형용사가 서술어로 쓰이면 ‘안’이나 ‘-지 않다’는 단순 부정을 나타낸다. 형용사가 나타내는 성질이나 상태에는 주어의 의지가 작용할 수 없기 때문이다.</p><p><strong>㉡</strong> 동사가 서술어로 쓰이는 경우에도 주어가 의지를 가지지 못하는 무정물이면 ‘안’이나 ‘-지 않다’가 단순 부정을 나타낸다. 또한 동사가 서술어로 쓰이고 주어가 유정물이더라도 ‘나는 깜빡 잊고 약을 안 먹었다.’에서와 같이 ‘안’이 단순 부정을 나타낼 수 있다.</p></div><ol class="qchoices"><li><span class="qnum">①</span><span>㉠: 옛날엔 통신 기술이 발달하지 않았다.　㉡: 주문한 옷이 아직도 도착하지 않았다.</span></li><li><span class="qnum">②</span><span>㉠: 이 문제집은 별로 어렵지 않더라.　㉡: 저는 이 은혜를 잊지 않겠습니다.</span></li><li><span class="qnum">③</span><span>㉠: 나는 그 이야기가 궁금하지 않아.　㉡: 동생이 오늘 우산을 안 가져갔어.</span></li><li><span class="qnum">④</span><span>㉠: 내 얘기에 고모는 놀라지 않았다.　㉡: 이 물질은 전기가 통하지 않는다.</span></li><li><span class="qnum">⑤</span><span>㉠: 밤바다가 그리 고요하지는 않네.　㉡: 아주 오래간만에 비가 안 온다.</span></li></ol><p class="dbsource">출처: 한국교육과정평가원 · 2023학년도 9월 모의평가 · 18쪽 (2022-08-31 시행). DB의 발문·보기·선지에서 줄바꿈을 복원한 문항 단위 재구성입니다. 실제 시행월은 8월이지만 시험명은 9월 모의평가입니다.</p><p class="qwarn">읽기용 재구성본입니다. 시험지 전체를 삽입하지 않았으며, 원본의 표·도식 검증과 저작물 이용 조건을 따로 확인해야 합니다.</p></div></details><p class="dbsource" style="padding:0 20px 18px;margin:0">정답 ⑤와 선지별 판단 근거는 이어지는 본문 분석표에서 확인하세요.</p></div>
+<table><thead><tr><th>선지</th><th>㉠ 형용사 여부</th><th>㉡ 무정물 주어 여부</th><th>판정</th></tr></thead><tbody>
+<tr><td>① 발달하지 않았다 / 옷이 도착하지 않았다</td><td>‘발달하다’ 동사</td><td>‘옷이 도착하다’는 부합</td><td>㉠ 불일치</td></tr>
+<tr><td>② 어렵지 않더라 / 은혜를 잊지 않겠다</td><td>‘어렵다’ 형용사</td><td>‘저는 잊지 않겠다’는 의지적 주어</td><td>㉡ 불일치</td></tr>
+<tr><td>③ 궁금하지 않아 / 동생이 안 가져갔다</td><td>‘궁금하다’ 형용사</td><td>‘동생’은 유정물 주어</td><td>㉡ 조건 불일치</td></tr>
+<tr><td>④ 놀라지 않았다 / 전기가 통하지 않는다</td><td>‘놀라다’ 동사</td><td>‘전기가 통하다’는 조건에 부합</td><td>㉠ 불일치</td></tr>
+<tr><td>⑤ 고요하지는 않네 / 비가 안 온다</td><td>‘고요하다’ 형용사</td><td>‘비’는 무정물 주어, ‘오다’는 동사</td><td><strong>둘 다 부합 · 정답 ⑤</strong></td></tr>
+</tbody></table>
+<p>시험명은 ‘2023학년도 9월 모의평가’이지만 실제 시행일은 <strong>2022년 8월 31일</strong>입니다. 학년도와 실제 날짜를 섞어 적지 않습니다.</p>
+<div class="insight"><strong>문제가 요구한 범위</strong><br/>이 선지는 ‘안’이 단순 부정이 될 <em>수 있는</em> 모든 경우를 부정하는 문제가 아닙니다. ㉠·㉡이라는 특정 조건을 각각 만족시키는 <strong>짝</strong>을 찾는 문제입니다. 따라서 ③의 유정물 주어가 문맥에 따라 단순 부정을 나타낼 가능성과 ㉡의 요구 조건을 동일시하면 안 됩니다.</div></section><section id="s9"><h2>9. 의존 명사와 조사의 경계 — ‘뿐’</h2>
+<div class="sentence">공부할 뿐이다. / 너뿐이다.</div>
+<p>두 표현의 ‘뿐’은 의미가 가까워도 문법적 성격과 쓰임이 다릅니다. 앞의 ‘공부할’은 관형사형을 이룬 용언으로, 뒤의 ‘뿐’은 관형어의 수식을 받는 <strong>의존 명사</strong>입니다. 반면 ‘너뿐’의 ‘뿐’은 체언 뒤에 붙어 제한의 의미를 더하는 <strong>보조사</strong>입니다.</p>
+<table><thead><tr><th>판별 질문</th><th>공부할 뿐</th><th>너뿐</th></tr></thead><tbody>
+<tr><td>앞말</td><td>용언의 관형사형</td><td>체언</td></tr><tr><td>기능</td><td>관형어의 수식을 받는 의존 명사</td><td>앞말에 뜻을 더하는 조사</td></tr><tr><td>표기</td><td>띄어 씀</td><td>붙여 씀</td></tr></tbody></table>
+<p>여기서는 띄어쓰기를 결과로만 외우지 말고 <strong>앞말의 성격과 결합 기능을 먼저 분석</strong>해야 합니다. 국립국어원은 의존 명사 ‘뿐’의 ‘-을 뿐’ 외에 ‘-다 뿐이지’와 같은 별도의 구성도 제시하므로, 간단한 요령을 모든 문장에 강제하지 않습니다.</p></section><section id="s10"><h2>10. 의존 명사와 조사의 경계 — ‘대로’</h2>
+<div class="sentence">본 대로 적었다. / 계획대로 진행했다.</div>
+<p>‘본 대로’의 ‘대로’는 관형사형 ‘본’이 앞에 오며, 의존 명사로 쓰입니다. ‘계획대로’의 ‘대로’는 명사 ‘계획’ 뒤에 붙어 쓰이는 조사입니다.</p>
+<div class="evidence-grid"><div><strong>의존 명사</strong>용언의 관형사형을 받아 하나의 명사구를 만듭니다. ‘보이는 대로’, ‘말한 대로’도 같은 판단 경로를 사용할 수 있습니다.</div><div><strong>조사</strong>체언 뒤에 붙습니다. ‘규칙대로’, ‘계획대로’처럼 앞말을 기준으로 삼는 뜻을 더합니다.</div></div>
+<p>다만 ‘대로’의 두 범주를 무조건 품사 통용이라고 불러야 하는지 등은 분석 견해가 다를 수 있습니다. 표준국어대사전의 각 표제어 용법과 <strong>시험 문제에서 제시한 체계</strong>를 구분합니다.</p></section><section id="s11"><h2>11. 관형사와 용언의 관형사형은 같은 자리가 아닙니다</h2>
+<div class="sentence">새 책 / 새로운 책</div>
+<p>‘새’와 ‘새로운’은 모두 ‘책’을 꾸밀 수 있지만 같은 품사가 아닙니다. ‘새’는 활용하지 않는 관형사이고, ‘새로운’은 형용사 ‘새롭다’가 관형사형 어미를 취한 결과입니다.</p>
+<p>여기서는 <strong>품사</strong>와 <strong>문장 성분</strong>을 구별해야 합니다. ‘새’라는 단어의 품사는 관형사이고, 문장에서의 기능은 관형어입니다. ‘새로운’은 형용사 활용형이면서 관형어 기능을 합니다.</p>
+<div class="methodbox"><strong>한 줄 판별</strong><br/>‘둘 다 뒤의 명사를 꾸민다’는 기능이 같다는 말이지 품사가 같다는 뜻이 아닙니다. 형태 변화(활용 가능성)를 추가해 기준을 세웁니다.</div></section><section id="s12"><h2>12. 학교 문법과 학문 문법의 차이 — 언제 판정이 달라질까?</h2>
+<p>학문 문법에는 한 현상을 분석하는 여러 관점이 존재할 수 있습니다. 그러나 평가원 기출은 보통 문제에서 요구한 학교 문법의 범주와 &lt;보기&gt;의 전제를 토대로 판정해야 합니다. ‘다른 학설이 있으니 어떤 답도 가능하다’고 하면 문제의 조건을 벗어납니다.</p>
+<p>예를 들어 어떤 문장 성분을 보어로 볼지 필수적 부사어로 볼지의 범위는 문법적 견해가 달라질 수 있습니다. 그 차이를 숨기지 않되, 실제 시험에서는 주어진 분류 기준과 교과서의 채택 기준을 우선합니다.</p>
+<div class="warning"><strong>두 진술을 구별하세요.</strong><br/>‘이 분석은 다른 연구에서는 달라질 수 있다’는 설명과 ‘이 시험의 정답은 달라진다’는 말은 다릅니다. 실제 정답을 바꾸려면 해당 시험의 발문·보기·선지 또는 공식 정오표에서 그 근거를 확인해야 합니다.</div></section><section id="s13"><h2>13. 경계 사례를 오답으로 만드는 네 가지 습관</h2>
+<ol class="flowlist"><li><strong>표기만 보고 품사를 결정한다.</strong> ‘뿐·대로’를 붙이거나 띄어 쓴 결과만 외우고 앞말의 형태를 확인하지 않습니다.</li>
+<li><strong>같은 소리면 같은 표제어라고 생각한다.</strong> ‘코’의 동음이의어와 다의어를 구별하지 않습니다.</li>
+<li><strong>표현 하나로 의미를 단정한다.</strong> ‘안’이 쓰였다는 사실만으로 의지 부정이라고 판단합니다.</li>
+<li><strong>문제의 조건보다 익숙한 이론을 앞세운다.</strong> 발문·보기가 명시한 기준을 무시하고 자신의 다른 분석을 적용합니다.</li></ol>
+<p>이 네 실수의 공통점은 <strong>증거를 확보하기 전에 범주를 확정한다</strong>는 것입니다. 판단은 기준을 찾아 적용한 뒤에 끝내야 합니다.</p></section><section id="s14"><h2>14. 기출 풀이법 — 조건·분류·검증의 다섯 단계</h2>
+<ol class="flowlist"><li><strong>발문의 분류 대상을 표시한다.</strong> 품사인지, 의미 관계인지, 문법 요소인지부터 분명히 합니다.</li>
+<li><strong>자료에서 기준을 추출한다.</strong> 정의와 적용 조건을 짧은 문장으로 적습니다.</li>
+<li><strong>각 선지에 하나씩 적용한다.</strong> 선지 하나에 서로 다른 기준을 섞지 않습니다.</li>
+<li><strong>경계 사례에는 반례를 찾는다.</strong> 같은 표면형이 다른 범주가 되는 예가 없는지 확인합니다.</li>
+<li><strong>정답의 근거를 다시 발문에 맞춰 서술한다.</strong> ‘왜 이 선지만 주어진 조건과 일치하는가?’를 설명합니다.</li></ol>
+<div class="proof"><div class="tag">정답 근거의 문장화</div><p>“이것은 맞는 것 같다” → “선지의 ‘비’는 의지가 없는 주어이고 ‘오다’는 동사이므로, 제시된 ㉡의 단순 부정 조건과 일치한다.”</p><p>“이것은 다른 코다” → “신체 부위 뜻에서의 확장과 관계없는 매듭의 뜻이므로, &lt;보기&gt;가 구분한 다른 표제어에 해당한다.”</p></div></section><section id="s15"><h2>15. 연결 개념글 — 총론에서 세부 개념으로</h2>
+<p>이 글은 경계 사례를 판별하는 <strong>방법</strong>을 설명하는 글입니다. 개별 개념의 정의를 모두 여기서 다시 쓰지는 않습니다. 실제 문항을 풀 때에는 필요한 개념으로 내려가 확인한 뒤 다시 풀이로 돌아오면 됩니다.</p>
+<ul class="checklist">
+<li><a href="/grammatical-judgment-criteria">판별 기준 세우기</a> — 정의·형태·기능·분포·대조의 근거 세우기</li>
+<li><a href="/grammar-analysis-method">문법 분석 방법</a> — 발문에서 필요한 분석 층위 선택하기</li>
+<li><a href="/form-function-meaning">형태·기능·의미</a> — 서로 다른 기준으로 같은 표현을 읽기</li>
+<li><a href="/parts-of-speech-and-sentence-components">품사와 문장 성분</a> — 단어의 성질과 문장에서의 역할 구분하기</li>
+<li><a href="/grammar-rules-and-system">규칙과 체계</a> — 적용 조건과 체계적 관계 확인하기</li>
+<li><a href="/grammar-and-language-norms">문법과 어문 규범</a> — 문법적 판단과 표기·발음 규정 나누기</li>
+</ul></section><section id="s16"><h2>16. 한눈에 정리 — 예외를 외우기 전에 경계를 확인하세요</h2>
+<table><thead><tr><th>문제의 모습</th><th>먼저 확인할 것</th><th>기억할 결론</th></tr></thead><tbody>
+<tr><td>규칙이 맞지 않는 듯하다</td><td>적용 환경·선행 규칙</td><td>조건을 확인한 뒤 예외 여부 판정</td></tr>
+<tr><td>‘뿐·대로’처럼 모양이 같다</td><td>앞말의 형태·기능</td><td>품사와 띄어쓰기는 근거로 연결</td></tr>
+<tr><td>‘코’처럼 뜻이 여럿이다</td><td>사전의 표제어와 의미 연관</td><td>다의어와 동음이의어 구별</td></tr>
+<tr><td>‘안’의 뜻이 다르게 읽힌다</td><td>서술어·주어·문맥</td><td>형식만으로 의미 단정 금지</td></tr>
+<tr><td>문법서의 해석이 다르다</td><td>학설과 학교 시험의 전제</td><td>견해 차이와 기출 정답은 구분</td></tr>
+</tbody></table>
+<p class="closing"><strong>문법에서 답이 갈릴 때 필요한 것은 더 많은 암기가 아니라, ‘무엇을 기준으로 나누고 있는가’를 정확하게 묻는 습관입니다.</strong></p></section></div>
+<footer class="references"><h2>공식 기준·기출 출처</h2><p>문항 제시 범위: 개념 분석에 필요한 개별 문항만 발문·보기·선지 단위로 재구성. 연결된 전체 시험지의 전재·삽입 금지. 제3자 저작물·긴 공통 지문은 별도 권리 검토 후 표시.</p><ul class="sources">
+<li>한국교육과정평가원, 2022학년도 수능 6월 모의평가 국어 영역 언어와 매체 39번 및 정답·해설 — 의미 관계, 정답 ⑤.</li>
+<li>한국교육과정평가원, 2023학년도 수능 9월 모의평가 국어 영역 언어와 매체 38번 및 정답·해설 — 단순 부정, 정답 ⑤ (실제 2022년 8월 31일 시행).</li>
+<li>국립국어원 온라인가나다, <a href="https://www.korean.go.kr/front/onlineQna/onlineQnaView.do?mn_id=216&amp;qna_seq=305980">‘뿐’의 사용(2024.11.14.)</a> — 의존 명사·조사 구별.</li>
+<li>국립국어원 온라인가나다, <a href="https://www.korean.go.kr/front/onlineQna/onlineQnaView.do?mn_id=216&amp;pageIndex=11&amp;qna_seq=319190">의존 명사 ‘대로’(2025.8.7.)</a> — 용언 관형형·체언 뒤의 용법.</li>
+<li>국립국어원 온라인가나다, <a href="https://www.korean.go.kr/front/onlineQna/onlineQnaView.do?mn_id=27&amp;qna_seq=328819">‘대로’의 품사 통용 관련 질문(2026.4.4.)</a> — 학설 차이와 학교 기준.</li>
+</ul></footer>
+</article></div><script defer="" id="s4-stdict-search-js" src="/assets/common/stdict-search.js?v=20260927v1"></script>
+<script crossorigin="anonymous" data-cf-beacon='{"version":"2024.11.0","token":"5e0a53a112374ef0a6c044df2cf3349c","r":1,"spa":2}' integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw==" src="https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092" type="module"></script>
+</body></html>

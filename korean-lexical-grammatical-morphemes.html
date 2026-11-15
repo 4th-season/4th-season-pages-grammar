@@ -1,0 +1,140 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>실질 형태소와 형식 형태소 — 실질 의미를 갖는가를 기준으로 나누기 | 국어 문법</title>
+<meta name="description" content="실질 형태소와 형식 형태소를 의미의 성격에 따라 구분합니다. 자립·의존 형태소와 다른 분류축이라는 점, 어간·접사·조사·어미·의존 명사의 판별 기준과 실제 분석 사례를 정리합니다.">
+<link rel="canonical" href="https://4th-season.com/korean-lexical-grammatical-morphemes"><meta name="robots" content="index,follow"><meta name="4s-public-marker" content="GRAMMAR_PUBLIC_0312_V1">
+<meta name="article:published_time" content="2026-10-02"><meta name="4th-subcategory" content="morphology"><style>
+:root{--navy:#17324D;--blue:#2B668F;--ink:#17212B;--muted:#5B6875;--line:#D9E1E7;--green:#1C6B57;--purple:#6C4E90;--warn:#FFF8E6;--rose:#A64B58}
+*{box-sizing:border-box}body{margin:0;background:#eef2f5;color:var(--ink);font-family:"Pretendard","Noto Sans KR","Malgun Gothic",sans-serif;line-height:1.8;letter-spacing:-.02em}a{color:var(--blue);text-decoration:none}.article-topnav{background:#fff;border-bottom:1px solid var(--line)}.nav-in{max-width:1180px;margin:auto;min-height:58px;padding:0 20px;display:flex;align-items:center;justify-content:space-between;gap:18px}.nav-left,.nav-right{display:flex;gap:14px;flex-wrap:wrap}.article-topnav a{color:#425466;font-size:13px;font-weight:800}.current{color:var(--navy)!important}.shell{max-width:980px;margin:auto;padding:32px 20px 80px}article{background:#fff;border-radius:22px;overflow:hidden;box-shadow:0 12px 36px rgba(23,50,77,.08)}.hero{padding:56px;background:linear-gradient(135deg,#17324D,#5A4C83);color:#fff}.eyebrow{display:inline-block;font-size:13px;font-weight:900;letter-spacing:.08em;background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.25);padding:6px 10px;border-radius:999px;margin-bottom:18px}h1{font-size:38px;line-height:1.25;margin:0 0 18px;letter-spacing:-.045em}.subtitle{font-size:18px;color:#e7e3f2;max-width:820px;margin:0}.content{padding:48px 56px 64px}.cover img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:18px;border:1px solid var(--line);margin-bottom:30px}.toc{margin:0 0 48px;padding:24px 26px;background:#f7f9fb;border:1px solid var(--line);border-radius:16px}.toc-title{font-size:18px;font-weight:900;color:var(--navy);margin-bottom:13px}.toc ol{columns:2;column-gap:36px;margin:0;padding-left:22px}.toc li{break-inside:avoid;margin-bottom:9px}section{margin-bottom:58px}h2{font-size:26px;color:var(--navy);margin:0 0 22px;padding-bottom:11px;border-bottom:2px solid #e7eef3}h3{font-size:20px;color:#214d70;margin:28px 0 12px}p{margin:0 0 16px}.keybox,.warning,.methodbox,.insight,.casebox{border-radius:16px;padding:20px 22px;margin:24px 0}.keybox{background:#eef6fb;border-left:5px solid var(--blue)}.methodbox{background:#eef8f4;border-left:5px solid var(--green)}.warning{background:var(--warn);border-left:5px solid #c98200}.insight{background:#f5f1fa;border-left:5px solid var(--purple)}.casebox{background:#fff2f4;border-left:5px solid var(--rose)}.grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:22px 0}.card{border:1px solid var(--line);border-radius:15px;padding:20px}.card b{display:block;color:var(--navy);font-size:18px;margin-bottom:7px}.flow{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:22px 0}.flow span{background:#f4f8fb;border:1px solid #cfdce5;border-radius:999px;padding:9px 14px;font-weight:800;color:var(--navy)}.flow i{font-style:normal;color:var(--blue);font-weight:900}.equation{font-size:19px;font-weight:900;letter-spacing:.01em;color:var(--navy);background:#f6f9fb;border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin:18px 0}table{width:100%;border-collapse:separate;border-spacing:0;margin:22px 0;border:1px solid var(--line);border-radius:14px;overflow:hidden;font-size:15px}th,td{padding:14px 15px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}th{background:#eaf3f8;color:var(--navy)}tr:last-child td{border-bottom:0}td+td,th+th{border-left:1px solid var(--line)}.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:24px 0}.step{border:1px solid var(--line);border-radius:14px;padding:16px}.num{display:inline-flex;width:28px;height:28px;align-items:center;justify-content:center;border-radius:50%;background:var(--blue);color:#fff;font-weight:900;margin-bottom:9px}.step b{display:block;color:var(--navy);margin-bottom:6px}.checklist{list-style:none;padding:0}.checklist li{padding:9px 0 9px 30px;position:relative;border-bottom:1px solid #edf1f4}.checklist li:before{content:"✓";position:absolute;left:5px;color:var(--green);font-weight:900}.closing{font-size:19px;text-align:center;background:#f0f6fa;border-radius:16px;padding:26px}.related{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:24px}.related a{display:block;border:1px solid var(--line);border-radius:14px;padding:16px;background:#fbfcfd;font-weight:800}.references{background:#f8fafb;border-top:1px solid var(--line);padding:28px 56px 38px;color:var(--muted);font-size:13px}.references h2{font-size:18px;border:0;padding:0;margin:0 0 10px}.references a{word-break:break-all}@media(max-width:900px){.shell{padding:0}.hero,.content,.references{padding-left:24px;padding-right:24px}.toc ol{columns:1}.grid,.steps,.related{grid-template-columns:1fr}}
+</style><link id="s4-article-nav-css" rel="stylesheet" href="/assets/common/article-nav.css?v=20260928v1">
+<link id="s4-stdict-search-css" rel="stylesheet" href="/assets/common/stdict-search.css?v=20260927v1">
+</head><body>
+<div id="s4-stdict-search" class="s4-dict-search" data-endpoint="/api/stdict" aria-label="표준국어대사전 검색">
+<form class="s4-dict-form" role="search" autocomplete="off">
+<span class="s4-dict-badge">사전</span>
+<label class="s4-dict-sr" for="s4-dict-input">표준국어대사전 검색어</label>
+<input id="s4-dict-input" class="s4-dict-input" type="search" inputmode="search" maxlength="80" placeholder="표준국어대사전" aria-label="표준국어대사전 검색">
+<button class="s4-dict-submit" type="submit" aria-label="사전 검색">⌕</button>
+</form>
+<div class="s4-dict-panel" hidden aria-live="polite"></div>
+</div>
+<nav id="fs-common-menu" class="fs-common-menu" data-sitejob-marker="GLOBAL_ARTICLE_NAV_V2" aria-label="개별 글 공통 메뉴"><div class="fsn-inner"><a class="fsn-exit" href="/learn/grammar/">← 상위 지도</a><a class="fsn-brand" href="/">4TH SEASON</a><a class="fsn-domain" href="/learn/">LEARN</a><a class="fsn-domain" href="/world/">WORLD</a><a class="fsn-domain" href="/life/">LIFE</a><a class="fsn-domain insite" href="/insite/">In:Site</a><a class="fsn-series" href="/learn/grammar/">문법</a><a class="fsn-map" href="/sitemap/">한눈에 보기</a></div></nav>
+<header class="article-topnav"><div class="nav-in"><nav class="nav-left"><a href="/">홈</a><a href="/learn/">LEARN</a></nav><nav class="nav-right"><a href="/learn/korean-reading/">읽기</a><a class="current" href="/learn/grammar/">문법</a><a href="/learn/vocabulary/">어휘</a><a href="/learn/reread/">Re:Read</a><a href="/quote-prestige/">명언의 품격</a></nav></div></header>
+<div class="shell"><article>
+<header class="hero"><span class="eyebrow">국어 문법 · 형태론 · 형태소 분류</span><h1>실질 형태소와 형식 형태소 — 실질 의미를 갖는가를 기준으로 나누기</h1>
+<p class="subtitle">형태소는 모두 의미를 갖지만 그 의미의 성격은 다릅니다. <strong>구체적인 대상·동작·상태를 직접 나타내면 실질 형태소</strong>, 실질 형태소에 붙어 관계나 문법 기능을 나타내면 형식 형태소로 나눕니다.</p></header>
+<div class="content"><figure class="cover"><img src="/assets/grammar/korean-lexical-grammatical-morphemes.webp" alt="실질 형태소와 형식 형태소를 두 축으로 비교하는 형태론 구조"></figure>
+<nav class="toc"><div class="toc-title">목차</div><ol>
+<li><a href="#s1">실질/형식의 기준</a></li><li><a href="#s2">자립/의존과 다른 축</a></li>
+<li><a href="#s3">실질 형태소의 범위</a></li><li><a href="#s4">형식 형태소의 범위</a></li>
+<li><a href="#s5">어간 전체가 실질 형태소는 아니다</a></li><li><a href="#s6">접사는 왜 형식 형태소인가</a></li>
+<li><a href="#s7">의존 명사는 어디에 속하는가</a></li><li><a href="#s8">문장 분석 예시</a></li>
+<li><a href="#s9">판별 순서</a></li><li><a href="#s10">한눈에 정리</a></li>
+</ol></nav>
+
+<section id="s1"><h2>1. 실질 형태소와 형식 형태소 — ‘의미가 있느냐’가 아니라 ‘어떤 의미냐’가 기준이다</h2>
+<p>형태소는 뜻을 가진 가장 작은 말의 단위입니다. 따라서 실질 형태소뿐 아니라 형식 형태소도 의미를 가집니다. 차이는 <strong>의미의 종류</strong>입니다.</p>
+<div class="grid">
+<div class="card"><b>실질 형태소</b>구체적인 대상, 동작, 상태, 성질처럼 어휘적인 내용을 직접 나타냅니다. 예: 하늘, 책, 먹-, 웃-, 오늘.</div>
+<div class="card"><b>형식 형태소</b>실질 형태소에 붙어 말과 말의 관계, 시제, 높임, 종결, 파생 같은 문법적 관계나 기능을 나타냅니다. 예: 조사, 어미, 접사.</div>
+</div>
+<div class="keybox"><strong>형식 형태소도 의미가 있습니다.</strong><br>‘-었-’은 과거, ‘-이/가’는 문장 성분의 관계, ‘-님’은 높임의 의미를 나타냅니다. 다만 그 의미가 사물이나 동작 자체를 가리키는 어휘적 의미가 아니라 문법적 관계 속에서 드러납니다.</div>
+</section>
+
+<section id="s2"><h2>2. 자립/의존과 실질/형식은 서로 다른 분류축이다</h2>
+<p>앞 글에서 본 자립 형태소와 의존 형태소는 <strong>혼자 설 수 있는가</strong>를 기준으로 나눕니다. 이번의 실질/형식 형태소는 <strong>어떤 성격의 의미를 갖는가</strong>를 기준으로 나눕니다. 두 분류는 같은 축이 아닙니다.</p>
+<table><thead><tr><th>형태소</th><th>자립/의존</th><th>실질/형식</th><th>이유</th></tr></thead><tbody>
+<tr><td>책</td><td>자립</td><td>실질</td><td>혼자 설 수 있고 구체적인 대상을 나타냄</td></tr>
+<tr><td>먹-</td><td>의존</td><td>실질</td><td>어미가 필요하지만 ‘먹다’의 동작 의미를 지님</td></tr>
+<tr><td>-었-</td><td>의존</td><td>형식</td><td>과거라는 문법적 의미를 나타냄</td></tr>
+<tr><td>-을/를</td><td>의존</td><td>형식</td><td>목적어 관계를 표시함</td></tr>
+</tbody></table>
+<div class="insight"><strong>‘의존 형태소 = 형식 형태소’는 틀립니다.</strong><br>‘먹-’, ‘웃-’, ‘크-’ 같은 용언의 어간 형태소는 혼자 쓰일 수 없다는 점에서는 의존 형태소지만, 동작이나 상태를 직접 나타내므로 실질 형태소입니다.</div>
+</section>
+
+<section id="s3"><h2>3. 실질 형태소 — 대상·동작·상태를 직접 나타내는 최소 단위</h2>
+<p>표준국어대사전은 실질 형태소를 <strong>구체적인 대상이나 동작, 상태를 표시하는 형태소</strong>로 풀이합니다. 명사나 대명사, 수사처럼 자립하는 말뿐 아니라, 동사·형용사의 어근이나 단일 형태소 어간도 실질 형태소가 될 수 있습니다.</p>
+<div class="flow"><span>오늘</span><i>+</i><span>재미</span><i>+</i><span>있-</span><i>+</i><span>게임</span><i>+</i><span>하-</span></div>
+<p>국립국어원은 “오늘도 재미있게 게임을 했다”에서 실질 형태소를 ‘오늘, 재미, 있-, 게임, 하-’로 제시합니다. 조사와 어미는 제외되지만, ‘있-’, ‘하-’처럼 혼자 쓰이지 못하는 어간 형태소는 포함됩니다.</p>
+</section>
+
+<section id="s4"><h2>4. 형식 형태소 — 조사·어미·접사가 대표적이다</h2>
+<p>형식 형태소는 실질 형태소에 붙어 관계나 기능을 나타냅니다. 학교 문법에서 가장 대표적인 유형은 <strong>조사, 어미, 접사</strong>입니다.</p>
+<table><thead><tr><th>유형</th><th>예</th><th>기능</th></tr></thead><tbody>
+<tr><td>조사</td><td>-이/가, -을/를, -도, -까지</td><td>체언과 다른 성분의 관계 또는 보조적 의미 표시</td></tr>
+<tr><td>어미</td><td>-었-, -시-, -다, -고</td><td>시제·높임·종결·연결 등 문법 기능 표시</td></tr>
+<tr><td>접사</td><td>민-, 덧-, -님, -히-, -이</td><td>새 단어를 만들거나 뜻을 더하는 파생 기능</td></tr>
+</tbody></table>
+<div class="casebox"><strong>접사가 의미를 가진다고 실질 형태소가 되는 것은 아닙니다.</strong><br>예를 들어 ‘-님’은 높임, ‘민-’은 아무것도 덧붙지 않은 상태, ‘덧-’은 거듭 더한다는 뜻을 더하지만, 이런 의미는 결합한 말과의 관계 속에서 기능하므로 학교 문법에서는 일반적으로 형식 형태소로 분류합니다.</div>
+</section>
+
+<section id="s5"><h2>5. ‘용언의 어간은 실질 형태소’라는 말을 그대로 외우면 틀릴 수 있다</h2>
+<p>학교 문법에서 단순한 예를 배울 때는 ‘먹-’, ‘웃-’, ‘놀-’ 같은 어간을 실질 형태소라고 합니다. 하지만 <strong>어간이 언제나 형태소 하나인 것은 아닙니다.</strong></p>
+<div class="equation">새하얗- → 새- + 하얗-</div>
+<p>국립국어원은 ‘새하얗-’ 전체를 실질 형태소 하나로 볼 수 없다고 설명합니다. ‘새-’와 ‘하얗-’으로 더 나눌 수 있기 때문입니다. 실질 형태소도 먼저 <strong>형태소 단위</strong>여야 하므로, 복합 어간은 내부 형태소를 다시 분석해야 합니다.</p>
+<div class="warning"><strong>“모든 어간은 실질 형태소”라고 쓰지 마십시오.</strong><br>어간 내부에 접사나 다른 형태소가 포함될 수 있습니다. 먼저 형태소 경계를 찾고, 그 각각을 실질/형식으로 분류해야 합니다.</div>
+</section>
+
+<section id="s6"><h2>6. 접사는 왜 형식 형태소인가 — ‘뜻이 없다’가 아니다</h2>
+<p>접사는 새 단어를 만드는 중요한 의미 기능을 가집니다. 그렇다면 왜 형식 형태소일까요? 핵심은 <strong>의미의 독립성</strong>이 아니라 <strong>의미가 나타나는 방식</strong>입니다.</p>
+<p>국립국어원은 보조사와 접사도 의미를 가지지만, 실질 형태소처럼 대상을 직접 가리키는 어휘적 의미라기보다 결합하는 말과의 관계 속에서 나타나는 의미로 보아 형식 형태소로 보는 것이 일반적이라고 설명합니다.</p>
+<div class="grid">
+<div class="card"><b>따님</b>따-?가 아니라 ‘딸’의 변형과 접미사 ‘-님’이 결합하며, ‘-님’은 높임을 더하는 형식 형태소입니다.</div>
+<div class="card"><b>덧버선</b>접두사 ‘덧-’은 ‘거듭 더함’의 뜻을 더하지만 혼자 대상이나 동작을 가리키는 실질 형태소가 아니라 파생 기능을 하는 형식 형태소입니다.</div>
+</div>
+</section>
+
+<section id="s7"><h2>7. 의존 명사는 실질 형태소다 — ‘의존’이라는 이름에 속지 말 것</h2>
+<p>‘것’, ‘수’, ‘바’ 같은 의존 명사는 앞말의 관형어 수식을 필요로 하므로 통사적으로 의존적입니다. 하지만 형태론적 분류에서는 명사의 하나이며, 일반적으로 <strong>자립 형태소이자 실질 형태소</strong>로 봅니다.</p>
+<div class="methodbox"><strong>이름보다 분류 기준을 보십시오.</strong><br>‘의존 명사’의 ‘의존’은 품사 체계에서의 통사적 의존성을 말합니다. ‘의존 형태소’의 ‘의존’은 형태적으로 혼자 쓰일 수 없는지를 묻습니다. 서로 같은 말처럼 보여도 기준이 다릅니다.</div>
+<p>따라서 “의존 명사니까 의존 형태소”, “혼자 뜻이 약하니까 형식 형태소”라고 자동 판정하면 안 됩니다.</p>
+</section>
+
+<section id="s8"><h2>8. 문장 분석 — ‘오늘도 재미있게 게임을 했다’</h2>
+<p>형태소를 실질/형식으로 나눌 때는 먼저 문장을 최소 의미 단위로 쪼갠 뒤 각 형태소의 의미 성격을 봅니다.</p>
+<table><thead><tr><th>형태소</th><th>분류</th><th>근거</th></tr></thead><tbody>
+<tr><td>오늘</td><td>실질</td><td>시간 대상을 직접 나타냄</td></tr>
+<tr><td>-도</td><td>형식</td><td>보조사로 관계·보조 의미 표시</td></tr>
+<tr><td>재미</td><td>실질</td><td>구체적인 개념을 나타냄</td></tr>
+<tr><td>있-</td><td>실질</td><td>상태를 직접 나타냄</td></tr>
+<tr><td>-게</td><td>형식</td><td>부사형 전성 기능을 하는 어미</td></tr>
+<tr><td>게임</td><td>실질</td><td>대상을 나타냄</td></tr>
+<tr><td>-을</td><td>형식</td><td>목적격 관계 표시</td></tr>
+<tr><td>하-</td><td>실질</td><td>동작을 직접 나타냄</td></tr>
+<tr><td>-았- / -다</td><td>형식</td><td>과거·종결 기능 표시</td></tr>
+</tbody></table>
+</section>
+
+<section id="s9"><h2>9. 판별 순서 — 먼저 형태소를 찾고, 그 다음 의미 성격을 본다</h2>
+<div class="steps">
+<div class="step"><span class="num">1</span><b>형태소 경계 찾기</b>더 나누면 의미나 기능이 사라지는 최소 단위까지 나눕니다.</div>
+<div class="step"><span class="num">2</span><b>대상·동작·상태인가</b>직접적인 어휘 의미를 나타내면 실질 형태소입니다.</div>
+<div class="step"><span class="num">3</span><b>관계·문법 기능인가</b>조사·어미·접사처럼 관계나 기능을 나타내면 형식 형태소입니다.</div>
+<div class="step"><span class="num">4</span><b>다른 분류축과 분리</b>자립/의존 여부와 섞지 않고 따로 판정합니다.</div>
+</div>
+<ul class="checklist">
+<li>형식 형태소도 의미를 가진다는 사실을 기억합니다.</li>
+<li>의존 형태소라고 해서 모두 형식 형태소인 것은 아닙니다.</li>
+<li>어간 전체가 형태소 하나인지 먼저 확인합니다.</li>
+<li>접사의 의미가 구체적으로 느껴져도 학교 문법에서는 일반적으로 형식 형태소로 봅니다.</li>
+<li>의존 명사는 일반적으로 자립 형태소이자 실질 형태소로 분류합니다.</li>
+</ul>
+</section>
+
+<section id="s10"><h2>10. 한눈에 정리 — 두 분류축을 교차해 보면 선명해진다</h2>
+<table><thead><tr><th>조합</th><th>대표 예</th><th>설명</th></tr></thead><tbody>
+<tr><td>자립 + 실질</td><td>책, 오늘, 사람, 것</td><td>혼자 설 수 있고 어휘적 의미를 가짐</td></tr>
+<tr><td>의존 + 실질</td><td>먹-, 웃-, 많-</td><td>어미에 기대지만 동작·상태 의미를 직접 가짐</td></tr>
+<tr><td>의존 + 형식</td><td>-이/가, -었-, -다, 민-, -님</td><td>다른 말에 붙어 문법 관계나 파생 기능을 나타냄</td></tr>
+</tbody></table>
+<div class="closing"><strong>실질/형식 형태소의 핵심은 “의미가 있느냐”가 아니라 “그 의미가 대상·동작·상태를 직접 가리키는가, 아니면 관계·문법 기능을 나타내는가”입니다.</strong><br>먼저 형태소 경계를 찾고, 그 다음 의미 성격을 판정하면 자립/의존 분류와 섞이지 않습니다.</div>
+<div class="related"><a href="/korean-morpheme">← 형태소의 정의 다시 보기</a><a href="/korean-free-bound-morphemes">← 자립 형태소와 의존 형태소</a></div>
+</section>
+</div>
+<footer class="references"><h2>참고</h2>
+<p>국립국어원 온라인가나다, 「실질형태소 관련하여 문의드립니다」(2025-05-13) — 실질 형태소의 정의와 문장 속 실질 형태소 사례.</p>
+<p>국립국어원 온라인가나다, 「보조사, 형식형태소」(2026-02-02) — 형식 형태소도 의미를 가지며 조사·어미·접사가 문법적 관계나 기능을 나타낸다는 설명.</p>
+<p>국립국어원 온라인가나다, 「실질형태소 기준」(2026-04-27) — 복합 어간 전체를 하나의 실질 형태소로 볼 수 없다는 설명.</p>
+<p>국립국어원 온라인가나다, 「형식형태소 실질형태소 구분」(2025-12-05) — '-님', '민-', '덧-' 등 접사를 형식 형태소로 분류.</p>
+<p>국립국어원 온라인가나다, 「‘것’ 형태소」(2025-02-04) — 의존 명사를 일반적으로 자립 형태소·실질 형태소로 분류.</p>
+</footer></article></div><script id="s4-stdict-search-js" src="/assets/common/stdict-search.js?v=20260927v1" defer></script>
+</body></html>

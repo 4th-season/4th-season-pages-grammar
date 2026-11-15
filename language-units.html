@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><title>언어 단위란 무엇인가: 음운·형태소·단어·어절·문장·담화 구별과 기출 풀이 | 국어 문법</title><meta content="언어 단위의 위계를 음운·음절·형태소·단어·어절·구·절·문장·담화로 나누어 분석합니다. 단어와 어절의 차이, 구와 절의 판별, 2004학년도 수능 기출 풀이까지 실제 예문으로 설명합니다." name="description"/><style>
+:root{--navy:#17324D;--blue:#275D85;--ink:#17212B;--muted:#5B6875;--line:#D9E1E7;--paper:#fff;--soft:#F7F9FB;--green:#1C6B57;--warn:#FFF8E6}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#EEF2F5;color:var(--ink);font-family:"Pretendard","Noto Sans KR","Apple SD Gothic Neo","Malgun Gothic",sans-serif;line-height:1.78;letter-spacing:-.02em}
+a{color:var(--blue);text-decoration:none}.shell{max-width:980px;margin:0 auto;padding:32px 20px 80px}article{background:var(--paper);border-radius:22px;box-shadow:0 12px 36px rgba(23,50,77,.08);overflow:hidden}
+.hero{padding:56px;background:linear-gradient(135deg,#17324D,#244E70);color:#fff}.eyebrow{display:inline-block;font-size:13px;font-weight:900;letter-spacing:.08em;background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.25);padding:6px 10px;border-radius:999px;margin-bottom:18px}
+h1{font-size:38px;line-height:1.25;letter-spacing:-.045em;margin:0 0 18px}.subtitle{font-size:18px;line-height:1.7;color:#DCEAF3;max-width:780px;margin:0}.content{padding:48px 56px 64px}
+.cover{margin:0 0 30px}.cover img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:18px;border:1px solid var(--line);box-shadow:0 10px 26px rgba(23,50,77,.08)}
+.toc{margin:0 0 48px;padding:24px 26px;background:#F7F9FB;border:1px solid var(--line);border-radius:16px}.toc-title{font-size:18px;font-weight:900;color:var(--navy);margin-bottom:13px}.toc ol{margin:0;padding-left:22px;columns:2;column-gap:36px}.toc li{break-inside:avoid;margin:0 0 9px}
+section{scroll-margin-top:24px;margin-bottom:58px}h2{font-size:26px;line-height:1.35;color:var(--navy);margin:0 0 22px;padding-bottom:11px;border-bottom:2px solid #E7EEF3}h3{font-size:18px;color:var(--navy);margin:0 0 8px}p{margin:0 0 16px}strong{color:#102D45}
+.keybox,.warning{border-radius:16px;padding:20px 22px;margin:24px 0}.keybox{background:#EEF6FB;border-left:5px solid var(--blue)}.warning{background:var(--warn);border-left:5px solid #C98200}
+.sentence,.example,.dialogue{background:#FAFBFC;border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin:20px 0}.sentence{text-align:center;font-size:20px;font-weight:800;color:var(--navy)}
+table{width:100%;border-collapse:separate;border-spacing:0;margin:22px 0;border:1px solid var(--line);border-radius:14px;overflow:hidden;font-size:15px}th,td{padding:14px 15px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}th{background:#EAF3F8;color:var(--navy);font-weight:800}tr:last-child td{border-bottom:0}td+td,th+th{border-left:1px solid var(--line)}
+.checklist{list-style:none;padding:0;margin:18px 0}.checklist li{padding:9px 0 9px 30px;position:relative;border-bottom:1px solid #EDF1F4}.checklist li:before{content:"✓";position:absolute;left:5px;color:var(--green);font-weight:900}
+.summary td:first-child{width:28%;font-weight:800;color:var(--navy)}.closing{font-size:19px;text-align:center;background:#F0F6FA;border-radius:16px;padding:26px;margin-top:28px}
+.references{background:#F8FAFB;border-top:1px solid var(--line);padding:28px 56px 38px;color:var(--muted);font-size:13px}
+@media(max-width:900px){.shell{padding:0}.hero,.content,.references{padding-left:24px;padding-right:24px}h1{font-size:31px}.toc ol{columns:1}}
+
+
+.article-topnav{background:#fff;border-bottom:1px solid #d9e1e7;font-family:"Pretendard","Noto Sans KR","Apple SD Gothic Neo","Malgun Gothic",sans-serif}
+.article-topnav .nav-in{max-width:1180px;margin:0 auto;min-height:58px;padding:0 20px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+.article-topnav .nav-left,.article-topnav .nav-right{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.article-topnav a{color:#425466;text-decoration:none;font-size:13px;font-weight:800}
+.article-topnav a.current{color:#17324D}
+@media(max-width:720px){.article-topnav .nav-in{align-items:flex-start;flex-direction:column;padding-top:12px;padding-bottom:12px;gap:8px}.article-topnav .nav-right{gap:10px}.article-topnav a{font-size:12px}}
+
+/* Grammar 0120 renewal: existing design preserved, expanded analysis layout */
+.renewal-map{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:20px 0}
+.renewal-map>div{background:#f6f9fc;border:1px solid #d9e1e7;border-radius:14px;padding:18px 20px}
+.renewal-map h3{margin:0 0 8px;font-size:17px;color:#17324D}
+.renewal-map p{font-size:15px;margin:0 0 8px}
+.rn-steps{counter-reset:step;list-style:none;padding:0;display:grid;gap:10px}
+.rn-steps li{counter-increment:step;background:#f6f9fc;border:1px solid #d9e1e7;border-radius:12px;padding:16px 18px 16px 58px;position:relative}
+.rn-steps li:before{content:counter(step);position:absolute;left:15px;top:15px;border-radius:50%;width:29px;height:29px;background:#17324D;color:white;text-align:center;line-height:29px;font-weight:800}
+.rn-links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:20px 0}
+.rn-links a{display:block;padding:16px 18px;border:1px solid #d9e1e7;border-radius:13px;background:#f7f9fb;color:#17324D;font-weight:700}
+.rn-links a span{display:block;font-size:13px;color:#5B6875;font-weight:500;margin-top:5px}
+.rn-footnote{font-size:14px;color:#5B6875}
+@media(max-width:720px){.renewal-map,.rn-links{grid-template-columns:1fr}.rn-steps li{padding-left:54px}table{display:block;overflow-x:auto}}
+</style><link href="https://4th-season.com/language-units" rel="canonical"/><meta content="index,follow" name="robots"/><meta content="GRAMMAR_RENEWAL_0120_20261018_V2" name="4s-public-marker"/><meta content="2026-09-27" name="article:published_time"/><meta content="how" name="4th-subcategory"/><link href="/assets/common/stdict-search.css?v=20260927v1" id="s4-stdict-search-css" rel="stylesheet"/>
+<link href="/assets/common/article-nav.css?v=20260928v1" id="s4-article-nav-css" rel="stylesheet"/>
+</head><body>
+<nav id="fs-common-menu" class="fs-common-menu" data-sitejob-marker="GLOBAL_ARTICLE_NAV_V2" aria-label="개별 글 공통 메뉴"><div class="fsn-inner"><a class="fsn-exit" href="/learn/grammar/">← 상위 지도</a><a class="fsn-brand" href="/">4TH SEASON</a><a class="fsn-domain" href="/learn/">LEARN</a><a class="fsn-domain" href="/world/">WORLD</a><a class="fsn-domain" href="/life/">LIFE</a><a class="fsn-domain insite" href="/insite/">In:Site</a><a class="fsn-series" href="/learn/grammar/">문법</a><a class="fsn-map" href="/sitemap/">한눈에 보기</a></div></nav>
+<div aria-label="표준국어대사전 검색" class="s4-dict-search" data-endpoint="/api/stdict" id="s4-stdict-search">
+<form autocomplete="off" class="s4-dict-form" role="search">
+<span class="s4-dict-badge">사전</span>
+<label class="s4-dict-sr" for="s4-dict-input">표준국어대사전 검색어</label>
+<input aria-label="표준국어대사전 검색" class="s4-dict-input" id="s4-dict-input" inputmode="search" maxlength="80" placeholder="표준국어대사전" type="search"/>
+<button aria-label="사전 검색" class="s4-dict-submit" type="submit">⌕</button>
+</form>
+<div aria-live="polite" class="s4-dict-panel" hidden=""></div>
+</div><header class="article-topnav"><div class="nav-in"><nav aria-label="상위 이동" class="nav-left"><a href="/">홈</a><a href="/learn/">LEARN</a></nav><nav aria-label="LEARN 동일 레벨 메뉴" class="nav-right"><a href="/learn/korean-reading/">읽기</a><a aria-current="page" class="current" href="/learn/grammar/">문법</a><a href="/learn/vocabulary/">어휘</a><a href="/learn/reread/">Re:Read</a><a href="/quote-prestige/">명언의 품격</a></nav></div></header><div class="shell"><article><header class="hero"><span class="eyebrow">국어 문법</span><h1>언어 단위 — 음운에서 담화까지 단위의 위계</h1><p class="subtitle">음운부터 담화까지 하나의 문장을 여러 층위에서 읽습니다. 음절·형태소의 차이, 단어·어절의 구별, 구와 절의 판정, 기출에서 쓰는 판단 순서까지 연결합니다.</p></header><div class="content"><figure class="cover"><img alt="음운·형태소·단어·구·절·문장·담화가 서로 연결되는 한국어 언어 단위 체계를 보여 주는 대표 이미지" height="540" src="/assets/grammar/language-units.webp" width="960"/></figure><nav aria-label="목차" class="toc"><div class="toc-title">목차</div><ol><li><a href="#s1">언어 단위는 작은 것부터 큰 것으로만 외우면 될까요?</a></li><li><a href="#s2">1. 음운 — 뜻을 구별해 주는 가장 작은 소리 단위</a></li><li><a href="#s3">2. 음절 — 소리의 한 덩어리</a></li><li><a href="#s4">3. 형태소 — 의미나 문법 기능을 가진 최소 단위</a></li><li><a href="#s5">4. 단어 — 문법적으로 자립성을 가지는 기본 단위</a></li><li><a href="#s6">5. 어절 — 띄어쓰기와 밀접한 문장 표면 단위</a></li><li><a href="#s7">6. 구 — 둘 이상의 단어가 모여 하나의 덩어리처럼 기능하는 단위</a></li><li><a href="#s8">7. 절 — 주어와 서술어의 관계를 가진 문장 내부 단위</a></li><li><a href="#s9">8. 문장 — 하나의 완결된 생각을 표현하는 단위</a></li><li><a href="#s10">9. 담화 — 문장을 넘어 맥락 속에서 이어지는 의미 단위</a></li><li><a href="#s11">10. 언어 단위는 왜 한 줄 위계로만 보면 안 될까요?</a></li><li><a href="#s12">11. 실제 문장을 여러 단위로 나누어 봅시다</a></li><li><a href="#s14">12. 소리의 단위와 의미의 단위를 구분하는 두 갈래</a></li><li><a href="#s15">13. 단어와 어절, 구와 절을 실제로 구별해 봅시다</a></li><li><a href="#s16">14. 실제 기출: 언어 단위와 선택·통합 관계를 어떻게 판단할까요?</a></li><li><a href="#s17">15. 어떤 개념글부터 읽어야 할까요?</a></li><li><a href="#s13">한눈에 정리</a></li></ol></nav><section id="s1"><h2>언어 단위는 작은 것부터 큰 것으로만 외우면 될까요?</h2>
+<p>문법을 처음 배울 때 언어 단위를 <strong>음운 → 음절 → 형태소 → 단어 → 어절 → 구 → 절 → 문장 → 담화</strong>처럼 한 줄로 외우는 경우가 많습니다. 전체 순서를 훑는 데에는 도움이 되지만, 모든 단위가 같은 기준으로 만들어진 것은 아닙니다.</p>
+<p>예를 들어 <strong>음절은 소리 조직의 단위</strong>이고, <strong>형태소는 의미나 문법 기능을 가진 최소 단위</strong>입니다. 둘을 단순히 크기만으로 비교하면 중요한 차이를 놓칠 수 있습니다.</p>
+<div class="keybox"><strong>핵심</strong><br/>언어 단위는 ‘크기’만이 아니라 <strong>무엇을 분석하기 위한 단위인가</strong>를 기준으로 이해해야 합니다.</div>
+<p>예를 들어 <strong>바다</strong>는 <strong>두 음절(바·다)</strong>이면서, 학교 문법의 일반적인 분석에서는 <strong>하나의 형태소</strong>입니다. 음절과 형태소가 같은 크기 단위라면 설명하기 어려운 사례입니다. 따라서 먼저 소리를 묻는지, 뜻·문법 기능을 묻는지 구분해야 합니다.</p></section><section id="s2"><h2>1. 음운 — 뜻을 구별해 주는 가장 작은 소리 단위</h2>
+<p>음운은 말의 뜻을 구별하는 데 기능하는 최소 소리 단위입니다.</p>
+<div class="example"><p><code>불</code>과 <code>풀</code>은 첫소리 /ㅂ/과 /ㅍ/의 차이로 뜻이 달라집니다.</p></div>
+<p>이처럼 하나의 소리 차이가 낱말의 뜻을 갈라 놓는다면 그 소리는 음운 체계에서 중요한 단위가 됩니다.</p>
+<p>음운은 실제 물리적 소리인 음성과 구별해 생각할 필요가 있습니다. 문법에서는 자음·모음과 같은 음운이 어떤 체계를 이루고, 실제 발음에서 어떻게 변하는지까지 살펴봅니다.</p>
+</section><section id="s3"><h2>2. 음절 — 소리의 한 덩어리</h2>
+<p>음절은 실제 발음에서 한 번에 묶여 나오는 소리의 단위입니다.</p>
+<table><thead><tr><th>낱말</th><th>음절 수</th><th>예</th></tr></thead><tbody>
+<tr><td>집</td><td>1</td><td>집</td></tr>
+<tr><td>학교</td><td>2</td><td>학-교</td></tr>
+<tr><td>한국어</td><td>3</td><td>한-국-어</td></tr>
+</tbody></table>
+<p>음절은 초성·중성·종성의 결합으로 설명할 수 있습니다. 하지만 음절과 형태소는 같은 기준의 단위가 아닙니다. 한 형태소가 한 음절일 수도 있고 여러 음절일 수도 있습니다.</p>
+</section><section id="s4"><h2>3. 형태소 — 의미나 문법 기능을 가진 최소 단위</h2>
+<p>형태소는 뜻이나 문법 기능을 가진 최소 단위입니다.</p>
+<div class="sentence">먹었다 → 먹- + -었- + -다</div>
+<ul class="checklist">
+<li><code>먹-</code> : 어휘적 의미의 중심</li>
+<li><code>-었-</code> : 시간과 관련된 문법 의미</li>
+<li><code>-다</code> : 문장을 종결하는 기능</li>
+</ul>
+<p>형태소는 음절 수와 일치하지 않을 수 있습니다. 중요한 것은 <strong>더 나누었을 때 의미나 기능이 유지되는가</strong>입니다.</p>
+</section><section id="s5"><h2>4. 단어 — 문법적으로 자립성을 가지는 기본 단위</h2>
+<p>단어는 문법에서 가장 자주 사용하는 기본 단위입니다. 명사·동사·형용사·조사·부사 같은 품사는 단어를 분류한 결과입니다.</p>
+<div class="example"><p><strong>학생이 책을 읽었다.</strong></p><p>학생 / 이 / 책 / 을 / 읽었다</p></div>
+<p>학교 문법에서는 조사를 하나의 단어로 다룹니다. 그래서 띄어쓰기 단위인 어절과 단어가 항상 일치하지는 않습니다.</p>
+<div class="keybox"><strong>판별 기준</strong> 학교 문법에서는 <em>조사도 단어</em>로 처리하지만, 어간에 붙은 어미는 보통 독립된 단어로 세지 않습니다. 따라서 <strong>학생이 / 책을 / 읽었다</strong>는 세 어절이지만, <strong>학생·이·책·을·읽었다</strong>의 다섯 단어로 분석됩니다.</div></section><section id="s6"><h2>5. 어절 — 띄어쓰기와 밀접한 문장 표면 단위</h2>
+<p>어절은 문장에서 띄어 쓴 덩어리를 기준으로 보는 단위입니다.</p>
+<div class="example"><p><strong>학생이 / 책을 / 읽었다.</strong></p></div>
+<p>이 문장은 세 어절이지만 단어 수는 더 많을 수 있습니다. <code>학생이</code>는 명사 <code>학생</code>과 조사 <code>이</code>로 이루어진 하나의 어절입니다.</p>
+<div class="warning"><strong>주의</strong> 단어와 어절은 자주 겹치지만 같은 개념은 아닙니다.</div>
+</section><section id="s7"><h2>6. 구 — 둘 이상의 단어가 모여 하나의 덩어리처럼 기능하는 단위</h2>
+<p>국립국어원 표준국어대사전은 구를 둘 이상의 단어가 모여 절이나 문장의 일부를 이루는 토막으로 풀이합니다. 구는 일반적으로 주어와 서술어의 관계를 갖지 않습니다.</p>
+<div class="example"><p><strong>아주 예쁜 꽃</strong></p><p><strong>학교 앞 작은 서점</strong></p></div>
+<p>이 표현들은 여러 단어가 모였지만 그 자체로 완전한 주어-서술어 관계를 이루지는 않습니다.</p>
+<p>이때 ‘아주 예쁜 꽃’ 전체는 구로 볼 수 있지만, 내부의 ‘예쁜’이 관형사형 어미를 가진 용언의 활용형이라는 이유만으로 그 덩어리 전체를 절이라 부르는 것은 아닙니다. 절의 판정에서는 <strong>주어와 서술어의 관계가 설정되는가</strong>를 검토해야 합니다. 문맥에서 주어가 생략될 수도 있어 형태만 보고 단정하지 않습니다.</p></section><section id="s8"><h2>7. 절 — 주어와 서술어의 관계를 가진 문장 내부 단위</h2>
+<p>절은 보통 주어와 서술어의 관계를 갖지만, 더 큰 문장 안에서 하나의 성분처럼 쓰일 수 있습니다.</p>
+<div class="sentence">나는 <strong>비가 오는 것</strong>을 보았다.</div>
+<p><code>비가 오는</code>에는 주어 <code>비가</code>와 서술어 <code>오는</code>의 관계가 있습니다. 하지만 전체 문장 안에서는 더 큰 구조의 일부입니다.</p>
+<p>절을 이해하면 안은문장과 이어진문장, 관형절·명사절·부사절 같은 문장 구조를 분석하기 쉬워집니다.</p>
+</section><section id="s9"><h2>8. 문장 — 하나의 완결된 생각을 표현하는 단위</h2>
+<p>문장은 일정한 종결성을 가지며 하나의 생각이나 판단, 질문, 명령 등을 표현합니다.</p>
+<div class="example"><p>비가 온다.</p><p>오늘 비가 오니?</p><p>문을 닫아라.</p></div>
+<p>문장은 한 절로 이루어질 수도 있고 여러 절이 결합할 수도 있습니다. 그래서 문장 구조를 분석할 때는 절의 수와 관계를 함께 봅니다.</p>
+</section><section id="s10"><h2>9. 담화 — 문장을 넘어 맥락 속에서 이어지는 의미 단위</h2>
+<p>실제 의사소통은 한 문장으로 끝나지 않습니다.</p>
+<div class="dialogue"><p><b>가:</b> 민수 왔어?</p><p><b>나:</b> 응, 조금 전에.</p></div>
+<p>둘째 발화에는 주어와 서술어가 완전히 드러나 있지 않지만 앞 문장과 상황을 공유하기 때문에 의미를 이해할 수 있습니다.</p>
+<p>담화는 여러 문장과 발화가 맥락 속에서 연결되어 하나의 의미 흐름을 이루는 단위입니다. 여기에서는 지시·생략·대용·접속·화자와 청자의 관계가 중요해집니다.</p>
+</section><section id="s11"><h2>10. 언어 단위는 왜 한 줄 위계로만 보면 안 될까요?</h2>
+<p>언어 단위는 서로 연결되지만 <strong>설정 기준이 다릅니다.</strong></p>
+<table><thead><tr><th>단위</th><th>주된 기준</th></tr></thead><tbody>
+<tr><td>음운</td><td>뜻을 구별하는 소리</td></tr>
+<tr><td>음절</td><td>발음의 소리 덩어리</td></tr>
+<tr><td>형태소</td><td>의미·문법 기능의 최소 단위</td></tr>
+<tr><td>단어</td><td>문법적 기본 단위</td></tr>
+<tr><td>어절</td><td>띄어쓰기 중심의 표면 단위</td></tr>
+<tr><td>구</td><td>둘 이상의 단어가 이룬 문장 내부 덩어리</td></tr>
+<tr><td>절</td><td>주어와 서술어 관계를 가진 내부 구조</td></tr>
+<tr><td>문장</td><td>완결된 생각을 표현하는 단위</td></tr>
+<tr><td>담화</td><td>맥락 속에서 이어지는 문장·발화의 의미 단위</td></tr>
+</tbody></table>
+<p>따라서 ‘무엇이 더 큰가’보다 <strong>무엇을 분석하기 위해 설정된 단위인가</strong>를 먼저 묻는 편이 정확합니다.</p>
+</section><section id="s12"><h2>11. 실제 문장을 여러 단위로 나누어 봅시다</h2>
+<div class="sentence">학생들이 새 책을 읽었다.</div>
+<table><thead><tr><th>단위</th><th>분석 예</th></tr></thead><tbody>
+<tr><td>음절</td><td>학-생-들-이 / 새 / 책-을 / 읽-었-다</td></tr>
+<tr><td>형태소</td><td>학생 + 들 + 이 / 새 / 책 + 을 / 읽- + -었- + -다</td></tr>
+<tr><td>어절</td><td>학생들이 / 새 / 책을 / 읽었다</td></tr>
+<tr><td>문장 성분</td><td>학생들이(주어) / 새(관형어) / 책을(목적어) / 읽었다(서술어)</td></tr>
+<tr><td>문장</td><td>전체 표현 하나</td></tr>
+</tbody></table>
+<p>같은 표현을 여러 방식으로 나눌 수 있는 것은 분석이 제멋대로라서가 아니라, <strong>서로 다른 단위를 기준으로 보고 있기 때문</strong>입니다.</p>
+<p class="rn-footnote">※ ‘학생들이’는 <strong>학생+들+이</strong>로, ‘읽었다’는 <strong>읽-+-었-+-다</strong>로 분석합니다. <em>새</em>는 품사로는 관형사, 문장 성분으로는 관형어입니다. 서로 다른 분류 질문을 섞지 않는 것이 중요합니다.</p></section><section id="s14"><h2>12. 소리의 단위와 의미의 단위를 구분하는 두 갈래</h2>
+<p>언어 단위를 <strong>음운 → 음절 → 형태소 → 단어</strong>라는 하나의 계단으로만 외우면, ‘음절이 형태소의 부품인가?’ 같은 질문에 막힙니다. 음운과 음절은 <strong>발음과 소리 조직</strong>을 중심으로, 형태소와 단어는 <strong>뜻·기능·결합</strong>을 중심으로 설정되기 때문입니다.</p>
+<div class="renewal-map">
+<div><h3>소리 분석의 축</h3><p><strong>음운</strong> — 단어의 의미를 구별해 주는 소리의 단위</p><p><strong>음절</strong> — 발음에서 묶여 실현되는 소리의 단위</p><p>‘바다’는 바·다, 두 음절입니다.</p></div>
+<div><h3>형태·문장 분석의 축</h3><p><strong>형태소</strong> — 의미 또는 문법 기능을 가진 최소 단위</p><p><strong>단어</strong> — 학교 문법에서 품사 분류의 기준이 되는 단위</p><p>‘바다’는 보통 한 형태소로 분석됩니다.</p></div>
+</div>
+<p>그 위로 <strong>구와 절은 문장 내부의 구성 방식</strong>, <strong>문장은 종결성을 지닌 언어 표현</strong>, <strong>담화는 앞뒤 발화와 맥락의 연결</strong>을 분석하는 개념입니다. 단위 사이에는 포함 관계가 나타날 수 있지만, 모든 단위를 단일한 크기 척도로 재단해서는 안 됩니다.</p>
+<div class="keybox"><strong>첫 질문</strong> 문항이 ‘몇 음절인가’를 물으면 발음 단위로, ‘몇 형태소인가’를 물으면 의미·기능 단위로, ‘몇 어절인가’를 물으면 띄어쓰기 단위로 돌아가야 합니다.</div></section><section id="s15"><h2>13. 단어와 어절, 구와 절을 실제로 구별해 봅시다</h2>
+<p>다음 세 문장을 비교해 보겠습니다.</p>
+<div class="example"><p>① <strong>학생이 책을 읽었다.</strong></p><p>② <strong>아주 작은 집</strong></p><p>③ <strong>학생이 읽은 책이 재미있다.</strong></p></div>
+<table><thead><tr><th>분석할 것</th><th>판단 근거</th><th>분석 결과</th></tr></thead><tbody>
+<tr><td>① 어절</td><td>띄어 쓴 마디</td><td>학생이 / 책을 / 읽었다 → 3어절</td></tr>
+<tr><td>① 단어</td><td>조사를 단어로 세되 어미는 별도 단어로 세지 않음</td><td>학생 / 이 / 책 / 을 / 읽었다 → 5단어</td></tr>
+<tr><td>② 구</td><td>여러 단어가 하나의 명사구로 기능하며 덩어리 전체에 독립된 주어·서술어의 짝이 없음</td><td>‘아주 작은 집’은 구로 분석할 수 있음</td></tr>
+<tr><td>③ 절</td><td>‘학생이 읽은’에 주어 ‘학생이’와 서술어 ‘읽은’의 관계가 있음</td><td>전체 문장 속에 관형절이 안겨 있음</td></tr>
+</tbody></table>
+<p>단어·어절은 <strong>어디를 나눌 것인가</strong>가 핵심이고, 구·절은 <strong>나눈 덩어리 안에 어떤 문장 구조가 형성되는가</strong>가 핵심입니다. 특히 수식 기능이 있다고 해서 언제나 관형사인 것도, 관형절인 것도 아닙니다.</p></section><section id="s16"><h2>14. 실제 기출: 언어 단위와 선택·통합 관계를 어떻게 판단할까요?</h2>
+<p><strong>2004학년도 대학수학능력시험 국어 영역 36번</strong>은 ‘언어의 체계·선택·구조’에 대한 독서 지문을 바탕으로, 짧은 글에서 부분과 전체의 관계를 판단하게 합니다. 지문은 대체 가능한 요소들의 <strong>선택 관계</strong>와, 여러 요소가 결합하여 구조를 이루는 <strong>통합 관계</strong>를 구분합니다.</p>
+<p>문항에 등장한 문장들은 담화를 구성하고, 문장 속의 단어와 표현들은 다시 작은 구성 요소로 분석될 수 있습니다. 여기서 중요한 것은 <strong>두 표현이 같은 자리에서 서로 대체 가능한가</strong>, 아니면 <strong>동시에 결합하여 더 큰 단위를 이루는가</strong>를 분리하는 것입니다.</p>
+<ol class="rn-steps">
+<li><strong>발문이 요구하는 판단</strong>을 확인합니다. 전체 글의 구조, 구성 요소, 선택 관계, 통합 관계 중 무엇이 문제인지 표시합니다.</li>
+<li>문제의 각 표시가 <strong>단어·문장·담화</strong> 중 어느 층위에 놓이는지 정합니다. 서로 다른 층위의 항목은 단순히 나란히 비교하지 않습니다.</li>
+<li>서로 <strong>바꾸어 넣는 관계</strong>라면 선택 관계, 실제 표현 속에 <strong>이어지거나 포함되는 관계</strong>라면 통합 관계인지 검토합니다.</li>
+<li>각 선지의 주장에 대해 <strong>해당 위치에서 대체가 가능한지 / 함께 결합한 요소인지</strong>를 원문과 대조한 뒤 결론을 냅니다.</li>
+</ol>
+<div class="warning"><strong>기출 원문 대조 범위</strong> 2004학년도 수능 36번의 발문·제시문·선지 내용은 수능 DB에서 확인했습니다. 이 글은 정답 번호 자체보다 <em>문제를 해결하는 판단 절차</em>를 설명하며, 최종 채점용 정답·오답 해설은 공식 정답표와 별도 대조 후 확정합니다.</div>
+<p class="rn-footnote">관련 개념을 더 자세히 확인하려면 <a href="/grammar-rules-and-system">규칙과 체계</a> 및 <a href="/hierarchy-of-language-units">언어 단위의 위계</a>를 이어서 읽을 수 있습니다.</p></section><section id="s17"><h2>15. 어떤 개념글부터 읽어야 할까요?</h2>
+<p>이 글은 <strong>언어 단위 전체의 지도</strong>입니다. 개별 개념을 깊이 판단해야 할 때는 해당 하위 글로 이동하는 편이 낫습니다.</p>
+<div class="rn-links">
+<a href="/hierarchy-of-language-units">언어 단위의 위계<span>작은 구성 요소가 큰 언어 구조를 이루는 방식을 분석</span></a>
+<a href="/form-function-meaning">형태·기능·의미<span>같은 표현을 서로 다른 세 기준에서 분류</span></a>
+<a href="/parts-of-speech-and-sentence-components">품사와 문장 성분<span>단어 자체의 성질과 문장 속 역할을 구별</span></a>
+<a href="/grammar-analysis-method">문법 분석 방법<span>발문을 보고 어떤 분석 단위를 택할지 결정</span></a>
+</div>
+<p>기출문제에 접근할 때는 <strong>문항을 먼저 읽고 → 요구하는 분석 단위를 확인하고 → 해당 개념글에서 판정 기준을 찾아 → 선지에 적용</strong>하는 순서가 효율적입니다. 여러 개념이 등장해도 모두가 그 문항의 필수 풀이 개념인 것은 아닙니다.</p></section><section id="s13"><h2>한눈에 정리</h2>
+<table class="summary"><thead><tr><th>단위</th><th>핵심 질문</th></tr></thead><tbody>
+<tr><td>음운</td><td>어떤 소리가 뜻을 구별하는가?</td></tr>
+<tr><td>음절</td><td>소리는 어떤 덩어리로 발음되는가?</td></tr>
+<tr><td>형태소</td><td>의미나 문법 기능을 가진 최소 단위는 무엇인가?</td></tr>
+<tr><td>단어</td><td>품사로 분류되는 기본 단위는 무엇인가?</td></tr>
+<tr><td>어절</td><td>문장에서 어떻게 띄어 쓰이는가?</td></tr>
+<tr><td>구·절</td><td>문장 내부에서 어떤 덩어리와 구조를 이루는가?</td></tr>
+<tr><td>문장</td><td>완결된 생각은 어떻게 표현되는가?</td></tr>
+<tr><td>담화</td><td>여러 문장과 발화가 맥락에서 어떻게 이어지는가?</td></tr>
+</tbody></table>
+<p class="closing"><strong>언어 단위는 크기의 순서가 아니라, 언어를 어떤 관점에서 분석하느냐를 보여 주는 여러 개의 좌표입니다.</strong></p>
+</section></div><footer class="references"><h2>공식 기준·참고</h2><ul><li>교육부, 교육부 고시 제2022-33호 「초·중등학교 교육과정」</li><li>국립국어원, 표준국어대사전 및 온라인가나다의 구·절 관련 설명</li><li><a href="https://www.korean.go.kr/front/mcfaq/mcfaqView.do?mcfaq_seq=6806&amp;mn_id=216&amp;pageIndex=1">국립국어원, 음절과 어절의 차이 (2019-12-06)</a></li><li><a href="https://www.korean.go.kr/front/onlineQna/onlineQnaView.do?mn_id=216&amp;pageIndex=1&amp;qna_seq=305550">국립국어원, 구와 절의 정의 및 문법 단위 관련 온라인가나다 (2024-11)</a></li><li><a href="https://docs.google.com/spreadsheets/d/1rtiGA9ItwYo3bQ1B5W-bWTTYYA2UOJSo22o7dvqkqpc/edit">2004학년도 수능 원천 문항 DB (문항 36번)</a></li></ul></footer></article></div><script defer="" id="s4-stdict-search-js" src="/assets/common/stdict-search.js?v=20260927v1"></script>
+
+</body></html>

@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>단어의 내부 구조 — 어근·접사와 어간·어미를 구별하기 | 국어 문법</title>
+<meta name="description" content="단어의 내부 구조를 어근·접사와 어간·어미라는 두 분석 기준으로 나눠 설명합니다. 먹다·먹히다·덮개를 통해 단어 형성과 활용을 구별하는 법을 정리합니다.">
+<link rel="canonical" href="https://4th-season.com/korean-word-internal-structure">
+<meta name="robots" content="index,follow">
+<meta name="4s-public-marker" content="GRAMMAR_PUBLIC_0323_V1">
+<meta name="article:published_time" content="2026-10-02">
+<meta name="4th-subcategory" content="morphology">
+<style>
+:root{--navy:#17324D;--blue:#2B668F;--ink:#17212B;--muted:#5B6875;--line:#D9E1E7;--green:#1C6B57;--purple:#6C4E90;--warn:#FFF8E6;--rose:#A64B58}
+*{box-sizing:border-box}body{margin:0;background:#eef2f5;color:var(--ink);font-family:"Pretendard","Noto Sans KR","Malgun Gothic",sans-serif;line-height:1.8;letter-spacing:-.02em}a{color:var(--blue);text-decoration:none}.article-topnav{background:#fff;border-bottom:1px solid var(--line)}.nav-in{max-width:1180px;margin:auto;min-height:58px;padding:0 20px;display:flex;align-items:center;justify-content:space-between;gap:18px}.nav-left,.nav-right{display:flex;gap:14px;flex-wrap:wrap}.article-topnav a{color:#425466;font-size:13px;font-weight:800}.current{color:var(--navy)!important}.shell{max-width:980px;margin:auto;padding:32px 20px 80px}article{background:#fff;border-radius:22px;overflow:hidden;box-shadow:0 12px 36px rgba(23,50,77,.08)}.hero{padding:56px;background:linear-gradient(135deg,#17324D,#3378A3);color:#fff}.eyebrow{display:inline-block;font-size:13px;font-weight:900;letter-spacing:.08em;background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.25);padding:6px 10px;border-radius:999px;margin-bottom:18px}h1{font-size:38px;line-height:1.25;margin:0 0 18px;letter-spacing:-.045em}.subtitle{font-size:18px;color:#dceaf3;max-width:820px;margin:0}.content{padding:48px 56px 64px}.cover img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:18px;border:1px solid var(--line);margin-bottom:30px}.toc{margin:0 0 48px;padding:24px 26px;background:#f7f9fb;border:1px solid var(--line);border-radius:16px}.toc-title{font-size:18px;font-weight:900;color:var(--navy);margin-bottom:13px}.toc ol{columns:2;column-gap:36px;margin:0;padding-left:22px}.toc li{break-inside:avoid;margin-bottom:9px}section{margin-bottom:58px}h2{font-size:26px;color:var(--navy);margin:0 0 22px;padding-bottom:11px;border-bottom:2px solid #e7eef3}h3{font-size:20px;color:#214d70;margin:28px 0 12px}p{margin:0 0 16px}.keybox,.warning,.methodbox,.insight,.casebox{border-radius:16px;padding:20px 22px;margin:24px 0}.keybox{background:#eef6fb;border-left:5px solid var(--blue)}.methodbox{background:#eef8f4;border-left:5px solid var(--green)}.warning{background:var(--warn);border-left:5px solid #c98200}.insight{background:#f5f1fa;border-left:5px solid var(--purple)}.casebox{background:#fff2f4;border-left:5px solid var(--rose)}.grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:22px 0}.card{border:1px solid var(--line);border-radius:15px;padding:20px}.card b{display:block;color:var(--navy);font-size:18px;margin-bottom:7px}.equation{font-size:19px;font-weight:900;letter-spacing:.01em;color:var(--navy);background:#f6f9fb;border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin:18px 0}table{width:100%;border-collapse:separate;border-spacing:0;margin:22px 0;border:1px solid var(--line);border-radius:14px;overflow:hidden;font-size:15px}th,td{padding:14px 15px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}th{background:#eaf3f8;color:var(--navy)}tr:last-child td{border-bottom:0}td+td,th+th{border-left:1px solid var(--line)}.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:24px 0}.step{border:1px solid var(--line);border-radius:14px;padding:16px}.num{display:inline-flex;width:28px;height:28px;align-items:center;justify-content:center;border-radius:50%;background:var(--blue);color:#fff;font-weight:900;margin-bottom:9px}.step b{display:block;color:var(--navy);margin-bottom:6px}.checklist{list-style:none;padding:0}.checklist li{padding:9px 0 9px 30px;position:relative;border-bottom:1px solid #edf1f4}.checklist li:before{content:"✓";position:absolute;left:5px;color:var(--green);font-weight:900}.closing{font-size:19px;text-align:center;background:#f0f6fa;border-radius:16px;padding:26px}.related{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:24px}.related a{display:block;border:1px solid var(--line);border-radius:14px;padding:16px;background:#fbfcfd;font-weight:800}.references{background:#f8fafb;border-top:1px solid var(--line);padding:28px 56px 38px;color:var(--muted);font-size:13px}.references h2{font-size:18px;border:0;padding:0;margin:0 0 10px}.references a{word-break:break-all}@media(max-width:900px){.shell{padding:0}.hero,.content,.references{padding-left:24px;padding-right:24px}.toc ol{columns:1}.grid,.steps,.related{grid-template-columns:1fr}}
+</style>
+<link id="s4-article-nav-css" rel="stylesheet" href="/assets/common/article-nav.css?v=20260928v1">
+<link id="s4-stdict-search-css" rel="stylesheet" href="/assets/common/stdict-search.css?v=20260927v1">
+</head>
+<body>
+<div id="s4-stdict-search" class="s4-dict-search" data-endpoint="/api/stdict" aria-label="표준국어대사전 검색">
+<form class="s4-dict-form" role="search" autocomplete="off">
+<span class="s4-dict-badge">사전</span>
+<label class="s4-dict-sr" for="s4-dict-input">표준국어대사전 검색어</label>
+<input id="s4-dict-input" class="s4-dict-input" type="search" inputmode="search" maxlength="80" placeholder="표준국어대사전" aria-label="표준국어대사전 검색">
+<button class="s4-dict-submit" type="submit" aria-label="사전 검색">⌕</button>
+</form>
+<div class="s4-dict-panel" hidden aria-live="polite"></div>
+</div>
+
+<nav id="fs-common-menu" class="fs-common-menu" data-sitejob-marker="GLOBAL_ARTICLE_NAV_V2" aria-label="개별 글 공통 메뉴"><div class="fsn-inner"><a class="fsn-exit" href="/learn/grammar/">← 상위 지도</a><a class="fsn-brand" href="/">4TH SEASON</a><a class="fsn-domain" href="/learn/">LEARN</a><a class="fsn-domain" href="/world/">WORLD</a><a class="fsn-domain" href="/life/">LIFE</a><a class="fsn-domain insite" href="/insite/">In:Site</a><a class="fsn-series" href="/learn/grammar/">문법</a><a class="fsn-map" href="/sitemap/">한눈에 보기</a></div></nav>
+
+<header class="article-topnav"><div class="nav-in">
+<nav class="nav-left"><a href="/">홈</a><a href="/learn/">LEARN</a></nav>
+<nav class="nav-right"><a href="/learn/korean-reading/">읽기</a><a class="current" href="/learn/grammar/">문법</a><a href="/learn/vocabulary/">어휘</a><a href="/learn/reread/">Re:Read</a><a href="/quote-prestige/">명언의 품격</a></nav>
+</div></header>
+
+<div class="shell"><article>
+<header class="hero">
+<span class="eyebrow">국어 문법 · 형태론 · 단어의 내부 구조</span>
+<h1>단어의 내부 구조 — 어근·접사와 어간·어미를 구별하기</h1>
+<p class="subtitle">어근·접사와 어간·어미는 모두 단어 안의 부분을 가리키지만 <strong>같은 기준으로 나눈 이름이 아닙니다.</strong> 어근·접사는 <strong>새 단어가 어떻게 만들어졌는가</strong>를 보고, 어간·어미는 <strong>용언이 어떻게 활용하는가</strong>를 봅니다.</p>
+</header>
+
+<div class="content">
+<figure class="cover"><img src="/assets/grammar/korean-word-internal-structure.webp" alt="단어 형성의 어근·접사와 활용의 어간·어미를 먹히다, 덮개, 먹다 등의 예로 비교한 문법 구조도"></figure>
+
+<nav class="toc"><div class="toc-title">목차</div><ol>
+<li><a href="#s1">네 용어가 헷갈리는 이유</a></li>
+<li><a href="#s2">두 개의 분석 질문</a></li>
+<li><a href="#s3">어근</a></li>
+<li><a href="#s4">접사</a></li>
+<li><a href="#s5">어간</a></li>
+<li><a href="#s6">어미</a></li>
+<li><a href="#s7">어근과 어간이 같은 경우</a></li>
+<li><a href="#s8">어근과 어간이 다른 경우</a></li>
+<li><a href="#s9">접사와 어미 구별</a></li>
+<li><a href="#s10">덮개·먹히다 분석</a></li>
+<li><a href="#s11">실전 판별 순서</a></li>
+<li><a href="#s12">한눈에 정리</a></li>
+</ol></nav>
+
+<section id="s1">
+<h2>1. 네 용어가 헷갈리는 이유 — 모두 ‘단어 안의 부분’을 가리키기 때문이다</h2>
+<p>어근, 접사, 어간, 어미를 처음 배우면 네 용어가 한 줄에 놓인 같은 종류의 이름처럼 보입니다. 그러나 실제로는 분석 기준이 다릅니다. <strong>어근과 접사</strong>는 단어가 만들어지는 구조를 설명하고, <strong>어간과 어미</strong>는 동사·형용사 같은 활용어가 문장에서 형태를 바꾸는 구조를 설명합니다.</p>
+<div class="equation">단어 형성의 관점 → 어근 + 접사　/　활용의 관점 → 어간 + 어미</div>
+<div class="keybox"><strong>먼저 “지금 무엇을 분석하는가?”를 물어야 합니다.</strong><br>새 단어가 만들어지는 과정을 보는지, 이미 존재하는 용언이 ‘먹다·먹고·먹으니·먹었다’처럼 활용하는 과정을 보는지에 따라 같은 부분의 이름이 달라질 수 있습니다.</div>
+</section>
+
+<section id="s2">
+<h2>2. 두 개의 분석 질문 — 새 단어를 만드는가, 문장 속 형태를 바꾸는가</h2>
+<div class="grid">
+<div class="card"><b>질문 A — 단어 형성</b>이 단어는 어떤 의미 중심과 어떤 부가 요소가 결합해 만들어졌는가? 이 질문에서는 <strong>어근·접사</strong>를 찾습니다.</div>
+<div class="card"><b>질문 B — 활용</b>이 용언이 ‘-다, -고, -니, -었다’처럼 형태를 바꿀 때 무엇이 유지되고 무엇이 달라지는가? 이 질문에서는 <strong>어간·어미</strong>를 찾습니다.</div>
+</div>
+<p>따라서 형태가 하나뿐인 명사에도 어근과 접사는 분석할 수 있지만, 활용하지 않는 명사에는 일반적으로 어간과 어미라는 분석을 적용하지 않습니다. 반대로 동사·형용사는 활용하므로 어간과 어미를 나눌 수 있습니다.</p>
+</section>
+
+<section id="s3">
+<h2>3. 어근 — 단어의 중심 의미를 맡는 부분</h2>
+<p>표준국어대사전은 어근을 <strong>단어를 분석할 때 실질적 의미를 나타내는 중심 부분</strong>으로 설명합니다. 어근은 새 단어를 만들 때 의미의 중심축이 됩니다.</p>
+<table><thead><tr><th>단어</th><th>어근</th><th>나머지 요소</th><th>설명</th></tr></thead><tbody>
+<tr><td>덮개</td><td>덮-</td><td>-개</td><td>‘덮다’의 의미 중심에 명사를 만드는 접사가 붙음</td></tr>
+<tr><td>풋사과</td><td>사과</td><td>풋-</td><td>‘덜 익은’ 뜻을 더하는 접두사가 결합</td></tr>
+<tr><td>먹히다</td><td>먹-</td><td>-히-</td><td>‘먹다’의 의미 중심에 피동 의미를 더하는 접미사가 결합</td></tr>
+</tbody></table>
+<div class="methodbox"><strong>어근을 찾을 때는 “이 단어의 핵심 어휘적 의미가 어디에 남아 있는가?”를 봅니다.</strong><br>접사가 떨어져도 기본적인 의미의 중심을 담당하는 부분이 어근입니다.</div>
+</section>
+
+<section id="s4">
+<h2>4. 접사 — 어근이나 단어에 붙어 새로운 단어를 만드는 부분</h2>
+<p>접사는 혼자 쓰이지 않고 어근이나 단어의 앞뒤에 붙어 <strong>새로운 단어를 구성</strong>합니다. 앞에 붙는 것은 접두사, 뒤에 붙는 것은 접미사입니다.</p>
+<div class="grid">
+<div class="card"><b>접두사</b>풋- + 사과 → 풋사과<br>맨- + 손 → 맨손<br>새 단어의 의미 범위를 바꿉니다.</div>
+<div class="card"><b>접미사</b>덮- + -개 → 덮개<br>먹- + -히- → 먹히다<br>의미를 더하거나 품사·문법적 성격을 바꿀 수 있습니다.</div>
+</div>
+<div class="warning"><strong>접사는 단어 형성 요소입니다.</strong><br>단순히 뒤에 붙는다는 이유로 어미와 같은 것으로 보면 안 됩니다. 접사가 붙으면 새 어휘 항목이 만들어지는 방향이고, 어미가 붙으면 같은 용언의 활용형이 만들어지는 방향입니다.</div>
+</section>
+
+<section id="s5">
+<h2>5. 어간 — 활용할 때 중심으로 남는 부분</h2>
+<p>어간은 활용어가 활용할 때 변하지 않는 부분입니다. ‘먹다, 먹고, 먹으니, 먹었다’를 비교하면 형태가 바뀌어도 <strong>먹-</strong>이 중심으로 남습니다. 이때 ‘먹-’은 어간입니다.</p>
+<table><thead><tr><th>활용형</th><th>어간</th><th>어미</th></tr></thead><tbody>
+<tr><td>먹다</td><td>먹-</td><td>-다</td></tr>
+<tr><td>먹고</td><td>먹-</td><td>-고</td></tr>
+<tr><td>먹으니</td><td>먹-</td><td>-으니</td></tr>
+<tr><td>먹었다</td><td>먹-</td><td>-었- + -다</td></tr>
+</tbody></table>
+<div class="insight"><strong>어간은 ‘뜻의 중심’이라는 정의가 아니라 ‘활용할 때 남는 부분’이라는 정의입니다.</strong><br>그래서 어떤 단어에서는 어근과 어간이 같고, 어떤 단어에서는 서로 다릅니다.</div>
+</section>
+
+<section id="s6">
+<h2>6. 어미 — 활용하면서 달라지는 부분</h2>
+<p>어미는 용언이나 서술격 조사가 활용할 때 변하는 부분입니다. ‘먹다, 먹고, 먹으니’의 <strong>-다, -고, -으니</strong>처럼 문장의 종결, 연결, 시간, 높임 등의 문법 기능을 나타냅니다.</p>
+<div class="grid">
+<div class="card"><b>-다</b>문장을 끝맺는 종결 기능</div>
+<div class="card"><b>-고</b>앞뒤 내용을 이어 주는 연결 기능</div>
+<div class="card"><b>-었-</b>과거의 시간 의미를 나타내는 선어말 어미</div>
+<div class="card"><b>-으니</b>앞뒤 절을 연결하며 이유·배경 등의 관계를 나타냄</div>
+</div>
+<p>국립국어원 상담 사례는 접사와 어미를 구분할 때 <strong>접사는 새 단어를 만들지만, 어미는 용언에 두루 붙어 활용형을 만든다</strong>는 차이를 중요한 기준으로 설명합니다.</p>
+</section>
+
+<section id="s7">
+<h2>7. 어근과 어간이 같은 경우 — 먹다의 ‘먹-’</h2>
+<p>‘먹다’를 단어 형성의 관점에서 보면 ‘먹-’이 실질적 의미의 중심이므로 <strong>어근</strong>입니다. 같은 ‘먹다’를 활용의 관점에서 보면 ‘먹다·먹고·먹으니’에서 변하지 않는 부분이므로 <strong>어간</strong>이기도 합니다.</p>
+<div class="equation">먹다 → 어근: 먹-　/　어간: 먹-　/　어미: -다</div>
+<p>국립국어원도 ‘먹다’의 ‘먹-’은 분석 기준에 따라 어근이 될 수도 있고 어간이 될 수도 있다고 설명합니다. 이것은 두 용어가 중복되어 잘못 붙은 것이 아니라, <strong>서로 다른 분석 질문에 대한 답이 우연히 같은 형태</strong>인 것입니다.</p>
+</section>
+
+<section id="s8">
+<h2>8. 어근과 어간이 다른 경우 — 먹히다의 ‘먹-’과 ‘먹히-’</h2>
+<p>피동사 ‘먹히다’는 네 용어의 차이를 가장 분명하게 보여 줍니다. 단어 형성 관점에서는 ‘먹-’에 피동 접미사 ‘-히-’가 붙어 새 동사 ‘먹히다’가 만들어집니다. 따라서 <strong>먹-은 어근, -히-는 접사</strong>입니다.</p>
+<p>하지만 완성된 동사 ‘먹히다’가 활용할 때는 ‘먹히다·먹히고·먹히니’에서 <strong>먹히-</strong>가 변하지 않습니다. 이때 <strong>먹히-가 어간</strong>이고, 뒤의 ‘-다·-고·-니’가 어미입니다.</p>
+<div class="equation">단어 형성: 먹- + -히- → 먹히다　/　활용: 먹히- + -다 → 먹히다</div>
+<div class="keybox"><strong>같은 단어를 두 번 다른 각도에서 분석할 수 있습니다.</strong><br>어근·접사는 ‘어떻게 만들어졌나’를, 어간·어미는 ‘어떻게 활용하나’를 보여 줍니다.</div>
+</section>
+
+<section id="s9">
+<h2>9. 접사와 어미를 구별하는 핵심 — 새 단어인가, 같은 단어의 활용형인가</h2>
+<table><thead><tr><th>구분</th><th>접사</th><th>어미</th></tr></thead><tbody>
+<tr><td>분석 관점</td><td>단어 형성</td><td>활용</td></tr>
+<tr><td>결합 대상</td><td>어근이나 단어</td><td>용언의 어간</td></tr>
+<tr><td>결과</td><td>새로운 단어</td><td>같은 단어의 다른 활용형</td></tr>
+<tr><td>예</td><td>먹- + -히- → 먹히다</td><td>먹히- + -고 → 먹히고</td></tr>
+<tr><td>핵심 질문</td><td>새 어휘를 만들었는가?</td><td>문장 속 문법 기능을 바꾸었는가?</td></tr>
+</tbody></table>
+<div class="casebox"><strong>위치만으로 판단하면 틀립니다.</strong><br>접미사도 뒤에 붙고 어미도 뒤에 붙습니다. ‘뒤에 붙는다’가 아니라 <strong>새 단어 형성인지 활용인지</strong>를 확인해야 합니다.</div>
+</section>
+
+<section id="s10">
+<h2>10. 덮개와 먹히다를 비교하면 구조가 선명해진다</h2>
+<div class="grid">
+<div class="card"><b>덮개</b><strong>덮- + -개</strong><br>어근 + 접미사로 이루어진 파생 명사입니다. 명사는 활용하지 않으므로 이 단어 자체를 어간·어미로 나누지 않습니다.</div>
+<div class="card"><b>먹히다</b><strong>먹- + -히- + -다</strong><br>단어 형성에서는 어근 + 접사, 활용에서는 어간 ‘먹히-’ + 어미 ‘-다’로 봅니다.</div>
+</div>
+<p>즉 형태소를 일렬로 잘라 놓은 뒤 모든 조각에 하나의 이름만 붙이려 하면 오류가 생깁니다. <strong>같은 조각이라도 분석 층위에 따라 역할 이름이 달라질 수 있고, 어떤 용어는 특정 종류의 단어에만 적용</strong>됩니다.</p>
+</section>
+
+<section id="s11">
+<h2>11. 실전 판별 순서 — 네 용어를 한꺼번에 찾지 말고 질문을 분리한다</h2>
+<div class="steps">
+<div class="step"><span class="num">1</span><b>품사 확인</b>활용하는 용언인지, 활용하지 않는 체언·수식언인지 먼저 확인합니다.</div>
+<div class="step"><span class="num">2</span><b>단어 형성 확인</b>새 단어를 만드는 어근과 접사가 있는지 봅니다.</div>
+<div class="step"><span class="num">3</span><b>활용 확인</b>용언이라면 여러 활용형을 만들어 변하지 않는 어간과 변하는 어미를 찾습니다.</div>
+<div class="step"><span class="num">4</span><b>두 결과 비교</b>어근과 어간이 같은지, 접사 때문에 어간이 더 커졌는지 확인합니다.</div>
+</div>
+<ul class="checklist">
+<li>어근·접사는 단어 형성의 관점입니다.</li>
+<li>어간·어미는 활용의 관점입니다.</li>
+<li>명사 ‘덮개’는 어근·접사를 분석하지만 어간·어미로 나누지 않습니다.</li>
+<li>‘먹다’의 먹-은 어근이면서 어간일 수 있습니다.</li>
+<li>‘먹히다’에서는 어근 먹-보다 어간 먹히-가 더 큽니다.</li>
+<li>접미사와 어미는 위치가 아니라 기능으로 구분합니다.</li>
+<li>구체적인 경계 사례는 교과서와 사전의 분석 체계를 우선합니다.</li>
+</ul>
+</section>
+
+<section id="s12">
+<h2>12. 한눈에 정리 — 어근·접사와 어간·어미는 서로 다른 질문의 답이다</h2>
+<table><thead><tr><th>용어</th><th>무엇을 보는가</th><th>핵심 정의</th><th>대표 예</th></tr></thead><tbody>
+<tr><td>어근</td><td>단어 형성</td><td>실질적 의미의 중심</td><td>먹히다의 먹-</td></tr>
+<tr><td>접사</td><td>단어 형성</td><td>어근·단어에 붙어 새 단어를 만드는 요소</td><td>먹히다의 -히-</td></tr>
+<tr><td>어간</td><td>활용</td><td>활용할 때 변하지 않는 부분</td><td>먹히다·먹히고의 먹히-</td></tr>
+<tr><td>어미</td><td>활용</td><td>활용할 때 변하는 부분</td><td>-다, -고, -니</td></tr>
+</tbody></table>
+<div class="closing"><strong>네 용어를 외우는 것보다 분석 관점을 먼저 고르는 것이 중요합니다.</strong><br>새 단어의 제작 과정을 보면 어근·접사, 문장 속 활용을 보면 어간·어미입니다. 이 두 축을 분리하면 단어의 내부 구조가 훨씬 선명하게 보입니다.</div>
+<div class="related">
+<a href="/korean-word">← 단어의 기본 개념</a>
+<a href="/korean-word-vs-morpheme">← 단어와 형태소</a>
+<a href="/korean-morpheme-analysis">← 형태소 분석</a>
+</div>
+</section>
+</div>
+
+<footer class="references"><h2>참고</h2>
+<p>국립국어원 온라인가나다, 「어간, 어미, 어근, 접사의 차이점」(2024-11-21) — 어근·접사와 어간·어미의 정의 및 ‘깨끗하다’ 분석.</p>
+<p>https://www.korean.go.kr/front/onlineQna/onlineQnaView.do?mn_id=216&amp;pageIndex=1&amp;qna_seq=306454</p>
+<p>국립국어원 온라인가나다, 「먹다에서 어근 어간」(2025-04-07) — ‘먹-’이 분석 관점에 따라 어근과 어간이 될 수 있음을 설명.</p>
+<p>https://www.korean.go.kr/front/onlineQna/onlineQnaView.do?mn_id=216&amp;pageIndex=1&amp;qna_seq=312436</p>
+<p>국립국어원 온라인가나다, 「어간 어미 질문이요」(2025-08-06) — 어근·접사는 단어 형성, 어간·어미는 활용과 관련한 개념임을 설명.</p>
+<p>https://www.korean.go.kr/front/onlineQna/onlineQnaView.do?mn_id=216&amp;pageIndex=1&amp;qna_seq=319139</p>
+<p>국립국어원 상담 사례 모음, 「'-게'의 형태적 성격」 — 접사와 어미를 ‘새 단어 형성 여부’로 구별하는 참고 설명.</p>
+<p>https://korean.go.kr/front/mcfaq/mcfaqView.do?mcfaq_seq=9002</p>
+</footer>
+</article></div>
+
+<script id="s4-stdict-search-js" src="/assets/common/stdict-search.js?v=20260927v1" defer></script>
+</body></html>

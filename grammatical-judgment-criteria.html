@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>판별 기준 세우기란? 느낌이 아니라 근거로 문법 판단하기 | 국어 문법</title>
+<meta content="문법 문제에서 정의·형태·기능·분포·대조 예문으로 근거를 만드는 판별법을 설명합니다. 형태소·문장 성분·발음 규정 기출을 선지별로 분석해 반례와 판단 순서를 익힙니다." name="description"/>
+<style>
+:root{--navy:#17324D;--blue:#275D85;--ink:#17212B;--muted:#5B6875;--line:#D9E1E7;--paper:#fff;--soft:#F7F9FB;--green:#1C6B57;--purple:#6C4E90;--warn:#FFF8E6;--lav:#F5F1FA;--red:#A94442}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#EEF2F5;color:var(--ink);font-family:"Pretendard","Noto Sans KR","Apple SD Gothic Neo","Malgun Gothic",sans-serif;line-height:1.78;letter-spacing:-.02em}a{color:var(--blue);text-decoration:none}
+.shell{max-width:980px;margin:0 auto;padding:32px 20px 80px}article{background:var(--paper);border-radius:22px;box-shadow:0 12px 36px rgba(23,50,77,.08);overflow:hidden}
+.hero{padding:56px;background:linear-gradient(135deg,#17324D,#244E70);color:#fff}.eyebrow{display:inline-block;font-size:13px;font-weight:900;letter-spacing:.08em;background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.25);padding:6px 10px;border-radius:999px;margin-bottom:18px}
+h1{font-size:38px;line-height:1.25;letter-spacing:-.045em;margin:0 0 18px}.subtitle{font-size:18px;line-height:1.7;color:#DCEAF3;max-width:820px;margin:0}
+.content{padding:48px 56px 64px}.cover{margin:0 0 30px}.cover img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:18px;border:1px solid var(--line);box-shadow:0 10px 26px rgba(23,50,77,.08)}
+.toc{margin:0 0 48px;padding:24px 26px;background:#F7F9FB;border:1px solid var(--line);border-radius:16px}.toc-title{font-size:18px;font-weight:900;color:var(--navy);margin-bottom:13px}.toc ol{margin:0;padding-left:22px;columns:2;column-gap:36px}.toc li{break-inside:avoid;margin:0 0 9px}
+section{scroll-margin-top:24px;margin-bottom:58px}h2{font-size:26px;line-height:1.35;color:var(--navy);margin:0 0 22px;padding-bottom:11px;border-bottom:2px solid #E7EEF3}h3{font-size:19px;color:var(--navy);margin:26px 0 10px}p{margin:0 0 16px}strong{color:#102D45}
+.keybox,.warning,.methodbox,.insight{border-radius:16px;padding:20px 22px;margin:24px 0}.keybox{background:#EEF6FB;border-left:5px solid var(--blue)}.methodbox{background:#EEF8F4;border-left:5px solid var(--green)}.warning{background:var(--warn);border-left:5px solid #C98200}.insight{background:var(--lav);border-left:5px solid var(--purple)}
+.sentence{background:#FAFBFC;border:1px solid var(--line);border-radius:14px;padding:19px 20px;margin:20px 0;text-align:center;font-size:20px;font-weight:800;color:var(--navy)}
+.criteria{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin:24px 0}.criterion{border:1px solid var(--line);border-radius:15px;padding:17px 13px;background:#fff;text-align:center}.criterion b{display:block;color:var(--navy);font-size:18px;margin-bottom:5px}.criterion span{font-size:14px;color:var(--muted)}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:22px 0}.card{border:1px solid var(--line);border-radius:15px;padding:20px;background:#fff}.card b{display:block;color:var(--navy);font-size:18px;margin-bottom:7px}
+table{width:100%;border-collapse:separate;border-spacing:0;margin:22px 0;border:1px solid var(--line);border-radius:14px;overflow:hidden;font-size:15px}th,td{padding:14px 15px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}th{background:#EAF3F8;color:var(--navy);font-weight:800}tr:last-child td{border-bottom:0}td+td,th+th{border-left:1px solid var(--line)}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:24px 0}.step{border:1px solid var(--line);border-radius:14px;padding:16px;background:#fff}.step b{display:block;color:var(--navy);margin-bottom:6px}.num{display:inline-flex;width:28px;height:28px;align-items:center;justify-content:center;border-radius:50%;background:var(--blue);color:#fff;font-weight:900;margin-bottom:9px}
+.matrix td:first-child{font-weight:800;color:var(--navy);width:18%}.pass{color:#146B55;font-weight:800}.fail{color:#9A3F3D;font-weight:800}
+.checklist{list-style:none;padding:0;margin:18px 0}.checklist li{padding:9px 0 9px 30px;position:relative;border-bottom:1px solid #EDF1F4}.checklist li:before{content:"✓";position:absolute;left:5px;color:var(--green);font-weight:900}
+.closing{font-size:19px;text-align:center;background:#F0F6FA;border-radius:16px;padding:26px;margin-top:28px}
+.references{background:#F8FAFB;border-top:1px solid var(--line);padding:28px 56px 38px;color:var(--muted);font-size:13px}.references h2{font-size:18px;border:0;margin:0 0 10px;padding:0}
+@media(max-width:900px){.shell{padding:0}.hero,.content,.references{padding-left:24px;padding-right:24px}h1{font-size:31px}.toc ol{columns:1}.grid,.steps,.criteria{grid-template-columns:1fr}}
+
+
+.article-topnav{background:#fff;border-bottom:1px solid #d9e1e7;font-family:"Pretendard","Noto Sans KR","Apple SD Gothic Neo","Malgun Gothic",sans-serif}
+.article-topnav .nav-in{max-width:1180px;margin:0 auto;min-height:58px;padding:0 20px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+.article-topnav .nav-left,.article-topnav .nav-right{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.article-topnav a{color:#425466;text-decoration:none;font-size:13px;font-weight:800}
+.article-topnav a.current{color:#17324D}
+@media(max-width:720px){.article-topnav .nav-in{align-items:flex-start;flex-direction:column;padding-top:12px;padding-bottom:12px;gap:8px}.article-topnav .nav-right{gap:10px}.article-topnav a{font-size:12px}}
+
+/* GRAM-0132: question-based DB excerpts; do not embed an entire exam PDF */
+.question-unit{margin:25px 0 28px;border:1px solid #cbdbe6;border-radius:18px;overflow:hidden;background:#fff}
+.question-unit .qheading{padding:16px 20px;background:#edf4f8;border-bottom:1px solid #d3e0e8;display:flex;justify-content:space-between;flex-wrap:wrap;gap:9px}
+.question-unit .qheading b{color:#17324d;font-size:17px}.question-unit .qmeta{font-size:13px;color:#4b6576}
+.question-unit details{padding:0 18px}.question-unit summary{cursor:pointer;padding:16px 0;color:#1c5374;font-weight:800}
+.question-unit .sourcebody{padding-bottom:18px}.question-unit .qstem{font-weight:800;padding:8px 0}
+.question-unit .qview{padding:15px;border-radius:12px;border:1px solid #d9e1e7;background:#fafcfd;margin:10px 0}
+.question-unit .qview-title{font-weight:800;color:#17324d;margin-bottom:8px}
+.question-unit .q-example{background:#fff;border:1px solid #dfe8ef;border-radius:9px;padding:12px 14px}
+.question-unit .qchoices{margin:12px 0;list-style:none;padding:0}
+.question-unit .qchoices li{display:flex;gap:10px;border:1px solid #e1e7eb;border-radius:10px;padding:11px 13px;margin:6px 0;font-size:15px}
+.question-unit .qnum{color:#1e5375;font-weight:800;flex:none}
+.question-unit .q-viewtable{width:100%;font-size:14px;margin:12px 0;table-layout:fixed}.question-unit .q-viewtable th,.question-unit .q-viewtable td{text-align:center;padding:10px}
+.question-unit .dbsource{font-size:12px;color:#516579;margin:15px 0 8px}
+.question-unit .qwarn{background:#fff8e9;color:#665124;padding:12px;border-radius:10px;font-size:13px}
+.question-unit .qanswer{border-top:1px solid #e2e8ed;padding:12px 18px;font-size:13px;color:#456174}
+@media(max-width:720px){.question-unit details{padding:0 12px}.question-unit .qheading{padding:13px}.question-unit .qchoices li{font-size:14px}}
+</style>
+<link href="https://4th-season.com/grammatical-judgment-criteria" rel="canonical"/><meta content="index,follow" name="robots"/><meta content="GRAMMAR_QUESTION_INLINE_0132_20261018_R3" name="4s-public-marker"/><meta content="2026-09-27" name="article:published_time"/><meta content="how" name="4th-subcategory"/><link href="/assets/common/stdict-search.css?v=20260927v1" id="s4-stdict-search-css" rel="stylesheet"/>
+<link href="/assets/common/article-nav.css?v=20260928v1" id="s4-article-nav-css" rel="stylesheet"/>
+<meta content="2026-10-18" name="article:modified_time"/></head>
+<body>
+<nav id="fs-common-menu" class="fs-common-menu" data-sitejob-marker="GLOBAL_ARTICLE_NAV_V2" aria-label="개별 글 공통 메뉴"><div class="fsn-inner"><a class="fsn-exit" href="/learn/grammar/">← 상위 지도</a><a class="fsn-brand" href="/">4TH SEASON</a><a class="fsn-domain" href="/learn/">LEARN</a><a class="fsn-domain" href="/world/">WORLD</a><a class="fsn-domain" href="/life/">LIFE</a><a class="fsn-domain insite" href="/insite/">In:Site</a><a class="fsn-series" href="/learn/grammar/">문법</a><a class="fsn-map" href="/sitemap/">한눈에 보기</a></div></nav>
+<div aria-label="표준국어대사전 검색" class="s4-dict-search" data-endpoint="/api/stdict" id="s4-stdict-search">
+<form autocomplete="off" class="s4-dict-form" role="search">
+<span class="s4-dict-badge">사전</span>
+<label class="s4-dict-sr" for="s4-dict-input">표준국어대사전 검색어</label>
+<input aria-label="표준국어대사전 검색" class="s4-dict-input" id="s4-dict-input" inputmode="search" maxlength="80" placeholder="표준국어대사전" type="search"/>
+<button aria-label="사전 검색" class="s4-dict-submit" type="submit">⌕</button>
+</form>
+<div aria-live="polite" class="s4-dict-panel" hidden=""></div>
+</div><header class="article-topnav"><div class="nav-in"><nav aria-label="상위 이동" class="nav-left"><a href="/">홈</a><a href="/learn/">LEARN</a></nav><nav aria-label="LEARN 동일 레벨 메뉴" class="nav-right"><a href="/learn/korean-reading/">읽기</a><a aria-current="page" class="current" href="/learn/grammar/">문법</a><a href="/learn/vocabulary/">어휘</a><a href="/learn/reread/">Re:Read</a><a href="/quote-prestige/">명언의 품격</a></nav></div></header><div class="shell"><article>
+<header class="hero"><span class="eyebrow">국어 문법</span><h1>판별 기준 세우기란 무엇인가 — 느낌이 아니라 근거로 문법 판단하기</h1>
+<p class="subtitle">이 표현은 왜 맞고 저 표현은 왜 틀릴까요? 정의·형태·기능·분포·대조의 다섯 가지 기준을 실제 수능 기출에 적용해, 답을 외우지 않고 근거를 세우는 판별법을 익힙니다.</p></header>
+<div class="content">
+<figure class="cover"><img alt="정의, 형태, 기능, 분포, 대조의 다섯 기준이 하나의 문법 판단으로 모이는 대표 이미지" height="540" src="/assets/grammar/grammatical-judgment-criteria.webp" width="960"/></figure><nav aria-label="목차" class="toc"><div class="toc-title">목차</div><ol><li><a href="#s1">문법 판단의 출발점 — 자연스럽다는 느낌은 정답의 근거가 아닙니다</a></li><li><a href="#s2">먼저 발문을 해석합니다 — 무엇을 판정하라는 문제인가요?</a></li><li><a href="#s3">기준 ① 정의 — 범주의 필요조건을 먼저 확인합니다</a></li><li><a href="#s4">기준 ② 형태 — 변하는가, 무엇과 결합하는가?</a></li><li><a href="#s5">기준 ③ 기능 — 품사와 문장 성분을 섞지 않습니다</a></li><li><a href="#s6">기준 ④ 분포 — 앞뒤 결합 자리의 조건을 확인합니다</a></li><li><a href="#s7">기준 ⑤ 대조 — 조건 한 가지를 바꾸어 확인합니다</a></li><li><a href="#s8">다섯 가지 기준을 한 장의 판정표로 결합합니다</a></li><li><a href="#s9">기출 ① 2023학년도 6월 38번 — 형태소는 두 축을 교차합니다</a></li><li><a href="#s10">형태소 기출의 오답을 근거별로 나누어 봅니다</a></li><li><a href="#s11">기출 ② 2022학년도 수능 38번 — 필수 성분은 서술어로 확인합니다</a></li><li><a href="#s12">기출 ③ 2023학년도 9월 39번 — 규정은 선행 조건까지 확인합니다</a></li><li><a href="#s13">판별 기준의 약점을 찾는 반례 검사</a></li><li><a href="#s14">기출 선지 판정표 — 채점 이전에 근거를 기록합니다</a></li><li><a href="#s15">실전용 6단계 판별 절차</a></li><li><a href="#s16">개념글과 기출을 연결해 다시 학습하기</a></li><li><a href="#s17">한눈에 정리 — 느낌은 출발점, 결론은 검증된 근거</a></li></ol></nav><section id="s1"><h2>1. 문법 판단의 출발점 — 자연스럽다는 느낌은 정답의 근거가 아닙니다</h2>
+<p>우리는 익숙한 한국어를 보면 거의 즉시 자연스러움을 판단합니다. 이 감각은 중요한 관찰의 출발점이지만 문법 문제에서는 불충분합니다. <strong>품사를 묻는지, 문장 성분을 묻는지, 표기를 묻는지</strong>에 따라 적용해야 할 기준이 다르기 때문입니다.</p>
+<div class="example"><p>‘그는 <strong>예쁘게</strong> 웃는다.’에서 ‘예쁘게’가 부사어 역할을 한다고 해서 기본 품사가 부사인 것은 아닙니다. ‘예쁘다’는 형용사이고, ‘-게’가 결합한 활용형이 문장에서는 부사어로 기능합니다.</p></div>
+<p>이 글은 외워 둔 예문과 비슷하다는 이유로 답을 고르는 대신, 처음 본 선지에도 재사용할 수 있는 <strong>관찰 가능한 근거</strong>를 만드는 데 초점을 둡니다. 앞 글 <a href="/grammar-analysis-method">문법 분석 방법</a>이 분석할 층위를 정하는 방법이라면, 이 글은 그 층위에서 <em>어떤 증거로 판정할지</em>를 다룹니다.</p>
+</section><section id="s2"><h2>2. 먼저 발문을 해석합니다 — 무엇을 판정하라는 문제인가요?</h2>
+<p>문제에 밑줄 친 표현이 나왔다고 곧바로 의미를 해석하지 않습니다. 먼저 ‘품사가 같은가’, ‘필수 성분의 수가 같은가’, ‘발음 규정이 적용되는가’처럼 <strong>판정 대상과 비교 조건을 명시</strong>합니다.</p>
+<table><thead><tr><th>발문의 질문</th><th>판정 대상</th><th>확인해야 할 핵심 증거</th></tr></thead><tbody>
+<tr><td>품사·형태소의 갈래</td><td>단어·형태소</td><td>형태 변화, 자립성, 실질성, 결합 위치</td></tr>
+<tr><td>문장 성분·서술어의 자릿수</td><td>서술어 중심의 성분 관계</td><td>필수 성분의 개수와 종류, 생략·교체의 영향</td></tr>
+<tr><td>구·절·직접 구성 요소</td><td>구성 단위의 경계</td><td>먼저 결합하는 덩어리, 내부 서술 관계</td></tr>
+<tr><td>맞춤법·표준 발음</td><td>규정이 적용되는 조건</td><td>규정 문구, 선행 음운 변동, 적용 순서</td></tr>
+</tbody></table><div class="keybox"><strong>판별 첫 문장</strong><br/>“이 문항은 무엇을 기준으로, 어떤 두 범주를 구별하라고 요구하는가?”를 먼저 자신의 말로 적습니다.</div>
+</section><section id="s3"><h2>3. 기준 ① 정의 — 범주의 필요조건을 먼저 확인합니다</h2>
+<p>판별 기준은 단순한 암기 요령이 아니라 <strong>범주의 정의에서 끌어낸 조건</strong>이어야 합니다. 예를 들어 관형사는 체언을 꾸미는 품사이며 활용하지 않는 반면, 형용사는 상태·성질을 나타내고 활용하는 용언입니다.</p>
+<div class="compare"><div><b>새 책</b><span>‘새’는 관형사입니다. 체언 ‘책’을 직접 꾸미고 형용사의 활용형처럼 굴절하지 않습니다.</span></div><div><b>새로운 책</b><span>‘새로운’은 형용사 ‘새롭다’가 관형사형 어미와 결합한 활용형입니다. 관형어 역할은 같아도 품사는 다릅니다.</span></div></div>
+<p>두 표현의 뜻이 비슷하고 모두 ‘책’을 꾸민다는 사실은 충분한 판별 근거가 아닙니다. <strong>범주에 필요한 형태와 결합 조건</strong>까지 확인해야 합니다.</p>
+</section><section id="s4"><h2>4. 기준 ② 형태 — 변하는가, 무엇과 결합하는가?</h2>
+<p>활용이 가능한지, 조사가 결합하는지, 어간과 어미로 나눌 수 있는지처럼 눈에 보이는 변화는 강력한 실마리입니다. 그러나 하나의 표지로 모든 사례를 단정하지 않습니다.</p>
+<div class="example"><p><strong>읽었다</strong> → 읽- + -었- + -다: 동사의 어간과 선어말·종결 어미를 분석할 수 있습니다. <strong>책이</strong> → 책 + 이: 명사와 조사로 분석합니다.</p></div>
+<p>“조사가 붙었으므로 앞말은 명사다”처럼 지나치게 일반화한 규칙은 다른 조사 결합이나 품사 문제에서 오류를 만듭니다. 형태적 단서를 정의·기능과 대조해 범위를 정해야 합니다.</p>
+</section><section id="s5"><h2>5. 기준 ③ 기능 — 품사와 문장 성분을 섞지 않습니다</h2>
+<p>품사는 단어의 형태·기능·의미를 바탕으로 정하는 갈래이고, 문장 성분은 특정 문장 속에서 맡는 역할입니다. <strong>품사와 문장 성분을 동시에 말할 수 있지만 서로 같은 이름이 되는 것은 아닙니다.</strong> 국립국어원 설명 역시 두 기준을 구별합니다.</p>
+<table><thead><tr><th>표현</th><th>품사·구성</th><th>문장 속 기능</th></tr></thead><tbody>
+<tr><td>하늘이 예쁘다</td><td>‘예쁘다’: 형용사</td><td>‘예쁘다’: 서술어</td></tr>
+<tr><td>예쁘게 웃는다</td><td>‘예쁘게’: 형용사의 활용형</td><td>‘예쁘게’: 부사어</td></tr>
+<tr><td>새 책을 읽는다</td><td>‘새’: 관형사</td><td>‘새’: 관형어</td></tr>
+<tr><td>새로운 책을 읽는다</td><td>‘새로운’: 형용사의 관형사형</td><td>‘새로운’: 관형어</td></tr>
+</tbody></table><p>같은 관형어라고 해서 둘 다 관형사는 아닙니다. 이 기준은 <a href="/parts-of-speech-and-sentence-components">품사와 문장 성분</a> 개념글에서 더 자세히 확인할 수 있습니다.</p>
+</section><section id="s6"><h2>6. 기준 ④ 분포 — 앞뒤 결합 자리의 조건을 확인합니다</h2>
+<p>분포는 표현이 <strong>어디에 놓이고 어떤 단위와 결합할 수 있는지</strong>를 뜻합니다. 두 표현의 뜻이 비슷해도 앞뒤 결합 조건이 다르면 다른 문법 범주로 나뉠 수 있습니다.</p>
+<div class="example"><p>‘그것<strong>뿐</strong>이다’의 ‘뿐’은 체언 뒤에 붙는 보조사입니다. ‘기다릴 <strong>뿐</strong>이다’의 ‘뿐’은 관형어 뒤에서 쓰이는 의존 명사입니다.</p></div>
+<p>대조할 때는 결합하는 앞말이 체언인지 관형형인지, 활용이 가능한지, 조사 결합이 허용되는지처럼 <strong>문장 속에서 직접 확인할 조건</strong>을 기록합니다. 띄어쓰기는 그 판단을 뒷받침하는 규범적 결과이지, 모든 사례에서 유일한 증거는 아닙니다.</p>
+</section><section id="s7"><h2>7. 기준 ⑤ 대조 — 조건 한 가지를 바꾸어 확인합니다</h2>
+<p>단일 예문에서 구별하기 어렵다면 최소한의 조건만 바꾼 대조 예문을 만듭니다. 이때 원문의 의미 전체를 함부로 바꾸면 대조 자체가 성립하지 않으므로 <strong>변경한 조건과 유지한 조건</strong>을 구분해야 합니다.</p>
+<table><thead><tr><th>대조 쌍</th><th>관찰할 조건</th><th>결론</th></tr></thead><tbody>
+<tr><td>본 대로 / 계획대로</td><td>관형형 뒤 / 체언 뒤</td><td>의존 명사 / 조사</td></tr>
+<tr><td>공부할 뿐이다 / 너뿐이다</td><td>관형형 뒤 / 체언 뒤</td><td>의존 명사 / 보조사</td></tr>
+<tr><td>새 책 / 새로운 책</td><td>활용 여부</td><td>관형사 / 형용사 활용형</td></tr>
+</tbody></table><p>하나의 조건을 바꾸었을 때 판정이 달라진다면, 그 조건이 실제 범주 구별과 관련이 있는지 다시 확인합니다. 다만 형태가 비슷하다는 사실만으로 문법적 기능까지 같다고 볼 수는 없습니다.</p>
+</section><section id="s8"><h2>8. 다섯 가지 기준을 한 장의 판정표로 결합합니다</h2>
+<p>새로운 표현을 만나면 가장 강력한 기준을 하나 찍는 대신, 필요한 조건들을 묶어 봅니다. 아래 표는 의존 명사와 조사의 경계에서 어떤 증거가 필요한지 보여 줍니다.</p>
+<table><thead><tr><th>판정 단계</th><th>질문</th><th>예시 판정</th></tr></thead><tbody>
+<tr><td>정의</td><td>체언 역할인가, 관계를 표시하는 조사인가?</td><td>범주의 필요조건 확인</td></tr>
+<tr><td>형태</td><td>어떤 형태가 앞말과 결합하는가?</td><td>관형형 뒤 ‘대로’ / 체언 뒤 ‘대로’</td></tr>
+<tr><td>기능</td><td>구 전체에서 어떤 역할을 맡는가?</td><td>의존 명사 / 조사</td></tr>
+<tr><td>분포</td><td>같은 자리에 다른 형식을 넣을 수 있는가?</td><td>결합 조건과 대체 가능성 비교</td></tr>
+<tr><td>대조</td><td>조건을 하나 바꿔도 판정이 유지되는가?</td><td>‘본 대로’와 ‘계획대로’ 대비</td></tr>
+</tbody></table><div class="warning"><strong>주의</strong><br/>문법 범주의 모든 특징이 언제나 필요조건은 아닙니다. 판정의 핵심 조건과 참고할 보조 단서를 구분하고, 반례를 찾으면 기준을 다시 좁혀야 합니다.</div>
+</section><section id="s9"><h2>9. 기출 ① 2023학년도 6월 38번 — 형태소는 두 축을 교차합니다</h2>
+<p>이 문항은 형태소를 <strong>자립성의 유무</strong>와 <strong>의미의 유형</strong>이라는 두 기준으로 분류합니다. 따라서 형태소가 독립적으로 쓰일 수 있는지와 실질적 의미를 가지는지를 각각 판정해야 합니다.</p>
+<table><thead><tr><th>표시</th><th>자립성</th><th>의미 유형</th><th>예</th></tr></thead><tbody>
+<tr><td>㉠</td><td>자립</td><td>실질</td><td>우리, 바람, 드디어</td></tr>
+<tr><td>㉡</td><td>의존</td><td>실질</td><td>찾-, 내- 등의 어간</td></tr>
+<tr><td>㉢</td><td>의존</td><td>형식</td><td>조사, 어미</td></tr>
+</tbody></table><p>‘우리는’의 ‘우리’를 의존 형태소로 분류하면 자립성 판단을 잘못한 것입니다. ‘비를’의 조사 ‘를’을 실질 형태소로 보면 의미 유형을 잘못한 것입니다. ‘맞고’의 ‘맞-’을 형식 형태소로 보면 어간의 실질성을 놓친 것입니다.</p>
+<div class="keybox"><strong>정답 ⑤의 근거</strong><br/>‘찾아냈다’에는 실질 의미가 있지만 자립하지 못하는 어간들과, 문법적 기능을 하는 어미가 결합합니다. 그래서 ㉡·㉢ 유형으로 판정합니다. <strong>원문의 분류표 두 축을 끝까지 유지</strong>하는 것이 이 문제의 풀이 기준입니다.</div>
+<p>기출 원문과 정답: <a href="https://wdown.ebsi.co.kr/W61001/01exam/20220609/go3/kor_main_mun_O33C5VD2.pdf">2023학년도 6월 모의평가 문제지</a> · <a href="https://wdown.ebsi.co.kr/W61001/01exam/20220609/go3/kor_main_hsj_H247M5A4_2.pdf">공식 해설</a></p>
+<div class="question-unit" data-question-id="E2023-JUN-Q038" data-render-source="CSAT-DB" data-render-format="RECONSTRUCTED_QUESTION" data-usage-review="COPYRIGHT_REVIEW_PENDING">
+<div class="qheading"><b>이 개념을 사용한 실제 기출 문항</b><span class="qmeta">2023학년도 6월 모의평가 · 언어와 매체 38번</span></div>
+<details class="qoriginal"><summary>문항별 자료 펼쳐보기 — 발문·보기·선지 ①~⑤</summary>
+<div class="sourcebody"><p class="qstem">〈학습 활동〉을 수행한 결과로 적절한 것은?</p><div class="qview"><div class="qview-title">〈보기〉 / 제시 자료</div><p>형태소를 <b>자립성</b>과 <b>의미 유형</b> 두 기준으로 분류하는 활동입니다.</p><table class="q-viewtable"><thead><tr><th>구분</th><th>자립 형태소</th><th>의존 형태소</th></tr></thead><tbody><tr><th>실질 형태소</th><td>㉠</td><td>㉡</td></tr><tr><th>형식 형태소</th><td>—</td><td>㉢</td></tr></tbody></table><p class="q-example">우리는 비를 맞고 바람에 맞서다가 드디어 길을 찾아냈다.</p></div>
+<ol class="qchoices"><li><span class="qnum">①</span><span>‘우리는’의 ‘우리’와 ‘드디어’는 ㉡에 속한다.</span></li><li><span class="qnum">②</span><span>‘비를’과 ‘길을’에는 ㉠과 ㉡에 속하는 형태소만 있다.</span></li><li><span class="qnum">③</span><span>‘맞고’의 ‘맞-’과 ‘맞서다가’의 ‘맞-’은 모두 ㉢에 속한다.</span></li><li><span class="qnum">④</span><span>‘바람에’에는 ㉡과 ㉢에 속하는 형태소만 있다.</span></li><li><span class="qnum">⑤</span><span>‘찾아냈다’에는 ㉡과 ㉢에 속하는 형태소만 있다.</span></li></ol><p class="dbsource">원천 DB: E2023-JUN-Q038 (발문·보기·선지) · 원 문제지 14쪽</p><p class="qwarn">원본의 학습 활동 분류표를 HTML 표로 재구성했습니다. 도식과 조판까지 동일하게 복원한 원문 이미지가 아니며 공개 이용 범위는 별도 검토 대상입니다.</p></div></details>
+<div class="qanswer">문항을 먼저 풀어 본 뒤 아래의 <strong>정답 ⑤와 근거 분석</strong>을 확인하세요.</div>
+</div></section><section id="s10"><h2>10. 형태소 기출의 오답을 근거별로 나누어 봅니다</h2>
+<p>오답 분석은 “틀렸다”로 끝나지 않습니다. 어떤 판정 기준을 어겼는지 명시해야 비슷한 문제에서 반복 실수를 줄일 수 있습니다.</p>
+<table><thead><tr><th>선지</th><th>핵심 주장</th><th>틀린 판정 지점</th></tr></thead><tbody>
+<tr><td>①</td><td>‘우리’와 ‘드디어’를 의존·실질로 분류</td><td>두 표현의 자립 가능성을 놓침</td></tr>
+<tr><td>②</td><td>‘비를’·‘길을’의 조사까지 실질 범주로 묶음</td><td>조사의 형식적 기능을 놓침</td></tr>
+<tr><td>③</td><td>‘맞-’을 형식 형태소로 처리</td><td>용언 어간의 실질적 의미를 놓침</td></tr>
+<tr><td>④</td><td>‘바람’의 자립·실질성을 배제</td><td>자립 형태소 범주를 누락</td></tr>
+<tr><td>⑤</td><td>활용형의 어간과 어미를 각각 분류</td><td>두 축이 맞게 적용됨</td></tr>
+</tbody></table><p>이처럼 오답은 <strong>자립성 오판, 실질성 오판, 구성 요소 누락</strong>으로 유형화할 수 있습니다. 단순 암기보다 판정의 실패 원인을 기록하는 학습이 중요합니다.</p>
+</section><section id="s11"><h2>11. 기출 ② 2022학년도 수능 38번 — 필수 성분은 서술어로 확인합니다</h2>
+<p>이 문항은 선지의 서술어가 요구하는 <strong>필수 성분의 개수와 종류</strong>를 비교합니다. 보기의 ‘유리하다’는 무엇에 유리한지에 해당하는 부사어를 요구합니다. 주어와 필수적 부사어를 중심으로 판단해야 합니다.</p>
+<div class="example"><p><strong>기준 문장</strong> — 이곳의 지형은 외적의 침입을 막기에 유리하다.</p><p>주어 ‘이곳의 지형은’과 필수적 부사어 ‘외적의 침입을 막기에’를 구별합니다.</p><p><strong>정답 ①</strong> — 그 광물이 원래는 귀금속에 속했다.</p><p>‘그 광물이’는 주어, ‘귀금속에’는 필수적 부사어입니다. ‘원래는’은 이 문항에서 동일한 필수 성분으로 세지 않습니다.</p></div>
+<p>‘원두막을 하루 만에 지었다’와 같은 선지에는 목적어가 들어가므로 필수 성분의 <em>종류</em>가 달라집니다. ‘보내다’는 보내는 대상과 도착점까지 요구할 수 있어 필수 성분의 개수도 따로 확인해야 합니다.</p>
+<div class="keybox"><strong>풀이 핵심</strong><br/>문장에 보이는 성분을 모두 세지 않습니다. <strong>서술어가 반드시 필요로 하는 성분</strong>의 개수와 종류만 추려 비교합니다. 임의로 성분을 제거했을 때의 의미·구조 변화는 보조 검증 자료로 사용합니다.</div>
+<div class="question-unit" data-question-id="E2022-CSAT-Q038" data-render-source="CSAT-DB" data-render-format="RECONSTRUCTED_QUESTION" data-usage-review="COPYRIGHT_REVIEW_PENDING">
+<div class="qheading"><b>이 개념을 사용한 실제 기출 문항</b><span class="qmeta">2022학년도 대학수학능력시험 · 언어와 매체 38번</span></div>
+<details class="qoriginal"><summary>문항별 자료 펼쳐보기 — 발문·보기·선지 ①~⑤</summary>
+<div class="sourcebody"><p class="qstem">밑줄 친 서술어가 요구하는 필수 성분의 개수와 종류가 〈보기〉의 문장과 같은 것은?</p><div class="qview"><div class="qview-title">〈보기〉 / 제시 자료</div><p>〈보기〉</p><p class="q-example">이곳의 지형은 외적의 침입을 막기에 <u>유리하다</u>.</p></div>
+<ol class="qchoices"><li><span class="qnum">①</span><span>그 광물이 원래는 귀금속에 속했다.</span></li><li><span class="qnum">②</span><span>그는 바람이 불기에 옷깃을 여몄다.</span></li><li><span class="qnum">③</span><span>우리는 원두막을 하루 만에 지었다.</span></li><li><span class="qnum">④</span><span>나는 시간이 남았기에 그와 걸었다.</span></li><li><span class="qnum">⑤</span><span>나는 구호품을 수해 지역에 보냈다.</span></li></ol><p class="dbsource">원천 DB: E2022-CSAT-Q038 (발문·보기·선지) · 원 문제지 14쪽</p><p class="qwarn">원천 DB에는 밑줄 위치가 별도 시각 정보로 저장되어 있지 않아 〈보기〉의 중심 서술어만 편집하여 표시했습니다. 선지의 원래 밑줄 위치와 조판은 공식 문제지로 대조해야 합니다.</p></div></details>
+<div class="qanswer">문항을 먼저 풀어 본 뒤 아래의 <strong>정답 ①와 근거 분석</strong>을 확인하세요.</div>
+</div></section><section id="s12"><h2>12. 기출 ③ 2023학년도 9월 39번 — 규정은 선행 조건까지 확인합니다</h2>
+<p>표준 발음법 제18항이 제시된 문제입니다. 단어의 끝소리를 하나씩 확인할 때, ‘비음화가 일어났다’는 결과만 보는 것이 아니라 <strong>비음화 이전에 어떤 변화가 있었는지</strong>도 판정해야 합니다.</p>
+<table><thead><tr><th>예시</th><th>확인할 단계</th><th>분류할 근거</th></tr></thead><tbody>
+<tr><td>밖만 → [방만]</td><td>받침 소리와 뒤의 비음</td><td>앞선 자음군 단순화를 가정할 필요 없음</td></tr>
+<tr><td>값만 → [감만]</td><td>자음군의 단순화 뒤 비음화</td><td>선행 변동의 종류 확인</td></tr>
+<tr><td>겉늙다 → [건늑따]</td><td>겉의 받침 ㅌ → [ㄷ] 뒤 비음화</td><td>음절의 끝소리 규칙 선행</td></tr>
+</tbody></table>
+<p>정답 <strong>④</strong>는 ‘겉늙다’에서 비음화의 앞 단계인 음절의 끝소리 규칙을 정확히 확인한 것입니다. <em>규정의 조건</em>과 <em>적용 순서</em>를 분리해 표시하면 비슷한 단어에도 원리를 옮겨 적용할 수 있습니다.</p>
+<p>참고: <a href="https://www.korean.go.kr/kornorms/main/main.do">국립국어원 한국어 어문 규범</a> · <a href="https://www.moe.go.kr/boardCnts/viewRenew.do?boardID=294&amp;boardSeq=92688&amp;lev=0&amp;m=020402&amp;opType=view">2023학년도 9월 모의평가 시행 정보</a></p>
+<div class="question-unit" data-question-id="E2023-SEP-Q039" data-render-source="CSAT-DB" data-render-format="RECONSTRUCTED_QUESTION" data-usage-review="COPYRIGHT_REVIEW_PENDING">
+<div class="qheading"><b>이 개념을 사용한 실제 기출 문항</b><span class="qmeta">2023학년도 9월 모의평가 · 언어와 매체 39번</span></div>
+<details class="qoriginal"><summary>문항별 자료 펼쳐보기 — 발문·보기·선지 ①~⑤</summary>
+<div class="sourcebody"><p class="qstem">[A]에 들어갈 말로 적절한 것은?</p><div class="qview"><div class="qview-title">〈보기〉 / 제시 자료</div><p><b>선생님과 학생의 문답</b>을 읽고 [A]에 들어갈 적절한 설명을 고르는 문제입니다. 학생은 표준 발음법 제18항의 괄호 안 받침이 뜻하는 바를 질문합니다.</p><p class="q-example">받침 ‘ㄱ(ㄲ, ㅋ, ㄳ, ㄺ), ㄷ(ㅅ, ㅆ, ㅈ, ㅊ, ㅌ, ㅎ), ㅂ(ㅍ, ㄼ, ㄿ, ㅄ)’은 ‘ㄴ, ㅁ’ 앞에서 [ㅇ, ㄴ, ㅁ]으로 발음한다.</p><p>선생님은 선행 음운 변동으로 [ㄱ, ㄷ, ㅂ] 발음이 된 뒤 비음화가 적용될 수 있다고 설명합니다.</p><p class="q-example">[A] 비음화 현상이 적용된 거네요?</p></div>
+<ol class="qchoices"><li><span class="qnum">①</span><span>‘밖만[방만]’은 자음군 단순화가 적용된 후</span></li><li><span class="qnum">②</span><span>‘폭넓다[퐁널따]’는 자음군 단순화가 적용된 후</span></li><li><span class="qnum">③</span><span>‘값만[감만]’은 음절의 끝소리 규칙이 적용된 후</span></li><li><span class="qnum">④</span><span>‘겉늙다[건늑따]’는 음절의 끝소리 규칙이 적용된 후</span></li><li><span class="qnum">⑤</span><span>‘호박잎[호방닙]’은 음절의 끝소리 규칙이 적용된 후</span></li></ol><p class="dbsource">원천 DB: E2023-SEP-Q039 (발문·보기·선지) · 원 문제지 18쪽</p><p class="qwarn">원천 DB의 선지는 공통 문장 뒷부분이 생략된 미완성 구절입니다. 위 목록은 DB의 전반부 그대로이며 뒤에는 문제의 공통 발화인 “비음화 현상이 적용된 거네요?”가 이어지는 형식으로 이해해야 합니다. 문제지 전체 조판 복원은 아닙니다.</p></div></details>
+<div class="qanswer">문항을 먼저 풀어 본 뒤 아래의 <strong>정답 ④와 근거 분석</strong>을 확인하세요.</div>
+</div></section><section id="s13"><h2>13. 판별 기준의 약점을 찾는 반례 검사</h2>
+<p>좋은 규칙은 여러 사례에 적용되지만, “반드시”, “항상”, “오직” 같은 단정은 반례 하나로 틀릴 수 있습니다. 선지의 범위를 과도하게 넓히지 않았는지 확인해야 합니다.</p>
+<div class="example"><p><strong>너무 넓은 기준:</strong> ‘다른 말을 꾸미면 모두 부사다.’</p><p><strong>반례:</strong> ‘새로운 책’에서 ‘새로운’은 뒤의 명사를 꾸미지만, 품사는 형용사입니다.</p><p><strong>수정한 기준:</strong> 수식 기능은 문장 성분 판단의 단서이고, 품사 판단에는 활용 여부 및 범주의 정의를 함께 확인한다.</p></div>
+<p>하나의 반례가 발견되면 개념 자체를 폐기하는 것이 아니라, 기준이 적용되는 조건을 좁혀 다시 검증합니다. 자세한 경계 사례는 <a href="/grammar-boundary-cases-and-exceptions">경계 사례와 예외</a>에서 다룹니다.</p>
+</section><section id="s14"><h2>14. 기출 선지 판정표 — 채점 이전에 근거를 기록합니다</h2>
+<p>문제를 풀 때 모든 선지에 장황한 해설을 쓰라는 뜻은 아닙니다. 기준이 모호한 선지에만 <strong>쟁점 → 증거 → 적용 규칙 → 판정</strong>의 짧은 기록을 남기면 됩니다.</p>
+<table><thead><tr><th>항목</th><th>적는 방법</th><th>짧은 기록 예</th></tr></thead><tbody>
+<tr><td>쟁점</td><td>발문에서 요구하는 판단</td><td>필수적 부사어인지?</td></tr>
+<tr><td>정의·조건</td><td>판정에 필요한 문법 개념</td><td>서술어의 필수 성분인가?</td></tr>
+<tr><td>관찰</td><td>주어진 문장의 실제 형태·기능</td><td>‘귀금속에’가 ‘속하다’와 결합</td></tr>
+<tr><td>대조·반례</td><td>다른 후보를 배제하는 근거</td><td>‘원래는’과 필수성 구별</td></tr>
+<tr><td>결론</td><td>맞음·틀림과 근거 1문장</td><td>주어+필수적 부사어 일치</td></tr>
+</tbody></table>
+<p>정답을 맞히더라도 어떤 판단이 운에 가까웠다면 그 단계는 미완성입니다. <strong>증거를 적어야 다시 풀 수 있는 방법</strong>으로 바뀝니다.</p>
+</section><section id="s15"><h2>15. 실전용 6단계 판별 절차</h2>
+<ol class="checklist"><li><strong>발문:</strong> 무엇을 판정하라는지 한 문장으로 바꾼다.</li><li><strong>정의:</strong> 후보 범주의 필요조건을 확인한다.</li><li><strong>형태·기능·분포:</strong> 관찰 가능한 증거를 표시한다.</li><li><strong>대조:</strong> 다른 후보가 실패하는 조건을 찾는다.</li><li><strong>반례:</strong> ‘항상/오직’ 같은 지나친 일반화를 점검한다.</li><li><strong>판정:</strong> 해당 선지가 맞거나 틀린 이유를 한 문장으로 쓴다.</li></ol>
+<div class="warning"><strong>시험에서는 효율을 조절합니다.</strong><br/>모든 문항에 다섯 기준을 기계적으로 전부 적용하지 않습니다. 발문에 직접 필요한 증거부터 사용하고, 기준이 충돌할 때 다음 증거와 반례를 추가합니다.</div>
+</section><section id="s16"><h2>16. 개념글과 기출을 연결해 다시 학습하기</h2>
+<p>이 글의 목표는 정답을 많이 암기하는 것이 아니라 여러 문법 영역에서 같은 판별 절차를 재사용하게 하는 데 있습니다. 구체적인 개념이 부족하면 해당 글을 먼저 읽고, 기출의 판단 지점으로 돌아오면 됩니다.</p>
+<ul><li><a href="/grammar-analysis-method">문법 분석 방법</a> — 문제의 층위를 먼저 정하는 법</li><li><a href="/form-function-meaning">형태·기능·의미</a> — 범주 판정의 세 기준</li><li><a href="/parts-of-speech-and-sentence-components">품사와 문장 성분</a> — 단어의 갈래와 문장 속 기능 구별</li><li><a href="/hierarchical-sentence-analysis">계층 분석</a> — 문장 속 큰 덩어리와 절의 경계</li><li><a href="/grammar-and-language-norms">문법과 어문 규범</a> — 문법 조건과 규범 적용을 구분</li><li><a href="/grammar-boundary-cases-and-exceptions">경계 사례와 예외</a> — 기준이 충돌할 때 다시 점검할 것</li></ul>
+<p>기출 분석의 순서는 개념글의 한 단락을 읽고, <strong>그 개념이 실제 선지에서 어디서 필요한지 표시</strong>하는 방식으로 이어집니다.</p>
+</section><section id="s17"><h2>17. 한눈에 정리 — 느낌은 출발점, 결론은 검증된 근거</h2>
+<p>문법 판단은 정의만 외우는 일도, 표면상 비슷한 단어를 골라내는 일도 아닙니다. 발문이 요구하는 분석 범주를 정하고 그 범주의 정의·형태·기능·분포·대조를 필요한 만큼 묶어 근거를 만듭니다.</p>
+<div class="keybox"><strong>이 글의 최종 판단 공식</strong><br/>발문 확인 → 후보 범주 정의 → 관찰 가능한 증거 → 대조와 반례 → 선지 판정 → 개념글로 되돌아가 검증</div>
+<p class="closing"><strong>좋은 문법 풀이법은 “왜 정답인가?”뿐 아니라 “어떤 조건이 바뀌면 정답이 달라지는가?”까지 설명할 수 있어야 합니다.</strong></p>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+<footer class="references"><h2>공식 기준·기출 출처</h2><ul><li>국립국어원, <a href="https://www.korean.go.kr/front/onlineQna/onlineQnaView.do?mn_id=90&amp;pageIndex=1&amp;qna_seq=330740">품사와 문장 성분 구별(2026)</a> 및 <a href="https://www.korean.go.kr/front/onlineQna/onlineQnaView.do?mn_id=&amp;pageIndex=1&amp;qna_seq=328629&amp;searchCondition=&amp;searchKeyword=">형용사 활용형의 부사어 기능</a></li><li>국립국어원, <a href="https://www.korean.go.kr/kornorms/main/main.do">한국어 어문 규범</a></li><li>한국교육과정평가원, 2023학년도 6월 모의평가 언어와 매체 38번·2022학년도 수능 38번·2023학년도 9월 모의평가 39번</li><li>EBSi, <a href="https://wdown.ebsi.co.kr/W61001/01exam/20220609/go3/kor_main_mun_O33C5VD2.pdf">2023학년도 6월 모의평가 국어 문제지</a> 및 <a href="https://wdown.ebsi.co.kr/W61001/01exam/20220609/go3/kor_main_hsj_H247M5A4_2.pdf">공식 정답·해설</a></li></ul></footer>
+</article></div><script defer="" id="s4-stdict-search-js" src="/assets/common/stdict-search.js?v=20260927v1"></script>
+<script crossorigin="anonymous" data-cf-beacon='{"version":"2024.11.0","token":"5e0a53a112374ef0a6c044df2cf3349c","r":1,"spa":2}' integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw==" src="https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092" type="module"></script>
+</body></html>

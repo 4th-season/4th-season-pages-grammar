@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>규칙과 체계: 문법 규칙은 어떻게 성립하는가 | 국어 문법</title>
+<meta content="문법 규칙은 누가 정할까요? 분포·결합 조건·선택 관계와 통합 관계를 실제 언어 사례로 구별하고, 2004학년도 수능 언어영역 36번에 적용하는 풀이 절차를 설명합니다." name="description"/>
+<style>
+:root{--navy:#17324D;--blue:#275D85;--sky:#EAF3F8;--ink:#17212B;--muted:#5B6875;--line:#D9E1E7;--paper:#FFF;--soft:#F7F9FB;--warn:#FFF8E6;--green:#1C6B57}
+*{box-sizing:border-box} html{scroll-behavior:smooth}
+body{margin:0;background:#EEF2F5;color:var(--ink);font-family:"Pretendard","Noto Sans KR","Apple SD Gothic Neo","Malgun Gothic",sans-serif;line-height:1.78;letter-spacing:-.02em}
+a{color:var(--blue);text-decoration:none} a:hover{text-decoration:underline}
+.shell{max-width:980px;margin:0 auto;padding:32px 20px 80px}
+article{background:var(--paper);border-radius:22px;box-shadow:0 12px 36px rgba(23,50,77,.08);overflow:hidden}
+.hero{padding:56px 56px 46px;background:linear-gradient(135deg,#17324D 0%,#244E70 100%);color:#fff}
+.eyebrow{display:inline-block;font-size:13px;font-weight:900;letter-spacing:.08em;background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.25);padding:6px 10px;border-radius:999px;margin-bottom:18px}
+h1{font-size:38px;line-height:1.25;letter-spacing:-.045em;margin:0 0 18px} .subtitle{font-size:18px;line-height:1.7;color:#DCEAF3;max-width:760px;margin:0}
+.content{padding:48px 56px 64px} section{scroll-margin-top:24px;margin:0 0 58px}
+h2{font-size:26px;line-height:1.35;color:var(--navy);margin:0 0 22px;padding-bottom:11px;border-bottom:2px solid #E7EEF3}
+h3{font-size:18px;color:var(--navy);margin:0 0 8px} p{margin:0 0 16px} strong{color:#102D45}
+.cover{margin:0 0 30px} .cover img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;border-radius:18px;border:1px solid var(--line);box-shadow:0 10px 26px rgba(23,50,77,.08)}
+.toc{margin:0 0 48px;padding:24px 26px;background:#F7F9FB;border:1px solid var(--line);border-radius:16px}
+.toc-title{font-size:18px;font-weight:900;color:var(--navy);margin-bottom:13px} .toc ol{margin:0;padding-left:22px;columns:2;column-gap:36px}
+.toc li{break-inside:avoid;margin:0 0 9px} .toc a{color:#425466}
+.keybox,.warning{border-radius:16px;padding:20px 22px;margin:24px 0} .keybox{background:#EEF6FB;border-left:5px solid var(--blue)} .warning{background:var(--warn);border-left:5px solid #C98200}
+.example,.dialogue{background:#FAFBFC;border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin:20px 0}
+.layer-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin:22px 0}
+.layer-grid div{background:#F4F8FB;border:1px solid var(--line);border-radius:14px;padding:16px} .layer-grid b{display:block;color:var(--navy);margin-bottom:5px} .layer-grid span{font-size:13px;color:var(--muted)}
+.compare{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:22px 0} .compare>div{border:1px solid var(--line);border-radius:16px;padding:20px;background:var(--soft)}
+table{width:100%;border-collapse:separate;border-spacing:0;margin:22px 0;border:1px solid var(--line);border-radius:14px;overflow:hidden;font-size:15px}
+th,td{padding:14px 15px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)} th{background:#EAF3F8;color:var(--navy);font-weight:800} tr:last-child td{border-bottom:0} td+td,th+th{border-left:1px solid var(--line)}
+.checklist{list-style:none;padding:0;margin:18px 0} .checklist li{padding:9px 0 9px 30px;position:relative;border-bottom:1px solid #EDF1F4} .checklist li:before{content:"✓";position:absolute;left:5px;color:var(--green);font-weight:900}
+.ladder{display:grid;gap:10px;margin:22px 0} .ladder div{display:grid;grid-template-columns:160px 1fr;gap:12px;padding:15px 18px;border-radius:12px;background:#F4F8FB;border-left:4px solid var(--blue)} .ladder span{color:var(--muted)}
+.principles{padding-left:22px} .principles li{margin:0 0 16px;padding-left:4px}
+.summary td:first-child{width:32%;font-weight:800;color:var(--navy)} .closing{font-size:19px;text-align:center;background:#F0F6FA;border-radius:16px;padding:26px;margin-top:28px}
+.references{background:#F8FAFB;border-top:1px solid var(--line);padding:28px 56px 38px;color:var(--muted);font-size:13px} .references h2{font-size:18px;border:0;padding:0;margin-bottom:12px}
+.ok{color:var(--green);font-weight:900} .no{color:#AA6A00;font-weight:900}
+@media(max-width:900px){.shell{padding:0} .hero,.content,.references{padding-left:24px;padding-right:24px} h1{font-size:31px} .toc ol{columns:1} .layer-grid{grid-template-columns:1fr 1fr} .compare{grid-template-columns:1fr} .ladder div{grid-template-columns:1fr}}
+
+
+.article-topnav{background:#fff;border-bottom:1px solid #d9e1e7;font-family:"Pretendard","Noto Sans KR","Apple SD Gothic Neo","Malgun Gothic",sans-serif}
+.article-topnav .nav-in{max-width:1180px;margin:0 auto;min-height:58px;padding:0 20px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+.article-topnav .nav-left,.article-topnav .nav-right{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.article-topnav a{color:#425466;text-decoration:none;font-size:13px;font-weight:800}
+.article-topnav a.current{color:#17324D}
+@media(max-width:720px){.article-topnav .nav-in{align-items:flex-start;flex-direction:column;padding-top:12px;padding-bottom:12px;gap:8px}.article-topnav .nav-right{gap:10px}.article-topnav a{font-size:12px}}
+
+.renewal-path{margin:24px 0}.keybox p:last-child,.warning p:last-child{margin-bottom:0}.content table{max-width:100%}article .content .closing{font-size:18px;line-height:1.7}@media(max-width:720px){.content table{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch}.cards,.compare{grid-template-columns:1fr}.ladder div{display:block}.ladder span{display:block;margin-top:6px}.content{padding:25px 20px 45px}}
+</style>
+<link href="https://4th-season.com/grammar-rules-and-system" rel="canonical"/><meta content="index,follow" name="robots"/><meta content="GRAMMAR_PUBLIC_0112_V1" name="4s-public-marker"/><meta content="2026-09-27" name="article:published_time"/><meta content="how" name="4th-subcategory"/><link href="/assets/common/stdict-search.css?v=20260927v1" id="s4-stdict-search-css" rel="stylesheet"/>
+<link href="/assets/common/article-nav.css?v=20260928v1" id="s4-article-nav-css" rel="stylesheet"/>
+<meta content="GRAMMAR_RENEWAL_0112_20261017_V2" name="4s-renewal-marker"/><style>
+.analysis-flow{counter-reset:steps;list-style:none;padding:0;margin:20px 0;display:grid;gap:10px}.analysis-flow li{background:#f4f8fb;border:1px solid #d9e1e7;padding:15px 17px;border-radius:12px}.analysis-flow li:before{counter-increment:steps;content:counter(steps);display:inline-grid;place-items:center;margin-right:10px;background:#275D85;color:#fff;width:25px;height:25px;border-radius:50%;font-size:13px;font-weight:800}.concept-links{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.concept-links a{border:1px solid #d9e1e7;padding:15px;background:#f7f9fb;border-radius:12px;font-weight:800}.smallprint{font-size:14px;color:#5B6875}.resultbox{background:#F0F6FA;border:1px solid #d9e1e7;padding:20px 22px;border-radius:14px;margin:24px 0}.badge-note{display:inline-block;color:#275D85;font-size:13px;font-weight:800;margin-bottom:8px}
+@media(max-width:700px){.concept-links{grid-template-columns:1fr}}
+</style></head>
+<body>
+<nav id="fs-common-menu" class="fs-common-menu" data-sitejob-marker="GLOBAL_ARTICLE_NAV_V2" aria-label="개별 글 공통 메뉴"><div class="fsn-inner"><a class="fsn-exit" href="/learn/grammar/">← 상위 지도</a><a class="fsn-brand" href="/">4TH SEASON</a><a class="fsn-domain" href="/learn/">LEARN</a><a class="fsn-domain" href="/world/">WORLD</a><a class="fsn-domain" href="/life/">LIFE</a><a class="fsn-domain insite" href="/insite/">In:Site</a><a class="fsn-series" href="/learn/grammar/">문법</a><a class="fsn-map" href="/sitemap/">한눈에 보기</a></div></nav>
+<div aria-label="표준국어대사전 검색" class="s4-dict-search" data-endpoint="/api/stdict" id="s4-stdict-search">
+<form autocomplete="off" class="s4-dict-form" role="search">
+<span class="s4-dict-badge">사전</span>
+<label class="s4-dict-sr" for="s4-dict-input">표준국어대사전 검색어</label>
+<input aria-label="표준국어대사전 검색" class="s4-dict-input" id="s4-dict-input" inputmode="search" maxlength="80" placeholder="표준국어대사전" type="search"/>
+<button aria-label="사전 검색" class="s4-dict-submit" type="submit">⌕</button>
+</form>
+<div aria-live="polite" class="s4-dict-panel" hidden=""></div>
+</div><header class="article-topnav"><div class="nav-in"><nav aria-label="상위 이동" class="nav-left"><a href="/">홈</a><a href="/learn/">LEARN</a></nav><nav aria-label="LEARN 동일 레벨 메뉴" class="nav-right"><a href="/learn/korean-reading/">읽기</a><a aria-current="page" class="current" href="/learn/grammar/">문법</a><a href="/learn/vocabulary/">어휘</a><a href="/learn/reread/">Re:Read</a><a href="/quote-prestige/">명언의 품격</a></nav></div></header>
+<div class="shell">
+<article>
+<header class="hero"><span class="eyebrow">국어 문법 · 언어의 체계</span><h1>규칙과 체계 — 문법 규칙은 어떻게 성립하는가</h1><p class="subtitle">말을 이루는 요소들이 왜 일정한 방식으로 결합할까요? 실제 사례에서 규칙을 찾는 법, 선택과 통합의 차이, 기출문제의 판단 순서를 연결합니다.</p></header>
+<div class="content">
+<figure class="cover"><img alt="언어의 체계와 규칙, 선택 관계와 통합 관계를 표현한 문법 대표 이미지" height="540" src="/assets/grammar/grammar-rules-and-system.webp" width="960"/></figure>
+<nav aria-label="목차" class="toc"><div class="toc-title">목차</div><ol><li><a href="#s1">규칙이 없다면 같은 문장을 이해할 수 있을까요?</a></li><li><a href="#s2">1. 언어에서 규칙은 어떻게 발견될까요?</a></li><li><a href="#s3">2. 규칙과 체계는 같은 말일까요?</a></li><li><a href="#s4">3. 선택 관계와 통합 관계는 어떻게 구별할까요?</a></li><li><a href="#s5">4. 폐쇄적 선택과 개방적 선택은 어떻게 다를까요?</a></li><li><a href="#s6">5. 문법 규칙의 적용에는 왜 환경과 분포가 중요할까요?</a></li><li><a href="#s7">6. 규칙을 찾을 때 형태·기능·의미를 왜 분리해야 할까요?</a></li><li><a href="#s8">7. 규칙과 예외는 왜 함께 살펴야 할까요?</a></li><li><a href="#s9">8. 문법 규칙과 어문 규범은 무엇이 다를까요?</a></li><li><a href="#s10">9. 2004학년도 수능 36번은 무엇을 구분하게 했을까요?</a></li><li><a href="#s11">10. 처음 보는 기출문제는 어떤 순서로 풀까요?</a></li><li><a href="#s12">11. 다음 개념글은 어떻게 연결해서 읽으면 좋을까요?</a></li><li><a href="#s13">한눈에 정리 — 규칙·체계·구조를 구별하는 세 질문</a></li></ol></nav>
+<section id="s1"><h2>규칙이 없다면 같은 문장을 이해할 수 있을까요?</h2>
+<p>친구가 “동생이 빵을 먹었다”고 말하면 우리는 누가 무엇을 했는지 대체로 이해합니다. 같은 단어를 “빵이 동생을 먹었다”로 바꾸면, 어법상 가능한 문장이더라도 등장인물과 사건의 관계가 전혀 달라집니다. 문법은 단어를 따로 외우는 지식이 아니라 <strong>형태가 어떻게 결합하고 각 요소가 어떤 역할과 의미를 갖는지</strong> 설명하는 지식입니다.</p>
+<div class="example"><p><strong>동생이 빵을 먹었다.</strong> — 동생: 행위자, 빵: 먹는 대상</p><p><strong>빵이 동생을 먹었다.</strong> — 같은 단어라도 조사와 성분의 관계가 달라진다</p></div>
+<p>이 문장들을 다르게 이해할 수 있는 이유를 적어 보면, 이미 문법 규칙을 찾기 시작한 것입니다. 다만 ‘누가 정한 규칙인가’와 ‘언어 자료에서 어떤 규칙이 관찰되는가’는 서로 다른 질문입니다.</p>
+</section><section id="s2"><h2>1. 언어에서 규칙은 어떻게 발견될까요?</h2>
+<p>언어 규칙은 개별 문장을 무작위로 모아 놓은 결과가 아닙니다. 여러 발화에서 되풀이되는 <strong>형식·결합 환경·기능과 의미의 대응</strong>을 비교하고, 공통되는 현상을 설명할 때 규칙을 세웁니다.</p>
+<div class="ladder"><div><b>자료 수집</b><span>실제 발음·형태·문장 사례를 충분히 모은다</span></div><div><b>대조와 분류</b><span>어떤 형태가 어느 자리에서 나타나는지 구분한다</span></div><div><b>조건 기술</b><span>반복되는 패턴과 적용되지 않는 경계를 말한다</span></div><div><b>다른 사례 검증</b><span>처음 보는 자료에서도 규칙이 통하는지 점검한다</span></div></div>
+<p>따라서 좋은 규칙의 설명은 “이렇게 된다”에서 끝나지 않습니다. <strong>언제, 무엇이, 무엇과 결합할 때, 어느 범위에서</strong> 그렇게 되는지까지 제시합니다.</p>
+</section><section id="s3"><h2>2. 규칙과 체계는 같은 말일까요?</h2>
+<p><strong>규칙</strong>은 어떤 결합이나 변화의 일반적인 양상을 설명하고, <strong>체계</strong>는 서로 관계 맺는 항목들이 이루는 조직을 가리킵니다. 국어의 지시 표현 ‘이것·그것·저것’은 서로 다른 선택 가능항을 이루며, 어느 하나를 쓸 때 위치·지시 대상·화자의 관점 등이 관계를 맺습니다.</p>
+<table><thead><tr><th>구분</th><th>무엇을 묻는가?</th><th>사례</th></tr></thead><tbody><tr><td>규칙</td><td>요소가 어떤 조건에서 결합·실현되는가?</td><td>조사가 체언 뒤에 붙는 관계</td></tr><tr><td>체계</td><td>항목들이 어떤 대비·연관 관계를 이루는가?</td><td>이것·그것·저것의 선택 관계</td></tr><tr><td>구조</td><td>요소들이 실제로 연결돼 어떤 전체를 만드는가?</td><td>단어가 결합한 문장, 문장이 이어진 담화</td></tr></tbody></table>
+<p>규칙이 체계 안에서만 작동한다는 뜻도, 체계가 언제나 규칙 하나로 설명된다는 뜻도 아닙니다. 두 개념은 함께 쓰이지만 질문이 다릅니다.</p>
+</section><section id="s4"><h2>3. 선택 관계와 통합 관계는 어떻게 구별할까요?</h2>
+<p>국어 문법에서 언어의 <strong>선택 관계</strong>는 같은 자리에서 서로 대체 가능한 항목들의 관계를, <strong>통합 관계</strong>는 요소가 앞뒤로 결합해 더 큰 단위를 만드는 관계를 설명하는 데 사용합니다.</p>
+<div class="example"><p>① <strong>철수가 책을 읽었다.</strong></p><p>② <strong>철수가 편지를 읽었다.</strong></p><p>③ <strong>철수가 책을 샀다.</strong></p></div>
+<p>①에서 ‘책을’ 대신 ‘편지를’ 넣는 것은 같은 자리에 올 수 있는 항목들의 선택을 보여 줍니다. ①에서 ‘철수가–책을–읽었다’가 실제 문장을 이루는 것은 통합을 보여 줍니다. ‘읽었다’ 대신 ‘샀다’도 선택할 수 있지만, 어느 동사를 택하느냐에 따라 결합하는 성분과 의미가 달라질 수 있습니다.</p>
+<div class="keybox"><strong>구분 질문</strong><br/>“이 자리에 무엇을 대신 넣을 수 있을까?”는 선택 관계, “이 요소들이 어떤 순서와 관계로 결합해 전체를 이루는가?”는 통합 관계입니다.</div>
+</section><section id="s5"><h2>4. 폐쇄적 선택과 개방적 선택은 어떻게 다를까요?</h2>
+<p>같은 자리의 대체 가능성을 살핀 뒤에는 선택 후보가 얼마나 제한되는지를 따집니다. 일정한 문법 범주는 비교적 제한된 대립항을 갖는 경우가 많습니다. 반대로 서술어가 허용하는 목적어 자리에 들어갈 명사는 문맥에 따라 폭넓게 열려 있을 수 있습니다.</p>
+<table><thead><tr><th>선택의 성격</th><th>대략적 특징</th><th>판단할 때 주의할 점</th></tr></thead><tbody><tr><td>폐쇄적 선택</td><td>대립항과 범주가 상대적으로 한정됨</td><td>문법 범주라고 해서 실제 표현 방법까지 단순한 두 항만 있는 것은 아님</td></tr><tr><td>개방적 선택</td><td>같은 자리에 다양한 어휘가 들어갈 수 있음</td><td>의미·호응·문맥 때문에 가능한 후보가 줄어들 수 있음</td></tr></tbody></table>
+<p>‘개방’은 아무 말이나 무조건 넣을 수 있다는 뜻이 아닙니다. 문법적 자리, 선택한 단어의 의미, 해당 상황의 맥락을 함께 검토해야 합니다.</p>
+</section><section id="s6"><h2>5. 문법 규칙의 적용에는 왜 환경과 분포가 중요할까요?</h2>
+<p><strong>분포</strong>는 어떤 형태가 어떤 환경에서 실제로 나타나는지를 말합니다. 서로 비슷한 형태도 나타나는 자리가 다를 수 있습니다.</p>
+<div class="example"><p><strong>학생이</strong> 왔다. / <strong>친구가</strong> 왔다.</p><p>서로 다른 형태가 나타나는 까닭을 설명하려면 받침 유무와 같은 결합 조건을 살펴야 합니다.</p></div>
+<p>‘이’와 ‘가’가 단순히 다른 뜻을 가진 두 단어이기 때문에 교체되는 것이 아닙니다. 주격 조사라는 기능을 공유하면서 선행 체언의 형태적 환경에 따라 교체되는 이형태로 기술할 수 있습니다. 다만 조사 ‘이/가’에는 다른 문법적 기능과 의미도 있으므로 모든 용례를 한 문장으로 뭉뚱그리면 안 됩니다.</p>
+<p>기출 풀이에서는 <strong>같은 기능인지 → 어느 환경에서 나타났는지 → 다른 환경에도 적용되는지</strong>를 순서대로 점검합니다.</p>
+</section><section id="s7"><h2>6. 규칙을 찾을 때 형태·기능·의미를 왜 분리해야 할까요?</h2>
+<p>형태는 어떻게 만들어졌는가, 기능은 문장에서 어떤 역할을 하는가, 의미는 무엇을 나타내는가라는 서로 다른 질문입니다. 단어 ‘새’는 관형사이고 ‘예쁜’은 형용사의 활용형이지만, 두 표현 모두 명사를 꾸미는 관형어가 될 수 있습니다.</p>
+<table><thead><tr><th>표현</th><th>품사·형태</th><th>문장 성분</th><th>판별 근거</th></tr></thead><tbody><tr><td>새 책</td><td>‘새’: 관형사</td><td>관형어</td><td>‘새’를 형용사처럼 활용하지 않음</td></tr><tr><td>예쁜 책</td><td>‘예쁜’: 형용사 ‘예쁘다’의 활용형</td><td>관형어</td><td>기본형·어미 결합 여부를 확인</td></tr></tbody></table>
+<p>‘명사를 꾸민다’는 사실만 보고 모두 관형사라고 판단하면, <strong>기능을 기준으로 품사를 잘못 판정</strong>하게 됩니다. 어떤 규칙을 묻고 있는지 먼저 특정해야 합니다.</p>
+</section><section id="s8"><h2>7. 규칙과 예외는 왜 함께 살펴야 할까요?</h2>
+<p>규칙에서 벗어난 것처럼 보이는 사례는 세 가지 가능성을 나누어 살핍니다. 하나는 조건을 덜 적어서 생긴 <strong>겉보기 예외</strong>, 다른 하나는 관습적으로 굳어져 일반 패턴과 다르게 처리되는 경우, 마지막은 실제 언어 변이와 변화 또는 이론의 차이입니다.</p>
+<div class="ladder"><div><b>조건 부족</b><span>환경을 추가하면 같은 규칙 안에서 설명되는가?</span></div><div><b>제한된 예외</b><span>특정 낱말·형태에서만 관습적 용법이 남아 있는가?</span></div><div><b>분석 관점 차이</b><span>학교 문법의 기본 분석과 학문적 대안을 구분해야 하는가?</span></div></div>
+<p>예외를 무조건 외우기 전에 규칙의 범위를 점검해야 하며, 반대로 예외가 존재한다는 이유로 규칙 전체를 폐기할 수는 없습니다.</p>
+</section><section id="s9"><h2>8. 문법 규칙과 어문 규범은 무엇이 다를까요?</h2>
+<p>문법은 언어 사용에서 나타나는 구조와 관계를 설명합니다. 어문 규범은 공적인 표기·표준 발음 등에서 어느 표현을 기준으로 사용할지 정합니다. 규범은 문법 사실을 참고하지만 둘이 같은 것은 아닙니다.</p>
+<div class="compare"><div><h3>문법의 질문</h3><p>‘수’가 의존 명사이므로 앞말과 어떤 통사 관계를 이루는가?</p></div><div><h3>규범의 질문</h3><p>그 분석을 바탕으로 ‘할 수 있다’를 어떻게 띄어 쓸 것인가?</p></div></div>
+<p>실제 사용이 있다고 해서 모두 표준 규범으로 인정된다는 뜻은 아니고, 표준 규범과 다르다는 이유만으로 관찰되는 언어 현상이 사라지는 것도 아닙니다. 규칙의 성립과 규범의 적용은 나누어 설명해야 합니다.</p>
+</section><section id="s10"><h2>9. 2004학년도 수능 36번은 무엇을 구분하게 했을까요?</h2>
+<p>2004학년도 대학수학능력시험 언어영역 36번은 언어의 체계·선택·구조를 설명한 지문과 짧은 이야기 형식의 보기를 결합했습니다. 지문에서는 같은 자리의 대체 가능성을 ‘선택’, 구성 요소의 결합을 ‘통합’, 더 큰 단위로 이루어진 전체를 ‘구조’라는 관점에서 설명합니다.</p>
+<p>보기에는 시간에 쫓기는 인물이 책을 챙기고 집을 나서는 장면이 이어집니다. 문제는 이 장면에서 표시된 문장과 낱말들의 관계를 지문 개념으로 다시 설명했을 때 잘못된 설명이 무엇인지 판단하게 합니다.</p>
+<table><thead><tr><th>선지의 판단 대상</th><th>적용해야 하는 개념</th><th>스스로 확인할 질문</th></tr></thead><tbody><tr><td>글 전체와 구성 문장</td><td>구조·구성 요소</td><td>문장들이 이어져 더 큰 담화를 이루는가?</td></tr><tr><td>연속되는 두 문장</td><td>통합 관계</td><td>서로 대체하는가, 실제로 앞뒤로 결합하는가?</td></tr><tr><td>표시된 한 낱말</td><td>선택 관계</td><td>동일한 자리에서 다른 낱말을 넣을 수 있는가?</td></tr><tr><td>하나의 진술을 이루는 두 표현</td><td>선택·통합 경계</td><td>두 표현은 경쟁 대안인가, 결합해 한 발화를 만드는가?</td></tr></tbody></table>
+<p class="smallprint">이 글은 실제 2004학년도 수능 36번의 발문·지문·선지 데이터에 근거한 개념별 풀이 설명입니다. 문제 전체와 선지 원문을 재수록하지 않았으며, 정답표 원문 확인 전에는 공식 정답 번호를 단정하지 않습니다.</p>
+</section><section id="s11"><h2>10. 처음 보는 기출문제는 어떤 순서로 풀까요?</h2>
+<ol class="analysis-flow"><li><strong>발문에서 요구하는 판단을 표시합니다.</strong> 뜻풀이인지, 선택·통합의 관계인지, 구조 분석인지 구분합니다.</li><li><strong>지문이 정의한 용어를 그대로 정리합니다.</strong> 평소 아는 뜻과 지문의 사용 범위가 같다고 가정하지 않습니다.</li><li><strong>보기에서 실제로 연결된 요소를 찾아 표시합니다.</strong> 문장·어절·낱말·형태소 중 무엇을 가리키는지 정합니다.</li><li><strong>대체 시험과 결합 시험을 각각 합니다.</strong> 같은 자리를 바꿔 보는가, 요소가 합쳐지는가를 구별합니다.</li><li><strong>선지의 관계 이름과 실제 현상을 하나씩 대조합니다.</strong> ‘체계/구조’처럼 비슷한 단어를 의미만으로 판단하지 않습니다.</li></ol>
+<div class="resultbox"><strong>이 문제에서 익혀야 할 원리</strong><p>체계는 ‘무엇을 대신 선택할 수 있는가’를, 구조는 ‘무엇과 무엇이 어떻게 결합하는가’를 묻는 상황에서 특히 선명하게 드러납니다. 용어 암기보다 관계를 표시하는 훈련이 중요합니다.</p></div>
+</section><section id="s12"><h2>11. 다음 개념글은 어떻게 연결해서 읽으면 좋을까요?</h2>
+<p>이 글은 문법의 원리를 설명하는 출발점입니다. 같은 분석 틀은 단어 형성과 품사 구분, 문장의 성분과 구조를 공부할 때 반복해서 쓰입니다.</p>
+<div class="concept-links"><a href="/what-is-korean-grammar">문법이란 무엇인가 →</a><a href="/language-and-grammar">언어와 문법 →</a><a href="/hierarchy-of-language-units">언어 단위의 위계 →</a><a href="/korean-phonology">음운의 전체 지도 →</a></div>
+<p>예를 들어 ‘음운 변동’에서는 규칙이 나타나는 <strong>발음 환경</strong>을, ‘형태소’에서는 여러 형태가 결합하는 <strong>단위와 경계</strong>를, ‘문장’에서는 성분이 이루는 <strong>구조</strong>를 판별합니다. 같은 말이라도 분석 질문을 바꾸면 살펴볼 대상도 달라집니다.</p>
+</section><section id="s13"><h2>한눈에 정리 — 규칙·체계·구조를 구별하는 세 질문</h2>
+<table class="summary"><thead><tr><th>핵심 개념</th><th>판단 기준</th></tr></thead><tbody><tr><td>규칙</td><td>어떤 환경·조건에서 어떤 결합이나 변화가 반복되는가?</td></tr><tr><td>체계와 선택</td><td>동일한 자리에 어떤 항목을 대체해 넣을 수 있는가?</td></tr><tr><td>구조와 통합</td><td>구성 요소가 실제로 결합해 어떤 단위와 전체를 이루는가?</td></tr><tr><td>분포와 예외</td><td>어디에 나타나는가, 적용 범위 밖의 사례는 무엇인가?</td></tr><tr><td>기출 판정</td><td>발문→지문 정의→보기 요소→대체/결합 시험→선지 확인</td></tr></tbody></table>
+<p class="closing"><strong>문법 규칙을 안다는 것은 낱개 문장을 외우는 것이 아니라, 새로운 문장에도 적용할 수 있는 관계와 조건을 설명하는 것입니다.</strong></p>
+</section></div>
+<footer class="references">
+<h2>공식 기준·참고</h2>
+<ul><li><a href="https://www.korean.go.kr/common/download.do?c_file_name=5cf42b79-1c29-4e7c-aaf2-ce86b5486691_0.pdf&amp;file_path=reportData&amp;o_file_name=2014년 표준국어문법개발.pdf">국립국어원, 「2014년 표준 국어 문법 개발」</a></li><li><a href="https://www.law.go.kr/admRulLsInfoP.do?admRulSeq=2100000197404">국립국어원, 「국어 규범 정비 및 보완에 관한 규정」</a></li><li><a href="https://www.megastudy.net/Entinfo/pda/User_Ans_Anal.asp?seq=13&amp;sort_flg=1&amp;sub_cod=1000&amp;years=2004">2004학년도 수능 관련 답안 자료(문항번호·형식 최종 대조 필요)</a></li><li>한국교육과정평가원, 2004학년도 대학수학능력시험 언어영역 34~38번 지문 및 36번 문항(시험 DB에서 발문·보기·선지 대조)</li></ul>
+</footer>
+</article>
+</div>
+<script defer="" id="s4-stdict-search-js" src="/assets/common/stdict-search.js?v=20260927v1"></script>
+
+</body>
+</html>

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>문법이란 무엇인가? 뜻·역할·학교 문법과 학문 문법 | 국어 문법</title>
+<meta content="문법이란 무엇인지 실제 문장으로 살펴봅니다. 문법의 뜻과 언어의 규칙, 품사와 문장 성분의 차이, 학교 문법과 학문 문법, 맞춤법의 경계를 구별하고 수능 기출에 적용하는 판단 순서를 설명합니다." name="description"/>
+<style>
+:root {
+  --navy:#17324D; --blue:#275D85; --sky:#EAF3F8; --ink:#17212B; --muted:#5B6875;
+  --line:#D9E1E7; --paper:#FFFFFF; --soft:#F7F9FB; --warn:#FFF8E6; --green:#1C6B57;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#EEF2F5;color:var(--ink);font-family:"Pretendard","Noto Sans KR","Apple SD Gothic Neo","Malgun Gothic",sans-serif;line-height:1.78;letter-spacing:-.02em}
+a{color:var(--blue);text-decoration:none}
+a:hover{text-decoration:underline}
+.shell{max-width:980px;margin:0 auto;padding:32px 20px 80px}
+
+
+
+
+
+
+
+
+
+
+.visual-stack{margin:0 0 34px}
+.visual-stack figure{margin:0 0 22px}
+.visual-stack img{display:block;width:100%;height:auto;border-radius:18px;border:1px solid var(--line);box-shadow:0 10px 26px rgba(23,50,77,.08)}
+.visual-stack .cover-img{aspect-ratio:16/9;object-fit:cover}
+.toc{margin:0 0 48px;padding:24px 26px;background:#F7F9FB;border:1px solid var(--line);border-radius:16px}
+.toc-title{font-size:18px;font-weight:900;color:var(--navy);margin-bottom:13px}
+.toc ol{margin:0;padding-left:22px;columns:2;column-gap:36px}
+.toc li{break-inside:avoid;margin:0 0 9px;padding-left:2px}
+.toc a{color:#425466;text-decoration:none}
+.toc a:hover{color:var(--blue);text-decoration:underline}
+
+
+article{background:var(--paper);border-radius:22px;box-shadow:0 12px 36px rgba(23,50,77,.08);overflow:hidden}
+.hero{padding:56px 56px 46px;background:linear-gradient(135deg,#17324D 0%,#244E70 100%);color:#fff}
+.eyebrow{display:inline-block;font-size:13px;font-weight:900;letter-spacing:.08em;background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.25);padding:6px 10px;border-radius:999px;margin-bottom:18px}
+h1{font-size:38px;line-height:1.25;letter-spacing:-.045em;margin:0 0 18px}
+.subtitle{font-size:18px;line-height:1.7;color:#DCEAF3;max-width:760px;margin:0}
+.meta{display:flex;gap:8px;flex-wrap:wrap;margin-top:26px}
+.meta span{font-size:12px;padding:6px 9px;border-radius:999px;background:rgba(255,255,255,.1)}
+.content{padding:48px 56px 64px}
+section{scroll-margin-top:24px;margin:0 0 58px}
+h2{font-size:26px;line-height:1.35;color:var(--navy);margin:0 0 22px;padding-bottom:11px;border-bottom:2px solid #E7EEF3}
+h3{font-size:18px;color:var(--navy);margin:0 0 8px}
+p{margin:0 0 16px}
+strong{color:#102D45}
+.keybox,.warning{border-radius:16px;padding:20px 22px;margin:24px 0}
+.keybox{background:#EEF6FB;border-left:5px solid var(--blue)}
+.warning{background:var(--warn);border-left:5px solid #C98200}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:22px 0}
+.card{background:var(--soft);border:1px solid var(--line);border-radius:16px;padding:20px}
+.card .num{display:inline-block;font-weight:900;font-size:12px;color:var(--blue);margin-bottom:8px}
+table{width:100%;border-collapse:separate;border-spacing:0;margin:22px 0;border:1px solid var(--line);border-radius:14px;overflow:hidden;font-size:15px}
+th,td{padding:14px 15px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}
+th{background:#EAF3F8;color:var(--navy);font-weight:800}
+tr:last-child td{border-bottom:0}
+td+td,th+th{border-left:1px solid var(--line)}
+.example,.sentence{background:#FAFBFC;border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin:20px 0}
+.sentence{font-size:19px;font-weight:800;text-align:center;color:var(--navy)}
+.ok{color:var(--green);font-weight:900} .no{color:#AA6A00;font-weight:900}
+.checklist{list-style:none;padding:0;margin:18px 0}
+.checklist li{padding:9px 0 9px 30px;position:relative;border-bottom:1px solid #EDF1F4}
+.checklist li:before{content:"✓";position:absolute;left:5px;color:var(--green);font-weight:900}
+.compare{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:22px 0}
+.compare>div{border:1px solid var(--line);border-radius:16px;padding:20px;background:var(--soft)}
+.mini{font-size:14px;color:var(--muted)}
+.ladder{display:grid;gap:10px;margin:22px 0}
+.ladder div{display:grid;grid-template-columns:150px 1fr;gap:12px;padding:15px 18px;border-radius:12px;background:#F4F8FB;border-left:4px solid var(--blue)}
+.ladder span{color:var(--muted)}
+.question-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:22px 0}
+.question-grid>div{border:1px solid var(--line);border-radius:16px;padding:20px;background:#fff}
+.question-grid span{font-size:12px;font-weight:900;color:var(--blue)}
+.principles{padding-left:22px}
+.principles li{margin:0 0 16px;padding-left:4px}
+.summary td:first-child{width:32%;font-weight:800;color:var(--navy)}
+.closing{font-size:19px;text-align:center;background:#F0F6FA;border-radius:16px;padding:26px;margin-top:28px}
+.references{background:#F8FAFB;border-top:1px solid var(--line);padding:28px 56px 38px;color:var(--muted);font-size:13px}
+.references h2{font-size:18px;border:0;padding:0;margin-bottom:12px}
+.references ul{margin:0;padding-left:20px}
+@media(max-width:900px){
+ .shell{grid-template-columns:1fr;padding:0}
+ 
+ .hero,.content,.references{padding-left:24px;padding-right:24px}
+ h1{font-size:31px}
+ .cards,.compare,.question-grid{grid-template-columns:1fr}
+ .toc ol{columns:1}
+ .ladder div{grid-template-columns:1fr}
+}
+
+
+.article-topnav{background:#fff;border-bottom:1px solid #d9e1e7;font-family:"Pretendard","Noto Sans KR","Apple SD Gothic Neo","Malgun Gothic",sans-serif}
+.article-topnav .nav-in{max-width:1180px;margin:0 auto;min-height:58px;padding:0 20px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+.article-topnav .nav-left,.article-topnav .nav-right{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.article-topnav a{color:#425466;text-decoration:none;font-size:13px;font-weight:800}
+.article-topnav a.current{color:#17324D}
+@media(max-width:720px){.article-topnav .nav-in{align-items:flex-start;flex-direction:column;padding-top:12px;padding-bottom:12px;gap:8px}.article-topnav .nav-right{gap:10px}.article-topnav a{font-size:12px}}
+
+@media(max-width:720px){.renewal-depth table{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch}.renewal-path .ladder div{display:block}.renewal-path .ladder span{display:block;margin-top:6px}.renewal-depth .compare{grid-template-columns:1fr}}
+</style>
+<link href="https://4th-season.com/what-is-korean-grammar" rel="canonical"/><meta content="index,follow" name="robots"/><meta content="GRAMMAR_PUBLIC_0110_V1" name="4s-public-marker"/><meta content="2026-09-27" name="article:published_time"/><meta content="how" name="4th-subcategory"/><meta content="GRAMMAR_RENEWAL_0110_20261017_V2" name="4s-renewal-marker"/><link id="s4-article-nav-css" rel="stylesheet" href="/assets/common/article-nav.css?v=20260928v1">
+<link id="s4-stdict-search-css" rel="stylesheet" href="/assets/common/stdict-search.css?v=20260927v1">
+</head>
+<body>
+<div id="s4-stdict-search" class="s4-dict-search" data-endpoint="/api/stdict" aria-label="표준국어대사전 검색">
+<form class="s4-dict-form" role="search" autocomplete="off">
+<span class="s4-dict-badge">사전</span>
+<label class="s4-dict-sr" for="s4-dict-input">표준국어대사전 검색어</label>
+<input id="s4-dict-input" class="s4-dict-input" type="search" inputmode="search" maxlength="80" placeholder="표준국어대사전" aria-label="표준국어대사전 검색">
+<button class="s4-dict-submit" type="submit" aria-label="사전 검색">⌕</button>
+</form>
+<div class="s4-dict-panel" hidden aria-live="polite"></div>
+</div>
+<nav id="fs-common-menu" class="fs-common-menu" data-sitejob-marker="GLOBAL_ARTICLE_NAV_V2" aria-label="개별 글 공통 메뉴"><div class="fsn-inner"><a class="fsn-exit" href="/learn/grammar/">← 상위 지도</a><a class="fsn-brand" href="/">4TH SEASON</a><a class="fsn-domain" href="/learn/">LEARN</a><a class="fsn-domain" href="/world/">WORLD</a><a class="fsn-domain" href="/life/">LIFE</a><a class="fsn-domain insite" href="/insite/">In:Site</a><a class="fsn-series" href="/learn/grammar/">문법</a><a class="fsn-map" href="/sitemap/">한눈에 보기</a></div></nav><header class="article-topnav"><div class="nav-in"><nav aria-label="상위 이동" class="nav-left"><a href="/">홈</a><a href="/learn/">LEARN</a></nav><nav aria-label="LEARN 동일 레벨 메뉴" class="nav-right"><a href="/learn/korean-reading/">읽기</a><a aria-current="page" class="current" href="/learn/grammar/">문법</a><a href="/learn/vocabulary/">어휘</a><a href="/learn/reread/">Re:Read</a><a href="/quote-prestige/">명언의 품격</a></nav></div></header>
+<div class="shell">
+<article>
+<header class="hero">
+<span class="eyebrow">국어 문법</span>
+<h1>문법이란 무엇인가 — 뜻·역할·학교 문법과 학문 문법</h1>
+<p class="subtitle">문법이 무엇을 설명하는지, 문법 규칙과 어문 규범은 어떻게 다른지, 학교 문법과 학문 문법을 어떤 기준으로 구별해야 하는지 하나의 글로 정리합니다.</p>
+</header>
+<div class="content"><div class="visual-stack"><figure><img alt="문법의 주요 층위와 문장 구조를 한눈에 보여 주는 한국어 문법 대표 이미지" class="cover-img" height="540" src="/assets/grammar/what-is-korean-grammar.webp" width="960"/></figure></div><nav aria-label="목차" class="toc"><div class="toc-title">목차</div><ol><li><a href="#s1">왜 우리는 문법을 배우기 전에 이미 말을 할 수 있을까요?</a></li><li><a href="#s2">1. ‘문법’이라는 말에는 몇 가지 뜻이 겹쳐 있습니다</a></li><li><a href="#s3">2. 문법은 무엇을 설명할까요?</a></li><li><a href="#s4">3. 문법 지식이 없어도 말을 하는데, 왜 문법을 배울까요?</a></li><li><a href="#s5">4. 문법과 맞춤법은 같은 것일까요?</a></li><li><a href="#s6">5. 학교 문법과 학문 문법은 무엇이 다를까요?</a></li><li><a href="#s7">6. ‘정답이 하나’인 문법과 ‘분석이 갈리는’ 문법을 어떻게 구분할까요?</a></li><li><a href="#s8">7. 문법은 ‘이름 맞히기’보다 ‘판단 기준 세우기’가 중요합니다</a></li><li><a href="#s9">8. 문법을 분석할 때 먼저 물어야 할 네 가지</a></li><li><a href="#s10">9. 실제 문장 하나를 여러 층위에서 봅시다</a></li><li><a href="#s11">10. 이 시리즈에서 문법을 다루는 원칙</a></li><li><a href="#s13">11. 실제 기출에서 개념을 적용하는 방법</a></li><li><a href="#s14">12. 문법 공부를 이어 가는 학습 경로</a></li><li><a href="#s12">한눈에 정리</a></li></ol></nav>
+<section id="s1"><h2>왜 우리는 문법을 배우기 전에 이미 말을 할 수 있을까요?</h2>
+<p>우리는 학교에서 <strong>주어, 서술어, 형태소, 어미</strong>라는 말을 배우기 전부터 한국어 문장을 만들고 이해합니다. 어린아이도 “엄마가 왔어”, “이거 내가 할래” 같은 문장을 자연스럽게 말합니다. 문법 용어를 몰라도 말은 할 수 있습니다.</p>
+<p>그렇다면 문법은 이미 할 줄 아는 말을 뒤늦게 이름 붙이는 공부일까요?</p>
+<p>그보다 정확하게 말하면 문법은 <strong>우리가 무의식적으로 사용하고 있는 언어의 규칙과 관계를 의식적으로 설명하는 체계</strong>입니다. 어떤 표현이 왜 자연스러운지, 무엇이 서로 같은 부류이고 무엇이 다른지, 형태가 달라지면 기능과 의미가 어떻게 달라지는지를 일정한 기준으로 설명합니다.</p>
+<div class="keybox"><strong>이 글의 핵심</strong><br/>문법은 ‘맞는 말을 외우는 규칙집’만을 뜻하지 않습니다. 언어가 어떤 단위와 관계로 조직되어 작동하는지를 설명하는 체계이며, 학교 문법은 그 체계를 학습과 교육을 위해 일정한 범주와 용어로 정리한 것입니다.</div>
+</section><section id="s2"><h2>1. ‘문법’이라는 말에는 몇 가지 뜻이 겹쳐 있습니다</h2>
+<p>일상에서 우리는 ‘문법’이라는 말을 서로 다른 뜻으로 사용합니다.</p>
+<div class="cards">
+<div class="card"><span class="num">01</span><h3>언어 안의 규칙</h3><p>사람들이 실제로 말을 만들고 이해할 때 따르는 구조적 질서입니다. 화자가 문법책을 읽지 않아도 어느 정도 알고 있는 규칙입니다.</p></div>
+<div class="card"><span class="num">02</span><h3>그 규칙을 설명하는 지식 체계</h3><p>언어학자나 교육자가 음운·형태·문장·담화의 규칙을 분석하고 체계화한 설명입니다.</p></div>
+<div class="card"><span class="num">03</span><h3>학교에서 배우는 문법</h3><p>학생이 언어 구조를 이해하고 읽기·쓰기·말하기에 활용할 수 있도록 교육 목적에 맞게 정리한 문법 체계입니다.</p></div>
+</div>
+<p>또 일상에서는 “문법에 맞게 써라”라는 말처럼 <strong>바른 표현의 기준</strong>이라는 뜻으로도 사용합니다. 이 때문에 문법과 맞춤법·표준어 규정이 자주 한 덩어리처럼 느껴집니다.</p>
+<p>하지만 이 시리즈에서는 혼동을 줄이기 위해 <strong>언어 구조를 설명하는 문법</strong>과 <strong>공식 표기·발음 기준인 어문 규범</strong>을 구별해 다룹니다.</p>
+</section><section id="s3"><h2>2. 문법은 무엇을 설명할까요?</h2>
+<p>문법은 단어의 종류만 설명하지 않습니다. 실제 언어를 구성하는 여러 층위가 어떻게 조직되고 서로 연결되는지를 설명합니다.</p>
+<table>
+<thead><tr><th>질문</th><th>주요 영역</th><th>예</th></tr></thead>
+<tbody>
+<tr><td>어떤 소리로 이루어지는가?</td><td>음운</td><td>자음·모음, 음절, 음운 변동</td></tr>
+<tr><td>말은 어떤 최소 단위로 나뉘는가?</td><td>형태</td><td>형태소, 어근·접사, 어간·어미</td></tr>
+<tr><td>단어를 어떻게 분류하는가?</td><td>품사</td><td>명사, 동사, 형용사, 조사 등</td></tr>
+<tr><td>문장 안에서 무슨 역할을 하는가?</td><td>통사</td><td>주어, 목적어, 서술어, 관형어</td></tr>
+<tr><td>절과 문장은 어떻게 결합하는가?</td><td>문장 구조</td><td>홑문장, 이어진문장, 안은문장</td></tr>
+<tr><td>어떤 문법 의미를 더하는가?</td><td>문법 요소</td><td>높임, 시간, 피동, 사동, 부정</td></tr>
+<tr><td>맥락에서 어떻게 해석되는가?</td><td>의미·담화</td><td>지시, 생략, 대용, 중의성</td></tr>
+</tbody>
+</table>
+<p>국립국어원의 「2014년 표준 국어 문법 개발」도 문법 지식 항목을 범주화·위계화하면서 <strong>음운, 형태, 통사, 담화</strong>의 체계 정합성을 점검했습니다. 문법은 낱개의 규칙을 모은 목록이 아니라 여러 영역이 연결된 구조로 보아야 한다는 뜻입니다.</p>
+</section><section id="s4"><h2>3. 문법 지식이 없어도 말을 하는데, 왜 문법을 배울까요?</h2>
+<p>모국어 화자는 문법 용어를 배우기 전에도 언어의 많은 규칙을 암묵적으로 알고 있습니다. 예를 들어 한국어 화자는 다음 두 표현의 자연스러움 차이를 설명하지 못하더라도 대체로 느낄 수 있습니다.</p>
+<div class="example">
+<p><span class="ok">✓</span> 나는 어제 그 책을 읽었다.</p>
+<p><span class="no">△</span> 나는 어제 그 책을 읽는다.</p>
+</div>
+<p>둘째 문장도 특정한 서사적 현재나 맥락에서는 가능하지만, 아무 맥락 없이 어제의 완료된 사건을 말하려는 상황이라면 첫째 문장이 더 자연스럽습니다. 화자는 이런 차이를 사용 경험을 통해 알고 있습니다.</p>
+<p>그럼에도 문법을 배우는 이유는 <strong>느낌을 근거 있는 설명으로 바꾸기 위해서</strong>입니다.</p>
+<ul class="checklist">
+<li>처음 보는 문장을 같은 기준으로 분석할 수 있습니다.</li>
+<li>비슷한 표현의 차이를 설명할 수 있습니다.</li>
+<li>읽기에서 복잡한 문장 구조를 정확히 파악할 수 있습니다.</li>
+<li>쓰기에서 중의성·호응·수식 범위를 점검할 수 있습니다.</li>
+<li>맞춤법과 띄어쓰기의 이유를 문법 구조와 연결할 수 있습니다.</li>
+</ul>
+<p>교육부의 2022 개정 교육과정은 단순 암기에서 벗어나 <strong>탐구와 개념 기반의 깊이 있는 학습</strong>을 강조합니다. 문법도 용어 암기보다 개념 사이의 관계와 실제 언어 자료를 분석하는 방식으로 읽는 편이 이 방향에 맞습니다.</p>
+</section><section id="s5"><h2>4. 문법과 맞춤법은 같은 것일까요?</h2>
+<p><strong>같지 않습니다.</strong> 다만 서로 밀접하게 연결됩니다.</p>
+<div class="compare">
+<div><h3>문법</h3><p>언어가 어떤 구조와 규칙으로 이루어지는지 설명합니다.</p><p class="mini">예: ‘수’는 의존 명사인가? ‘읽었다’는 어떻게 형태소로 나뉘는가?</p></div>
+<div><h3>어문 규범</h3><p>표준적인 표기와 발음 등 사회적 공통 기준을 정합니다.</p><p class="mini">예: ‘할 수 있다’를 어떻게 띄어 쓰는가? 어떤 발음을 표준으로 인정하는가?</p></div>
+</div>
+<p>예를 들어 <code>할 수 있다</code>를 왜 띄어 쓰는지를 이해하려면 먼저 <code>수</code>가 앞의 관형형을 받아 쓰이는 <strong>의존 명사</strong>라는 문법 지식이 필요합니다. 규범을 적용하는 데 문법 지식이 근거가 되는 경우가 많습니다.</p>
+<div class="warning"><strong>주의</strong> ‘문법에 맞다’라는 일상 표현 때문에 문법과 규범이 자주 섞입니다. 이 시리즈에서는 <em>구조를 설명하는 문법</em>과 <em>표준적 사용을 정하는 규범</em>을 구분합니다.</div>
+</section><section id="s6"><h2>5. 학교 문법과 학문 문법은 무엇이 다를까요?</h2>
+<p>둘이 다루는 언어가 다른 것은 아닙니다. <strong>목적과 기술 방식이 다릅니다.</strong></p>
+<table>
+<thead><tr><th></th><th>학교 문법</th><th>학문 문법</th></tr></thead>
+<tbody>
+<tr><td>주요 목적</td><td>교육·학습·평가에 필요한 공통 체계</td><td>언어 현상을 더 정밀하게 설명하고 이론화</td></tr>
+<tr><td>범주와 용어</td><td>학습 가능성과 일관성을 고려해 정리</td><td>연구 관점에 따라 범주·용어가 달라질 수 있음</td></tr>
+<tr><td>쟁점 처리</td><td>기본 분석을 정해 제시하는 경우가 많음</td><td>여러 분석을 경쟁적으로 검토할 수 있음</td></tr>
+<tr><td>이 시리즈의 기준</td><td colspan="2">학교 문법을 기본값으로 두되, 중요한 학문적 차이는 ‘다른 분석 가능성’으로 분리해 설명</td></tr>
+</tbody>
+</table>
+<p>국립국어원의 표준 국어 문법 개발 연구도 문법 항목의 위계화뿐 아니라 <strong>쟁점 상세 분석, 표준 용어, 영역별 기술</strong>을 별도로 점검했습니다. 하나의 공통 체계를 만드는 일과 모든 쟁점에 단 하나의 분석만 존재한다고 주장하는 일은 같지 않습니다.</p>
+</section><section id="s7"><h2>6. ‘정답이 하나’인 문법과 ‘분석이 갈리는’ 문법을 어떻게 구분할까요?</h2>
+<p>학교 문법 문제를 풀 때는 정답이 필요합니다. 그러나 언어 자체는 때때로 한 줄 정의로 깔끔하게 나뉘지 않습니다.</p>
+<p>이 시리즈에서는 사례를 세 층으로 구분합니다.</p>
+<div class="ladder">
+<div><b>① 기본 사례</b><span>학교 문법의 정의와 판별 기준이 명확하게 적용되는 예</span></div>
+<div><b>② 경계 사례</b><span>둘 이상의 성질이 겹쳐 추가 기준이 필요한 예</span></div>
+<div><b>③ 쟁점 사례</b><span>학문적으로 실제 분석이 갈리며 관점을 밝혀야 하는 예</span></div>
+</div>
+<p>이렇게 구분하면 두 가지 오류를 피할 수 있습니다. 모든 예외를 “그냥 외우라”고 처리하는 오류와, 분석이 조금이라도 갈리면 “문법에는 정답이 없다”고 말하는 오류입니다.</p>
+</section><section id="s8"><h2>7. 문법은 ‘이름 맞히기’보다 ‘판단 기준 세우기’가 중요합니다</h2>
+<p>다음 두 문장을 보겠습니다.</p>
+<div class="example">
+<p>① <strong>새</strong> 책이 왔다.</p>
+<p>② <strong>예쁜</strong> 책이 왔다.</p>
+</div>
+<p>둘 다 뒤의 명사 <code>책</code>을 꾸밉니다. 문장 성분으로 보면 둘 다 <strong>관형어</strong>입니다. 하지만 품사는 다릅니다.</p>
+<ul>
+<li><code>새</code> → 관형사</li>
+<li><code>예쁜</code> → 형용사 <code>예쁘다</code>의 활용형</li>
+</ul>
+<p>이 차이를 알기 위해서는 “명사를 꾸미면 관형사”라는 한 줄 정의만으로는 부족합니다. <strong>형태가 변하는가, 기본형이 있는가, 어떤 어미와 결합하는가</strong> 같은 추가 기준이 필요합니다.</p>
+<p>좋은 문법 설명은 정답을 알려 주는 데서 멈추지 않고 <strong>새로운 사례에도 다시 적용할 수 있는 기준</strong>을 남깁니다.</p>
+</section><section id="s9"><h2>8. 문법을 분석할 때 먼저 물어야 할 네 가지</h2>
+<div class="question-grid">
+<div><span>Q1</span><h3>무엇을 분석하는가?</h3><p>소리인가, 형태소인가, 단어인가, 문장인가, 담화인가?</p></div>
+<div><span>Q2</span><h3>어떤 기준으로 보는가?</h3><p>형태인가, 기능인가, 의미인가, 결합 환경인가?</p></div>
+<div><span>Q3</span><h3>비슷한 것과 무엇이 다른가?</h3><p>대조 사례를 통해 경계를 확인합니다.</p></div>
+<div><span>Q4</span><h3>학교 문법의 기본 분석은 무엇인가?</h3><p>쟁점이 있다면 기본값과 다른 분석을 분리합니다.</p></div>
+</div>
+<p>이 네 질문은 이후 품사, 문장 성분, 음운 변동, 문법 요소를 공부할 때 계속 반복됩니다.</p>
+</section><section id="s10"><h2>9. 실제 문장 하나를 여러 층위에서 봅시다</h2>
+<div class="sentence">“민지가 새 책을 조용히 읽었다.”</div>
+<table>
+<thead><tr><th>분석 질문</th><th>예</th></tr></thead>
+<tbody>
+<tr><td>단어의 종류는?</td><td>민지(명사), 새(관형사), 책(명사), 조용히(부사), 읽다(동사)</td></tr>
+<tr><td>문장 속 역할은?</td><td>민지가(주어), 새(관형어), 책을(목적어), 조용히(부사어), 읽었다(서술어)</td></tr>
+<tr><td>형태는 어떻게 이루어졌는가?</td><td>읽- + -었- + -다</td></tr>
+<tr><td>어떤 의미가 더해졌는가?</td><td>-었-이 사건의 과거 시간 해석에 관여</td></tr>
+</tbody>
+</table>
+<p>하나의 표현을 두고 여러 답이 나오는 것은 모순이 아닙니다. <strong>질문이 다르기 때문</strong>입니다. 품사와 문장 성분을 구별해야 하는 이유도 여기에 있습니다.</p>
+</section><section id="s11"><h2>10. 이 시리즈에서 문법을 다루는 원칙</h2>
+<ol class="principles">
+<li><strong>학교 문법을 기본값으로 삼습니다.</strong><br/>교육과정과 공신력 있는 국어 자료를 우선 기준으로 합니다.</li>
+<li><strong>상위 개념도 완전한 글로 씁니다.</strong><br/>‘품사’ 글은 명사·동사 링크만 모은 허브가 아니라 분류 원리와 전체 구조를 설명합니다.</li>
+<li><strong>정의보다 판단 기준을 중시합니다.</strong><br/>새로운 사례에 적용할 수 있어야 합니다.</li>
+<li><strong>형태·기능·의미를 섞지 않습니다.</strong><br/>서로 다른 질문이라는 점을 먼저 확인합니다.</li>
+<li><strong>예외와 쟁점을 숨기지 않습니다.</strong><br/>기본 사례·경계 사례·쟁점 사례를 구분합니다.</li>
+<li><strong>규범은 문법 구조와 연결해 설명합니다.</strong><br/>맞춤법과 띄어쓰기의 이유를 가능한 한 구조에서 찾습니다.</li>
+</ol>
+</section><section class="renewal-path" id="s14">
+<h2>12. 문법 공부는 어떤 글부터 이어 읽으면 좋을까요?</h2>
+<p>문법을 처음부터 끝까지 암기할 필요는 없습니다. <strong>분석 단위 → 판단 기준 → 개별 분야 → 기출 적용</strong>의 순서로 읽으면 서로 다른 용어가 같은 개념인지, 다른 기준의 말인지 구별하기 쉽습니다.</p>
+<div class="ladder"><div><b>언어 단위 파악</b><span><a href="/language-units">언어 단위</a> · <a href="/hierarchy-of-language-units">언어 단위의 위계</a></span></div>
+<div><b>판단 기준 설정</b><span><a href="/form-function-meaning">형태·기능·의미</a> · <a href="/parts-of-speech-and-sentence-components">품사와 문장 성분</a></span></div>
+<div><b>개별 영역 연결</b><span><a href="/korean-phonology">음운의 전체 체계</a> · <a href="/grammar-and-language-norms">문법과 어문 규범</a></span></div>
+<div><b>문제에 적용</b><span><a href="/grammar-analysis-method">문법 분석 방법</a> · <a href="/grammatical-judgment-criteria">판별 기준 세우기</a></span></div></div>
+<p>어떤 기출에서 틀렸다면 문제의 제목이 아니라 <strong>틀린 판단을 일으킨 개념</strong>으로 돌아가는 것이 좋습니다. 음운 문제라 해도 틀린 까닭이 형태소 경계의 판단에 있을 수 있고, 문장 문제라 해도 실제 원인은 품사와 성분을 혼동한 데 있을 수 있습니다.</p>
+<div class="warning"><strong>읽기의 원칙</strong> 한 문제에 연결되는 개념이 여러 개일 때는 ‘직접 정답 판정에 필요한 개념’과 ‘이해를 도와주는 관련 개념’을 구별합니다. 관련된 개념을 모두 필수 선수학습으로 취급하지 않습니다.</div>
+</section><section class="renewal-depth" id="s13">
+<h2>11. 개념을 안다는 것과 기출문제를 푼다는 것은 어떻게 연결될까요?</h2>
+<p>문법에서 개념은 정답표의 이름표가 아닙니다. 새로운 언어 자료를 만났을 때 <strong>어떤 질문을 먼저 던지고, 무엇을 증거로 비교할지</strong> 결정하는 기준입니다. 같은 단어라도 분류 기준을 바꾸면 답해야 할 질문이 달라집니다.</p>
+<div class="compare"><div><h3>개념을 외울 때</h3><p>‘형태소는 뜻을 가진 가장 작은 단위’라는 정의를 기억합니다. ‘관형어는 체언을 꾸민다’는 성분 설명을 기억합니다.</p></div><div><h3>문항을 풀 때</h3><p>형태소를 실제 단어에서 어디까지 나눌지 판단합니다. 명사를 꾸미는 두 표현의 <em>품사</em>가 서로 같다고 단정하지 않고, 활용 여부와 기본형까지 확인합니다.</p></div></div>
+<h3>하나의 문장을 서로 다른 좌표에서 보기</h3>
+<div class="sentence">“민지가 새 책을 조용히 읽었다.”</div>
+<table><thead><tr><th>분석할 층위</th><th>먼저 물을 질문</th><th>이 문장에서 확인할 것</th></tr></thead><tbody>
+<tr><td>단어·품사</td><td>각 단어는 어떤 부류에 속하는가?</td><td>‘새’는 관형사, ‘조용히’는 부사, ‘읽었다’의 기본형은 동사 ‘읽다’입니다.</td></tr>
+<tr><td>문장 성분</td><td>각 표현이 문장 안에서 맡는 역할은 무엇인가?</td><td>‘새’는 ‘책’을 꾸미는 관형어, ‘조용히’는 ‘읽었다’를 꾸미는 부사어입니다.</td></tr>
+<tr><td>문법 요소</td><td>언제의 사건을 어떻게 나타내는가?</td><td>‘읽었다’에 과거 시제 선어말 어미 ‘-었-’이 나타납니다.</td></tr>
+<tr><td>문장 구조</td><td>서술 관계가 몇 번 드러나는가?</td><td>이 문장은 ‘민지가 책을 읽었다’라는 한 서술 관계를 중심으로 합니다.</td></tr>
+</tbody></table>
+<p>이때 <strong>품사는 단어의 문법적 성질</strong>이고 <strong>문장 성분은 문장 안의 역할</strong>입니다. ‘새 책’의 ‘새’와 ‘예쁜 책’의 ‘예쁜’은 모두 관형어이지만, ‘새’는 관형사이고 ‘예쁜’은 형용사 ‘예쁘다’의 활용형입니다. 형태·기능·의미라는 판단 기준을 섞지 않으면 같은 문장에서도 답이 갈리지 않습니다.</p>
+<div class="keybox"><strong>수능 문제에 적용할 때의 네 단계</strong><ol><li><strong>발문 확인:</strong> 무엇을 고르라고 하는지, 판단 단위를 먼저 확인합니다.</li><li><strong>개념 확정:</strong> 예를 들어 자립성인지, 실질적 의미인지, 문장 안의 기능인지 분류 기준을 정확히 정합니다.</li><li><strong>보기를 분석:</strong> 주어진 자료의 경계 사례를 해당 기준으로 확인하고, 필요하면 추가 기준을 동원합니다.</li><li><strong>선지를 판정:</strong> 맞는 이유 또는 틀린 이유를 구체적인 형태와 기능으로 설명합니다.</li></ol></div>
+<h3>실제 기출에서 무엇을 확인할까요?</h3>
+<p><strong>2023학년도 6월 모의평가 언어와 매체 38번</strong>은 형태소의 자립성 및 의미 유형을 교차하여 사례를 구분하는 문제입니다. ‘찾아냈다’처럼 여러 부분으로 분석할 수 있는 표현을 볼 때, 단순히 낱말을 눈으로 나누는 대신 각각이 <em>스스로 쓰일 수 있는지</em>와 <em>실질적 의미를 담당하는지</em>를 별개로 판단해야 합니다. 이 문제는 앞의 정의를 실제 분류표에 적용하는 연습이라는 점에서 문법 탐구의 본보기가 됩니다.</p>
+<p>단, 이 글은 문법 전체의 길잡이이므로 모든 선지의 정오 풀이까지 대신하지 않습니다. 개별 기출의 정답과 선지별 오답 근거는 해당 개념 설명글의 기출 분석에서 공식 원문과 대조하여 제시합니다.</p>
+</section><section id="s12"><h2>한눈에 정리</h2>
+<table class="summary">
+<thead><tr><th>질문</th><th>답</th></tr></thead>
+<tbody>
+<tr><td>문법이란 무엇인가?</td><td>언어의 단위·형식·기능·의미와 그 관계를 일정한 기준으로 설명하는 체계</td></tr>
+<tr><td>문법을 몰라도 왜 말을 할 수 있나?</td><td>모국어 화자는 많은 규칙을 암묵적으로 습득하기 때문</td></tr>
+<tr><td>그런데 왜 문법을 배우나?</td><td>암묵적 느낌을 재현 가능한 분석 기준과 설명으로 바꾸기 위해</td></tr>
+<tr><td>문법과 맞춤법은 같은가?</td><td>아님. 문법은 구조를 설명하고 어문 규범은 표준 표기·발음 등의 기준을 정함</td></tr>
+<tr><td>학교 문법과 학문 문법은 다른가?</td><td>대상은 같지만 목적·범주화·쟁점 처리 방식이 다를 수 있음</td></tr>
+<tr><td>이 시리즈의 기본값은?</td><td>학교 문법을 기본으로 하고 중요한 다른 분석은 분리해 설명</td></tr>
+</tbody>
+</table>
+<p class="closing"><strong>문법을 안다는 것은 이름을 많이 외운다는 뜻이 아닙니다.</strong><br/>무엇을 어떤 기준으로 보고 있으며, 왜 그렇게 판단하는지를 설명할 수 있다는 뜻입니다.</p>
+</section>
+</div>
+<footer class="references">
+<h2>공식 기준·참고</h2>
+<ul>
+<li>교육부, 교육부 고시 제2022-33호 「초·중등학교 교육과정」(국어과 교육과정 별책 5), 2022-12-22</li>
+<li>국립국어원, 「2014년 표준 국어 문법 개발」</li>
+<li>한국교육과정평가원, 2023학년도 6월 모의평가 국어(언어와 매체) 기출 38번 및 공식 문제 자료.</li><li><a href="https://www.moe.go.kr/boardCnts/viewRenew.do?boardID=294&amp;boardSeq=93459&amp;lev=0&amp;m=020&amp;s=moe">교육부, 「2022 개정 교육과정」 확정 발표, 2022-12-22</a></li></ul>
+</footer>
+</article>
+</div>
+<script id="s4-stdict-search-js" src="/assets/common/stdict-search.js?v=20260927v1" defer></script>
+</body>
+</html>
